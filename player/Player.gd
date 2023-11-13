@@ -1,13 +1,26 @@
 extends CharacterBody3D
 
 
-const SPEED = 5.0
+
 const JUMP_VELOCITY = 4.5
+const BASE_SPEED = 5.0
+const CROUCH_SPEED = 3.0
+const RUN_SPEED = 10.0
+var mouse_sense = 2.5
+
+var fov = 75.0
+var run_fov = 85.0
 
 @onready var head := $head
 @onready var camera := $head/Camera3D
-@onready var hitbox := $CollisionShape3D
+@onready var hitbox := $standard_hitbox
+@onready var crouch_hitbox := $crouch_hitbox
+@onready var raycast := $RayCast3D
+@onready var anim_player := $AnimationPlayer
 @onready var parent := get_parent()
+@onready var SPEED = 5.0
+@onready var crouching = false
+
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
@@ -18,12 +31,29 @@ func _ready():
 func _input(event):
 	if event is InputEventMouseMotion:
 		if !parent.pause_game:
-			head.rotation_degrees.y -= event.relative.x * 0.1
-			head.rotation_degrees.x -= event.relative.y * 0.1
+			head.rotation_degrees.y -= deg_to_rad(event.relative.x * mouse_sense)
+			head.rotation_degrees.x -= deg_to_rad(event.relative.y * mouse_sense)
 			head.rotation.x = clamp(head.rotation.x, deg_to_rad(-90), deg_to_rad(90))
 
 func _physics_process(delta):
-	# Add the gravity.
+	
+	if Input.is_action_pressed("crouch"):
+		move_cam("crouching")
+		SPEED = CROUCH_SPEED
+		hitbox.disabled = true
+		crouch_hitbox.disabled = false
+		camera.fov = lerp(camera.fov, fov, 5*delta)
+	elif !raycast.is_colliding():
+		move_cam("standing")
+		hitbox.disabled = false
+		crouch_hitbox.disabled = true
+		if Input.is_action_pressed("run") and Input.is_action_pressed("move_forward"):
+			SPEED = RUN_SPEED
+			camera.fov = lerp(camera.fov, run_fov, 5*delta)
+		else:
+			SPEED = BASE_SPEED
+			camera.fov = lerp(camera.fov, fov, 5*delta)
+	
 	if not is_on_floor():
 		velocity.y -= gravity * delta
 
@@ -45,4 +75,15 @@ func _physics_process(delta):
 	move_and_slide()
 	
 
+func move_cam(state):
+	match state:
+		"crouching":
+			if !crouching:
+				anim_player.play("crouch_animation")
+			crouching = true
+		"standing":
+			if crouching:
+				anim_player.play_backwards("crouch_animation")
+			crouching = false
+	
 
