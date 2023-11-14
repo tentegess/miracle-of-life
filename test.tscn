@@ -81,7 +81,7 @@ mesh = SubResource("BoxMesh_nedsh")
 shape = SubResource("ConcavePolygonShape3D_j6l11")
 
 [node name="MeshInstance3D4" type="MeshInstance3D" parent="." groups=["metal"]]
-transform = Transform3D(5, 0, 0, 0, 1, 0, 0, 0, 10, -7.95189, 2.3358, -11.1374)
+transform = Transform3D(5, 0, 0, 0, 1, 0, 0, 0, 10, -7.61776, 2.1454, -11.1569)
 mesh = SubResource("BoxMesh_0wbmo")
 skeleton = NodePath("../MeshInstance3D")
 

@@ -1,7 +1,5 @@
 extends CharacterBody3D
 
-
-
 const JUMP_VELOCITY = 4.5
 
 # move speed variants
@@ -14,6 +12,16 @@ var mouse_sense = 2.5
 var fov = 75.0
 var run_fov = 85.0
 
+#stamina
+var max_stamina = 100.0
+var stamina = max_stamina
+var stamina_recovery_rate = 15.0 
+var stamina_depletion_rate = 25.0
+var can_run := true
+
+# variables that prevent action if player move into wall
+var previous_position = Vector3()
+var is_moving = false
 
 # load elements of player node
 @onready var head := $head
@@ -24,6 +32,7 @@ var run_fov = 85.0
 @onready var footstep_raycast := $footstep_raycast
 @onready var anim_player := $AnimationPlayer
 @onready var footstep_player := $footstep_player
+@onready var run_player := $run_player
 
 # initial values when object is ready
 @onready var parent := get_parent()
@@ -53,6 +62,8 @@ func _input(event):
 
 
 func _physics_process(delta):
+	check_movement()
+	handle_stamina(delta)
 	movement(delta)
 
 
@@ -69,7 +80,7 @@ func movement(delta):
 		move_cam("standing")
 		hitbox.disabled = false
 		crouch_hitbox.disabled = true
-		if Input.is_action_pressed("run") and Input.is_action_pressed("move_forward"):
+		if Input.is_action_pressed("run") and Input.is_action_pressed("move_forward") and can_run:
 			play_period = 2.0
 			SPEED = RUN_SPEED
 			camera.fov = lerp(camera.fov, run_fov, 5*delta)
@@ -103,7 +114,7 @@ func movement(delta):
 func get_ground_type():
 	sound_distance += play_freq
 	
-	if sound_distance > play_period:
+	if sound_distance > play_period and is_moving:
 		sound_distance = 0.0
 		var terrain  = footstep_raycast.get_collider().get_parent()
 		if terrain != null:
@@ -130,7 +141,33 @@ func play_step_sound(group : String):
 	footstep_player.pitch_scale = randf_range(0.6,0.9)
 	footstep_player.play()
 
+func handle_stamina(delta):
+	if (Input.is_action_pressed("run") and Input.is_action_pressed("move_forward")
+	and can_run and !crouching and is_moving):
+		stamina -= stamina_depletion_rate * delta
+		stamina = max(stamina, 0)
+		if stamina <= 0:
+			if can_run:
+				run_player.stream = load("res://sound/player/hiperventilation.ogg")
+				run_player.pitch_scale = 1.0
+				run_player.play()
+			can_run = false
+	else:
+		stamina += stamina_recovery_rate * delta
+		stamina = min(stamina, max_stamina)
+		if stamina >= 40:
+			run_player.stop()
+			can_run = true
+	print(stamina)
+		
 
+
+# check if player position change
+func check_movement():
+	is_moving = global_transform.origin != previous_position
+	previous_position = global_transform.origin
+		
+		
 # move down camera at crouching
 func move_cam(state):
 	match state:

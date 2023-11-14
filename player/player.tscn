@@ -58,3 +58,5 @@ libraries = {
 }
 
 [node name="footstep_player" type="AudioStreamPlayer" parent="."]
+
+[node name="run_player" type="AudioStreamPlayer" parent="."]
