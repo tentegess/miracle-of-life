@@ -4,7 +4,7 @@ extends CharacterBody3D
 
 const JUMP_VELOCITY = 4.5
 const BASE_SPEED = 5.0
-const CROUCH_SPEED = 3.0
+const CROUCH_SPEED = 2.5
 const RUN_SPEED = 10.0
 var mouse_sense = 2.5
 
