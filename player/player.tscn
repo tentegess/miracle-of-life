@@ -29,6 +29,7 @@ _data = {
 }
 
 [node name="Player" type="CharacterBody3D"]
+floor_max_angle = 0.872665
 script = ExtResource("1_oybvn")
 
 [node name="standard_hitbox" type="CollisionShape3D" parent="."]
@@ -44,7 +45,10 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
 
 [node name="Camera3D" type="Camera3D" parent="head"]
 
-[node name="RayCast3D" type="RayCast3D" parent="."]
+[node name="footstep_raycast" type="RayCast3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.00458443, 0)
+
+[node name="crouch_raycast" type="RayCast3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0)
 target_position = Vector3(0, 2, 0)
 
@@ -52,3 +56,5 @@ target_position = Vector3(0, 2, 0)
 libraries = {
 "": SubResource("AnimationLibrary_lrots")
 }
+
+[node name="footstep_player" type="AudioStreamPlayer" parent="."]
