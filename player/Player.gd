@@ -23,6 +23,12 @@ var can_run := true
 var previous_position = Vector3()
 var is_moving = false
 
+# picking up item
+var picked_object
+var pull_power = 4 * RUN_SPEED
+var rotation_power = 0.05
+var locked = false
+
 # load elements of player node
 @onready var head := $head
 @onready var camera := $head/Camera3D
@@ -33,6 +39,12 @@ var is_moving = false
 @onready var anim_player := $AnimationPlayer
 @onready var footstep_player := $footstep_player
 @onready var run_player := $run_player
+
+# picking items variables
+@onready var reach := $head/Camera3D/reach
+@onready var hand := $head/Camera3D/hand
+@onready var joint := $head/Camera3D/Generic6DOFJoint3D
+@onready var staticbody := $head/Camera3D/StaticBody3D
 
 # initial values when object is ready
 @onready var parent := get_parent()
@@ -54,17 +66,35 @@ func _ready():
 
 
 func _input(event):
-	if event is InputEventMouseMotion:
-		if !parent.pause_game:
-			head.rotation_degrees.y -= deg_to_rad(event.relative.x * mouse_sense)
-			head.rotation_degrees.x -= deg_to_rad(event.relative.y * mouse_sense)
-			head.rotation.x = clamp(head.rotation.x, deg_to_rad(-90), deg_to_rad(90))
+	if !parent.pause_game:
+		if event is InputEventMouseMotion:
+			if !locked:
+				head.rotation_degrees.y -= deg_to_rad(event.relative.x * mouse_sense)
+				head.rotation_degrees.x -= deg_to_rad(event.relative.y * mouse_sense)
+				head.rotation.x = clamp(head.rotation.x, deg_to_rad(-90), deg_to_rad(90))
+			
+		if Input.is_action_just_pressed("left_click"):
+			if picked_object == null:
+				pick_up()
+			elif picked_object != null:
+				remove_object()		
+						
+		if Input.is_action_pressed("right_click"):
+			locked = true
+			rotate_object(event)
+		if Input.is_action_just_released("right_click"):
+			locked = false
 
 
 func _physics_process(delta):
 	check_movement()
 	handle_stamina(delta)
 	movement(delta)
+	
+	if picked_object != null:
+		var a = picked_object.global_transform.origin
+		var b = hand.global_transform.origin
+		picked_object.set_linear_velocity((b-a)*pull_power)
 
 
 # player movement logic
@@ -158,7 +188,7 @@ func handle_stamina(delta):
 		if stamina >= 40:
 			run_player.stop()
 			can_run = true
-	print(stamina)
+	#print(stamina)
 		
 
 
@@ -180,4 +210,25 @@ func move_cam(state):
 				anim_player.play_backwards("crouch_animation")
 			crouching = false
 	
-
+	
+func pick_up():
+	var collider = reach.get_collider()
+	if collider != null and collider is RigidBody3D:
+		picked_object = collider
+		picked_object.global_transform.origin = hand.global_transform.origin
+		joint.set_node_b(picked_object.get_path())
+		
+		
+func rotate_object(event):
+	if picked_object != null:
+		if event is InputEventMouseMotion:
+			joint.set_node_b(picked_object.get_path())
+			staticbody.rotate_x(deg_to_rad(event.relative.y * rotation_power))
+			staticbody.rotate_y(deg_to_rad(event.relative.x * rotation_power))
+		
+		
+func remove_object():
+	if picked_object != null:
+		picked_object = null
+		joint.set_node_b(joint.get_path())
+		
