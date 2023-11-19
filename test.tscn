@@ -123,8 +123,8 @@ mesh = SubResource("PlaneMesh_v0h1l")
 shape = SubResource("ConcavePolygonShape3D_7o4te")
 
 [node name="Box" type="RigidBody3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.45721, 4.98797, 0)
-mass = 0.6
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.15208, 4.98797, 0)
+mass = 0.44
 physics_material_override = SubResource("PhysicsMaterial_ke1yh")
 gravity_scale = 2.0
 
@@ -136,6 +136,7 @@ mesh = SubResource("BoxMesh_ibknr")
 
 [node name="RigidBody3D" type="RigidBody3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.20738, 0.829685, 0)
+mass = 0.12
 
 [node name="Untitled" type="MeshInstance3D" parent="RigidBody3D"]
 transform = Transform3D(0.02, 0, 0, 0, 0.02, 0, 0, 0, 0.02, 0, 0, 0)

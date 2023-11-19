@@ -148,6 +148,16 @@ func movement(delta):
 		velocity.z = move_toward(velocity.z, 0, SPEED)
 
 	move_and_slide()
+	character_colision()
+
+
+func character_colision():
+	for collision_index in get_slide_collision_count():
+		var collision = get_slide_collision(collision_index)
+		if collision.get_collider() is RigidBody3D:
+			var collider = collision.get_collider()
+			var central_impulse_force = -collision.get_normal()  * 0.1 / collider.get_mass()
+			collider.apply_central_impulse(central_impulse_force)
 
 
 # get ground type in way to choose sound to play
