@@ -1,8 +1,8 @@
-[gd_scene load_steps=18 format=3 uid="uid://djfsnxjg5dyt6"]
+[gd_scene load_steps=21 format=3 uid="uid://djfsnxjg5dyt6"]
 
 [ext_resource type="PackedScene" uid="uid://dujh6n5slbk8s" path="res://player/player.tscn" id="1_gnk70"]
 [ext_resource type="Script" path="res://test.gd" id="1_ttvfy"]
-[ext_resource type="PackedScene" path="res://DoorsAsset/Scenes/Door_1_grp.tscn" id="4_034hh"]
+[ext_resource type="ArrayMesh" uid="uid://b0yv1j1wcnvwn" path="res://cross/untitled.obj" id="3_qucmh"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_7y3lw"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -37,12 +37,18 @@ data = PackedVector3Array(-0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_vm7rr"]
 data = PackedVector3Array(-0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, -0.5)
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_ybabk"]
-size = Vector3(2.38491, 5.96129, 0.393042)
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_ke1yh"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_quclp"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_ibknr"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_iswjb"]
+size = Vector3(0.330114, 0.561489, 0.137207)
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_755up"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_j0icx"]
 
 [node name="Node3D" type="Node3D"]
 script = ExtResource("1_ttvfy")
@@ -59,7 +65,6 @@ transform = Transform3D(20, 0, 0, 0, 1, 0, 0, 0, 20, -0.00593448, 0, 0.00185966)
 mesh = SubResource("PlaneMesh_v0h1l")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_7o4te")
@@ -95,14 +100,6 @@ skeleton = NodePath("../MeshInstance3D")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D4/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_vm7rr")
 
-[node name="Door_1_grp" parent="." instance=ExtResource("4_034hh")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.4892, 0, 1.2607)
-
-[node name="StaticBody3D" type="StaticBody3D" parent="Door_1_grp"]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Door_1_grp/StaticBody3D"]
-shape = SubResource("BoxShape3D_ybabk")
-
 [node name="MeshInstance3D5" type="MeshInstance3D" parent="." groups=["grass"]]
 transform = Transform3D(20, 0, 0, 0, 1, 0, 0, 0, 20, -40.4957, 0, 0.00185966)
 mesh = SubResource("PlaneMesh_v0h1l")
@@ -115,9 +112,36 @@ shape = SubResource("ConcavePolygonShape3D_7o4te")
 [node name="Box" type="RigidBody3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.45721, 4.98797, 0)
 mass = 0.6
+physics_material_override = SubResource("PhysicsMaterial_ke1yh")
+gravity_scale = 2.0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Box"]
 shape = SubResource("BoxShape3D_quclp")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Box"]
 mesh = SubResource("BoxMesh_ibknr")
+
+[node name="RigidBody3D" type="RigidBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.20738, 0.829685, 0)
+
+[node name="Untitled" type="MeshInstance3D" parent="RigidBody3D"]
+transform = Transform3D(0.02, 0, 0, 0, 0.02, 0, 0, 0, 0.02, 0, 0, 0)
+mesh = ExtResource("3_qucmh")
+skeleton = NodePath("../..")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00864077, 0.0241174, -0.00477585)
+shape = SubResource("BoxShape3D_iswjb")
+
+[node name="Box2" type="RigidBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.71564, 9.97594, -0.156048)
+mass = 0.6
+physics_material_override = SubResource("PhysicsMaterial_ke1yh")
+gravity_scale = 2.0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box2"]
+shape = SubResource("SphereShape3D_755up")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Box2"]
+mesh = SubResource("SphereMesh_j0icx")
+skeleton = NodePath("../../Box2")

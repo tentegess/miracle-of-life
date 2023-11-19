@@ -28,6 +28,7 @@ var picked_object
 var pull_power = 4 * RUN_SPEED
 var rotation_power = 0.05
 var locked = false
+var clicked = false
 
 # load elements of player node
 @onready var head := $head
@@ -45,6 +46,7 @@ var locked = false
 @onready var hand := $head/Camera3D/hand
 @onready var joint := $head/Camera3D/Generic6DOFJoint3D
 @onready var staticbody := $head/Camera3D/StaticBody3D
+@onready var item_view := $head/Camera3D/itemView
 
 # initial values when object is ready
 @onready var parent := get_parent()
@@ -73,15 +75,20 @@ func _input(event):
 				head.rotation_degrees.x -= deg_to_rad(event.relative.y * mouse_sense)
 				head.rotation.x = clamp(head.rotation.x, deg_to_rad(-90), deg_to_rad(90))
 			
-		if Input.is_action_just_pressed("left_click"):
+		if Input.is_action_just_pressed("left_click") and not clicked:
 			if picked_object == null:
 				pick_up()
 			elif picked_object != null:
 				remove_object()		
+			clicked = true
+			
+		if Input.is_action_just_released("left_click"):
+			clicked = false
 						
 		if Input.is_action_pressed("right_click"):
-			locked = true
-			rotate_object(event)
+			if picked_object != null:
+				locked = true
+				rotate_object(event)
 		if Input.is_action_just_released("right_click"):
 			locked = false
 
@@ -90,11 +97,7 @@ func _physics_process(delta):
 	check_movement()
 	handle_stamina(delta)
 	movement(delta)
-	
-	if picked_object != null:
-		var a = picked_object.global_transform.origin
-		var b = hand.global_transform.origin
-		picked_object.set_linear_velocity((b-a)*pull_power)
+	item_movement()
 
 
 # player movement logic
@@ -191,7 +194,6 @@ func handle_stamina(delta):
 	#print(stamina)
 		
 
-
 # check if player position change
 func check_movement():
 	is_moving = global_transform.origin != previous_position
@@ -214,10 +216,13 @@ func move_cam(state):
 func pick_up():
 	var collider = reach.get_collider()
 	if collider != null and collider is RigidBody3D:
+		print("pick")
+		print(collider)
 		picked_object = collider
 		picked_object.global_transform.origin = hand.global_transform.origin
-		joint.set_node_b(picked_object.get_path())
-		
+		picked_object.collision_mask = 0
+		picked_object.collision_layer = 0
+	
 		
 func rotate_object(event):
 	if picked_object != null:
@@ -225,10 +230,25 @@ func rotate_object(event):
 			joint.set_node_b(picked_object.get_path())
 			staticbody.rotate_x(deg_to_rad(event.relative.y * rotation_power))
 			staticbody.rotate_y(deg_to_rad(event.relative.x * rotation_power))
-		
-		
+			
+			
 func remove_object():
+	print("remove")
+	print(picked_object)
 	if picked_object != null:
-		picked_object = null
 		joint.set_node_b(joint.get_path())
+		picked_object.collision_mask = 1
+		picked_object.collision_layer = 1
+		picked_object.linear_velocity = Vector3.ZERO
+		picked_object = null
 		
+		
+func item_movement():
+	if picked_object != null:
+		if locked:
+			picked_object.global_transform.origin = item_view.global_transform.origin
+		else:
+			staticbody.global_transform.basis = head.global_transform.basis
+			picked_object.global_transform.basis = head.global_transform.basis
+			picked_object.global_transform.origin = hand.global_transform.origin
+	
