@@ -47,6 +47,7 @@ var clicked = false
 @onready var joint := $head/Camera3D/Generic6DOFJoint3D
 @onready var staticbody := $head/Camera3D/StaticBody3D
 @onready var item_view := $head/Camera3D/itemView
+@onready var crosshair := $head/Camera3D/crosshair
 
 # initial values when object is ready
 @onready var parent := get_parent()
@@ -97,6 +98,7 @@ func _physics_process(delta):
 	check_movement()
 	handle_stamina(delta)
 	movement(delta)
+	check_cursor()
 	item_movement()
 
 
@@ -213,11 +215,17 @@ func move_cam(state):
 			crouching = false
 	
 	
+func check_cursor():
+	var collider = reach.get_collider()
+	if collider != null and collider is RigidBody3D:
+		crosshair.visible = true
+	else:
+		crosshair.visible = false
+
+
 func pick_up():
 	var collider = reach.get_collider()
 	if collider != null and collider is RigidBody3D:
-		print("pick")
-		print(collider)
 		picked_object = collider
 		picked_object.global_transform.origin = hand.global_transform.origin
 		picked_object.collision_mask = 0
@@ -233,8 +241,6 @@ func rotate_object(event):
 			
 			
 func remove_object():
-	print("remove")
-	print(picked_object)
 	if picked_object != null:
 		joint.set_node_b(joint.get_path())
 		picked_object.collision_mask = 1
