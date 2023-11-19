@@ -29,6 +29,7 @@ var pull_power = 4 * RUN_SPEED
 var rotation_power = 0.05
 var locked = false
 var clicked = false
+var interaction = false
 
 # load elements of player node
 @onready var head := $head
@@ -48,6 +49,8 @@ var clicked = false
 @onready var staticbody := $head/Camera3D/StaticBody3D
 @onready var item_view := $head/Camera3D/itemView
 @onready var crosshair := $head/Camera3D/crosshair
+@onready var note_view := $head/Camera3D/note_view.get_node("Control").get_node("note")
+@onready var note_sound := $head/Camera3D/note_view.get_node("Control").get_node("note_sound")
 
 # initial values when object is ready
 @onready var parent := get_parent()
@@ -77,10 +80,12 @@ func _input(event):
 				head.rotation.x = clamp(head.rotation.x, deg_to_rad(-90), deg_to_rad(90))
 			
 		if Input.is_action_just_pressed("left_click") and not clicked:
-			if picked_object == null:
+			interaction = false
+			if not note_view.visible:
 				pick_up()
-			elif picked_object != null:
-				remove_object()		
+				read_note()
+			if not interaction:
+				remove_object()	
 			clicked = true
 			
 		if Input.is_action_just_released("left_click"):
@@ -217,7 +222,7 @@ func move_cam(state):
 	
 func check_cursor():
 	var collider = reach.get_collider()
-	if collider != null and collider is RigidBody3D:
+	if collider != null and (collider is RigidBody3D or "note" in collider.get_groups()):
 		crosshair.visible = true
 	else:
 		crosshair.visible = false
@@ -226,11 +231,23 @@ func check_cursor():
 func pick_up():
 	var collider = reach.get_collider()
 	if collider != null and collider is RigidBody3D:
+		if picked_object != null:
+			remove_object()
 		picked_object = collider
 		picked_object.global_transform.origin = hand.global_transform.origin
 		picked_object.collision_mask = 0
 		picked_object.collision_layer = 0
-	
+		interaction = true
+		
+		
+func read_note():
+	var collider = reach.get_collider()
+	if collider != null and "note" in collider.get_groups():
+		note_view.texture = collider.get_node("note").texture
+		note_view.visible = true
+		note_sound.play()
+		interaction = true
+		
 		
 func rotate_object(event):
 	if picked_object != null:
@@ -241,7 +258,9 @@ func rotate_object(event):
 			
 			
 func remove_object():
-	if picked_object != null:
+	if note_view.visible:
+		note_view.visible = false
+	elif picked_object != null:
 		joint.set_node_b(joint.get_path())
 		picked_object.collision_mask = 1
 		picked_object.collision_layer = 1
@@ -257,4 +276,4 @@ func item_movement():
 			staticbody.global_transform.basis = head.global_transform.basis
 			picked_object.global_transform.basis = head.global_transform.basis
 			picked_object.global_transform.origin = hand.global_transform.origin
-	
+			

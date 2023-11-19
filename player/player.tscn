@@ -1,7 +1,8 @@
-[gd_scene load_steps=7 format=3 uid="uid://dujh6n5slbk8s"]
+[gd_scene load_steps=8 format=3 uid="uid://dujh6n5slbk8s"]
 
 [ext_resource type="Script" path="res://player/Player.gd" id="1_oybvn"]
-[ext_resource type="PackedScene" uid="uid://h2e8km0nyw66" path="res://crosshair/crosshair.tscn" id="2_vsi3e"]
+[ext_resource type="PackedScene" uid="uid://boq6ixdxep13i" path="res://player/crosshair/crosshair.tscn" id="2_vsi3e"]
+[ext_resource type="PackedScene" uid="uid://cc8we4ytxpf1w" path="res://player/note_view/note_view.tscn" id="3_gfdlc"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_sjv1d"]
 
@@ -42,7 +43,6 @@ shape = SubResource("CapsuleShape3D_v7eox")
 disabled = true
 
 [node name="head" type="Node3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
 
 [node name="Camera3D" type="Camera3D" parent="head"]
 
@@ -64,6 +64,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.25)
 
 [node name="crosshair" parent="head/Camera3D" instance=ExtResource("2_vsi3e")]
 visible = false
+
+[node name="note_view" parent="head/Camera3D" instance=ExtResource("3_gfdlc")]
 
 [node name="footstep_raycast" type="RayCast3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.98195, 0)

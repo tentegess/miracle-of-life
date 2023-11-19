@@ -1,6 +1,6 @@
-[gd_scene load_steps=2 format=3 uid="uid://h2e8km0nyw66"]
+[gd_scene load_steps=2 format=3 uid="uid://boq6ixdxep13i"]
 
-[ext_resource type="Texture2D" uid="uid://1c472ju85nkp" path="res://crosshair/crosshair.png" id="1_7r7xd"]
+[ext_resource type="Texture2D" uid="uid://1c472ju85nkp" path="res://player/crosshair/crosshair.png" id="1_7r7xd"]
 
 [node name="crosshair" type="Control"]
 layout_mode = 3
