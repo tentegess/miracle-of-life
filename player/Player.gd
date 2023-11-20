@@ -97,6 +97,11 @@ func _input(event):
 				rotate_object(event)
 		if Input.is_action_just_released("right_click"):
 			locked = false
+			
+		if Input.is_action_just_pressed("interact"):
+			var interacted = reach.get_collider()
+			if interacted != null and interacted.has_method("action"):
+				interacted.action()
 
 
 func _physics_process(delta):
@@ -232,7 +237,7 @@ func move_cam(state):
 	
 func check_cursor():
 	var collider = reach.get_collider()
-	if collider != null and (collider is RigidBody3D or "note" in collider.get_groups()):
+	if collider != null and (collider is RigidBody3D or "note" in collider.get_groups() or collider.has_method("action")):
 		crosshair.visible = true
 	else:
 		crosshair.visible = false
