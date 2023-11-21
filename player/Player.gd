@@ -101,7 +101,7 @@ func _input(event):
 		if Input.is_action_just_pressed("interact"):
 			var interacted = reach.get_collider()
 			if interacted != null and interacted.has_method("action"):
-				interacted.action()
+				interacted.action(self)
 
 
 func _physics_process(delta):
@@ -292,3 +292,6 @@ func item_movement():
 			picked_object.global_transform.basis = head.global_transform.basis
 			picked_object.global_transform.origin = hand.global_transform.origin
 			
+
+func held_item():
+	return picked_object
