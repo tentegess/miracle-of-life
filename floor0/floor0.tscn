@@ -1,9 +1,12 @@
-[gd_scene load_steps=5 format=3 uid="uid://d2x6xkadgddvh"]
+[gd_scene load_steps=8 format=3 uid="uid://d2x6xkadgddvh"]
 
 [ext_resource type="PackedScene" uid="uid://3va183v261dk" path="res://floor0/hallway.tscn" id="1_kj0tv"]
 [ext_resource type="PackedScene" uid="uid://7g8d2n8q674t" path="res://floor0/bathroom.tscn" id="2_kiuwd"]
 [ext_resource type="PackedScene" uid="uid://8kw4en630ajo" path="res://floor0/kitchen.tscn" id="3_8vmdm"]
 [ext_resource type="PackedScene" uid="uid://cq26yiemxg1ey" path="res://floor0/bedroom1.tscn" id="4_07c1c"]
+[ext_resource type="PackedScene" uid="uid://6lchojg1ji50" path="res://floor0/office.tscn" id="5_k1kv1"]
+[ext_resource type="PackedScene" uid="uid://gg8onwme2ylx" path="res://floor0/bedroom2.tscn" id="6_3e37e"]
+[ext_resource type="PackedScene" uid="uid://bq72hnscmse3i" path="res://floor0/stairs.tscn" id="7_rmc13"]
 
 [node name="main_floor" type="Node3D"]
 
@@ -18,3 +21,12 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.35, 0, -6)
 
 [node name="bedroom1" parent="." instance=ExtResource("4_07c1c")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.35, 0, 1.4)
+
+[node name="office" parent="." instance=ExtResource("5_k1kv1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.35, 0, -6)
+
+[node name="bedroom2" parent="." instance=ExtResource("6_3e37e")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.35, 0, 1.392)
+
+[node name="stairs" parent="." instance=ExtResource("7_rmc13")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, -2.9, 1.40354)
