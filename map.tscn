@@ -1,8 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://cq3tamh6j318"]
+[gd_scene load_steps=8 format=3 uid="uid://cq3tamh6j318"]
 
 [ext_resource type="Script" path="res://map.gd" id="1_6rbcb"]
 [ext_resource type="PackedScene" uid="uid://dujh6n5slbk8s" path="res://player/player.tscn" id="1_fiq1j"]
 [ext_resource type="PackedScene" uid="uid://d2x6xkadgddvh" path="res://floor0/floor0.tscn" id="3_i1w8e"]
+[ext_resource type="PackedScene" uid="uid://rlawu5t5aehs" path="res://floor-1/floor-1.tscn" id="4_uciv6"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_qr8h3"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -18,10 +19,11 @@ tonemap_mode = 2
 glow_enabled = true
 
 [node name="map" type="Node3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.13136)
 script = ExtResource("1_6rbcb")
 
 [node name="Player" parent="." instance=ExtResource("1_fiq1j")]
-transform = Transform3D(0.7, 0, 0, 0, 1.2, 0, 0, 0, 0.7, 0, 2.075, 4)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.075, 4)
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(-0.866025, -0.433013, 0.25, 0, 0.5, 0.866025, -0.5, 0.75, -0.433013, 0, 10, 0)
@@ -31,4 +33,7 @@ shadow_enabled = true
 environment = SubResource("Environment_7v3vg")
 
 [node name="main_floor" parent="." instance=ExtResource("3_i1w8e")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.345341, 0, 0.270212)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.345341, 0.0814004, 0.270212)
+
+[node name="basement" parent="." instance=ExtResource("4_uciv6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.456, -2.919, -2.652)

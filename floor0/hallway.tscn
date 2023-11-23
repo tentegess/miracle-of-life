@@ -8,7 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://dpsffkb2fky6g" path="res://assets/textures/wood_floor_1k/wood_floor_rough_1k.png" id="5_0fctc"]
 [ext_resource type="PackedScene" uid="uid://bwqbp2atvjdog" path="res://assets/models/carpet/scene.gltf" id="7_x66gl"]
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_te31v"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7poll"]
 albedo_texture = ExtResource("3_w3u4k")
 roughness_texture = ExtResource("5_0fctc")
 normal_enabled = true
@@ -16,7 +16,7 @@ normal_texture = ExtResource("4_0s6wk")
 uv1_scale = Vector3(2.9, 10.4, 1)
 
 [sub_resource type="BoxMesh" id="BoxMesh_x31ir"]
-material = SubResource("StandardMaterial3D_te31v")
+material = SubResource("StandardMaterial3D_7poll")
 size = Vector3(2.9, 0.2, 10.4)
 
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_oo2k2"]

@@ -6,8 +6,8 @@
 [ext_resource type="Texture2D" uid="uid://drwixqqleanh7" path="res://notes/DN Color.png" id="4_gmkrs"]
 [ext_resource type="ArrayMesh" uid="uid://dbpsogr1r48hy" path="res://notes/DEATH NOTE OBJ.obj" id="5_ihg13"]
 [ext_resource type="Texture2D" uid="uid://rm38kquv7aar" path="res://note.png" id="6_anqa3"]
-[ext_resource type="PackedScene" uid="uid://ycwwefpje1n" path="res://door.tscn" id="7_7k4c5"]
-[ext_resource type="PackedScene" uid="uid://dtyv81c45apy4" path="res://floor0/door_with_wall.tscn" id="8_5p25q"]
+[ext_resource type="PackedScene" uid="uid://ycwwefpje1n" path="res://assets/models/doors/door.tscn" id="7_7k4c5"]
+[ext_resource type="PackedScene" uid="uid://dtyv81c45apy4" path="res://floor0/doors_with_walls/door_with_wall.tscn" id="8_5p25q"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_7y3lw"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)

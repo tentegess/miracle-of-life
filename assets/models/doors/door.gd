@@ -29,11 +29,15 @@ func action(player=null):
 		
 func close():
 	animation.play("door_close")
+	$CollisionShape3D2.disabled = true
+	$CollisionShape3D.disabled = false
 	can_use = false
 	is_open = false
 	
 func open():
 	animation.play("door_open")
+	$CollisionShape3D.disabled = true
+	$CollisionShape3D2.disabled = false
 	can_use = false
 	is_open = true
 
@@ -43,7 +47,7 @@ func lock():
 	is_open = false
 	
 func unlock():
-	$AudioStreamPlayer2D.stream = load("res://sound/doors/doorUnlock.ogg")
+	$AudioStreamPlayer2D.stream = load("res://assets/sound/doors/doorUnlock.ogg")
 	$AudioStreamPlayer2D.pitch_scale = 1.0
 	$AudioStreamPlayer2D.play()
 	locked = false

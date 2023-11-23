@@ -1,13 +1,31 @@
-[gd_scene load_steps=8 format=3 uid="uid://dujh6n5slbk8s"]
+[gd_scene load_steps=9 format=3 uid="uid://dujh6n5slbk8s"]
 
 [ext_resource type="Script" path="res://player/Player.gd" id="1_oybvn"]
 [ext_resource type="PackedScene" uid="uid://boq6ixdxep13i" path="res://player/crosshair/crosshair.tscn" id="2_vsi3e"]
 [ext_resource type="PackedScene" uid="uid://cc8we4ytxpf1w" path="res://player/note_view/note_view.tscn" id="3_gfdlc"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_sjv1d"]
+radius = 0.35
+height = 2.2
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_v7eox"]
+radius = 0.35
 height = 1.5
+
+[sub_resource type="Animation" id="Animation_gp65f"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("head:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0.796105, 0)]
+}
 
 [sub_resource type="Animation" id="Animation_i0k58"]
 resource_name = "crouch"
@@ -19,14 +37,15 @@ tracks/0/path = NodePath("head:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.25),
+"times": PackedFloat32Array(0, 0.2),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector3(0, 0.5, 0), Vector3(0, 0, 0)]
+"values": [Vector3(0, 0.743464, 0), Vector3(0, 0.0393915, 0)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_lrots"]
 _data = {
+"RESET": SubResource("Animation_gp65f"),
 "crouch_animation": SubResource("Animation_i0k58")
 }
 
@@ -38,12 +57,12 @@ script = ExtResource("1_oybvn")
 shape = SubResource("CapsuleShape3D_sjv1d")
 
 [node name="crouch_hitbox" type="CollisionShape3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.241719, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.350334, 0)
 shape = SubResource("CapsuleShape3D_v7eox")
 disabled = true
 
 [node name="head" type="Node3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.796105, 0)
 
 [node name="Camera3D" type="Camera3D" parent="head"]
 
@@ -74,7 +93,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.98195, 0)
 
 [node name="crouch_raycast" type="RayCast3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0)
-target_position = Vector3(0, 2, 0)
+target_position = Vector3(0, 2.2, 0)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {

@@ -9,8 +9,8 @@ const RUN_SPEED = 10.0
 var mouse_sense = 2.5
 
 # camera fov
-var fov = 75.0
-var run_fov = 85.0
+var fov = 65.0
+var run_fov = 75.0
 
 #stamina
 var max_stamina = 100.0
@@ -77,7 +77,7 @@ func _input(event):
 			if !locked:
 				head.rotation_degrees.y -= deg_to_rad(event.relative.x * mouse_sense)
 				head.rotation_degrees.x -= deg_to_rad(event.relative.y * mouse_sense)
-				head.rotation.x = clamp(head.rotation.x, deg_to_rad(-90), deg_to_rad(90))
+				head.rotation.x = clamp(head.rotation.x, deg_to_rad(-89), deg_to_rad(89))
 			
 		if Input.is_action_just_pressed("left_click") and not clicked:
 			interaction = false
@@ -141,8 +141,9 @@ func movement(delta):
 	if Input.is_action_just_pressed("jump") and is_on_floor():
 		velocity.y = JUMP_VELOCITY
 
+	var h_rot = head.basis.get_euler().y
 	var input_dir = Input.get_vector("move_left", "move_right", "move_forward", "move_back")
-	var direction = (head.transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
+	var direction = Vector3(input_dir.x,0,input_dir.y).rotated(Vector3.UP,h_rot).normalized()
 	if direction:
 		velocity.x = direction.x * SPEED
 		velocity.z = direction.z * SPEED

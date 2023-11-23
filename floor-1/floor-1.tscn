@@ -1,3 +1,7 @@
-[gd_scene format=3 uid="uid://rlawu5t5aehs"]
+[gd_scene load_steps=2 format=3 uid="uid://rlawu5t5aehs"]
 
-[node name="floor-1" type="Node3D"]
+[ext_resource type="PackedScene" uid="uid://dn5xefs4fvvx6" path="res://floor-1/corridor.tscn" id="1_eyrka"]
+
+[node name="basement" type="Node3D"]
+
+[node name="corridor" parent="." instance=ExtResource("1_eyrka")]
