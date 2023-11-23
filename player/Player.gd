@@ -181,6 +181,9 @@ func get_ground_type():
 # play step sound based on ground type
 func play_step_sound(group : String):
 	match group:
+		"concrete":
+			footstep_player.stream = load("res://assets/sound/step/concrete/0.ogg")
+			
 		"wood":
 			footstep_player.stream = load("res://assets/sound/step/wood/0.ogg")
 			

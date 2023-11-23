@@ -1,7 +1,8 @@
-[gd_scene load_steps=21 format=3 uid="uid://3va183v261dk"]
+[gd_scene load_steps=22 format=3 uid="uid://3va183v261dk"]
 
-[ext_resource type="PackedScene" uid="uid://dtyv81c45apy4" path="res://floor0/door_with_wall.tscn" id="1_0r6rm"]
-[ext_resource type="PackedScene" uid="uid://d2063ynm8rdfg" path="res://floor0/door_with_wall_locked.tscn" id="2_ntsob"]
+[ext_resource type="PackedScene" uid="uid://dtyv81c45apy4" path="res://floor0/doors_with_walls/door_with_wall.tscn" id="1_0r6rm"]
+[ext_resource type="PackedScene" uid="uid://2bxc3ybq0uk6" path="res://floor0/doors_with_walls/bathroom_doors.tscn" id="1_iuru3"]
+[ext_resource type="PackedScene" uid="uid://d2063ynm8rdfg" path="res://floor0/doors_with_walls/door_with_wall_locked.tscn" id="2_y7w7b"]
 [ext_resource type="Texture2D" uid="uid://b0375i2jbk64f" path="res://assets/textures/wood_floor_1k/wood_floor_diff_1k.png" id="3_w3u4k"]
 [ext_resource type="Texture2D" uid="uid://wsbqhnhc6g0o" path="res://assets/textures/wood_floor_1k/wood_floor_nor_gl_1k.png" id="4_0s6wk"]
 [ext_resource type="Texture2D" uid="uid://dpsffkb2fky6g" path="res://assets/textures/wood_floor_1k/wood_floor_rough_1k.png" id="5_0fctc"]
@@ -59,16 +60,16 @@ data = PackedVector3Array(-0.05, 1.5, 0.15, 0.05, 1.5, 0.15, -0.05, -1.5, 0.15, 
 [node name="hallway" type="Node3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.02732)
 
-[node name="door_outside" parent="." instance=ExtResource("2_ntsob")]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0.1, 5.1)
+[node name="door_bathroom" parent="." instance=ExtResource("1_iuru3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.1, -5.1)
 
-[node name="door_bathroom" parent="." instance=ExtResource("1_0r6rm")]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0.1, -5.1)
+[node name="door_outside" parent="." instance=ExtResource("2_y7w7b")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0.1, 5.1)
 
 [node name="door_office" parent="." instance=ExtResource("1_0r6rm")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -1.35, 0.1, -3.75)
 
-[node name="door_bedroom" parent="." instance=ExtResource("2_ntsob")]
+[node name="door_bedroom" parent="." instance=ExtResource("2_y7w7b")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -1.35, 0.1, -0.95)
 
 [node name="floor" type="MeshInstance3D" parent="." groups=["wood"]]
