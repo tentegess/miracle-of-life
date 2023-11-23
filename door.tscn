@@ -2,9 +2,9 @@
 
 [ext_resource type="PackedScene" uid="uid://dxujqpyoelacu" path="res://interact_template.tscn" id="1_bfm4s"]
 [ext_resource type="Script" path="res://door.gd" id="2_unjri"]
-[ext_resource type="AudioStream" uid="uid://dvd081e2ctp6d" path="res://sound/doors/doorClose.ogg" id="3_d1h03"]
-[ext_resource type="AudioStream" uid="uid://bqfjcypgulv0i" path="res://sound/doors/doorLocked.ogg" id="3_d6jaj"]
-[ext_resource type="AudioStream" uid="uid://dncxyn0cd81s3" path="res://sound/doors/doorOpen.ogg" id="4_515dc"]
+[ext_resource type="AudioStream" uid="uid://dvd081e2ctp6d" path="res://assets/sound/doors/doorClose.ogg" id="3_d1h03"]
+[ext_resource type="AudioStream" uid="uid://bqfjcypgulv0i" path="res://assets/sound/doors/doorLocked.ogg" id="3_d6jaj"]
+[ext_resource type="AudioStream" uid="uid://dncxyn0cd81s3" path="res://assets/sound/doors/doorOpen.ogg" id="4_515dc"]
 [ext_resource type="Texture2D" uid="uid://c5o3bmwq5gvf5" path="res://assets/models/doors/textures/None_baseColor.jpg" id="6_bh0p0"]
 [ext_resource type="Texture2D" uid="uid://dijtlp8ydvlvh" path="res://assets/models/doors/textures/None_metallicRoughness.png" id="7_44nt4"]
 [ext_resource type="Texture2D" uid="uid://d2h4ta7ra8cbu" path="res://assets/models/doors/textures/None_normal.png" id="8_t85ky"]
