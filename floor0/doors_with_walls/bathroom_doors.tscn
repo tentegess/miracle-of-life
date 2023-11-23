@@ -65,7 +65,7 @@ locked = false
 [node name="front" type="Node3D" parent="."]
 
 [node name="leftwall" type="MeshInstance3D" parent="front" groups=["wood"]]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.95, 1.5, 0.05)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.95, 1.35, 0.05)
 mesh = SubResource("BoxMesh_a8qay")
 skeleton = NodePath("")
 
@@ -75,7 +75,7 @@ skeleton = NodePath("")
 shape = SubResource("ConcavePolygonShape3D_o4swh")
 
 [node name="rightwall" type="MeshInstance3D" parent="front" groups=["wood"]]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.95, 1.5, 0.05)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.95, 1.35, 0.05)
 mesh = SubResource("BoxMesh_xvyc3")
 skeleton = NodePath("")
 
