@@ -182,13 +182,13 @@ func get_ground_type():
 func play_step_sound(group : String):
 	match group:
 		"wood":
-			footstep_player.stream = load("res://sound/step/wood/0.ogg")
+			footstep_player.stream = load("res://assets/sound/step/wood/0.ogg")
 			
 		"grass":
-			footstep_player.stream = load("res://sound/step/grass/0.ogg")
+			footstep_player.stream = load("res://assets/sound/step/grass/0.ogg")
 			
 		"metal":
-			footstep_player.stream = load("res://sound/step/metal/0.ogg")
+			footstep_player.stream = load("res://assets/sound/step/metal/0.ogg")
 			
 		_:
 			return
