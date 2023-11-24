@@ -207,7 +207,7 @@ func handle_stamina(delta):
 		stamina = max(stamina, 0)
 		if stamina <= 0:
 			if can_run:
-				run_player.stream = load("res://sound/player/hiperventilation.ogg")
+				run_player.stream = load("res://assets/sound/player/hiperventilation.ogg")
 				run_player.pitch_scale = 1.0
 				run_player.play()
 			can_run = false
