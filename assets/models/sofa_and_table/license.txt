@@ -1,0 +1,11 @@
+Model Information:
+* title:	Sofa and table
+* source:	https://sketchfab.com/3d-models/sofa-and-table-988bf24fd6a84501905e9d93df6136cb
+* author:	zulhilmi_zakaria (https://sketchfab.com/zulhilmi_zakaria)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Sofa and table" (https://sketchfab.com/3d-models/sofa-and-table-988bf24fd6a84501905e9d93df6136cb) by zulhilmi_zakaria (https://sketchfab.com/zulhilmi_zakaria) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

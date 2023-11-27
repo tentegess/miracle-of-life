@@ -1,0 +1,11 @@
+Model Information:
+* title:	Wardrobe, шкаф
+* source:	https://sketchfab.com/3d-models/wardrobe-174c85c50fce4bdea6bdcaeec282c5dd
+* author:	VladEv1L (https://sketchfab.com/VladEv1L)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Wardrobe, шкаф" (https://sketchfab.com/3d-models/wardrobe-174c85c50fce4bdea6bdcaeec282c5dd) by VladEv1L (https://sketchfab.com/VladEv1L) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
