@@ -1,9 +1,29 @@
-[gd_scene load_steps=5 format=3 uid="uid://rlawu5t5aehs"]
+[gd_scene load_steps=10 format=3 uid="uid://rlawu5t5aehs"]
 
 [ext_resource type="PackedScene" uid="uid://dn5xefs4fvvx6" path="res://floor-1/corridor.tscn" id="1_eyrka"]
 [ext_resource type="PackedScene" uid="uid://bjnvp1ebornfb" path="res://floor-1/storage.tscn" id="2_amk52"]
 [ext_resource type="PackedScene" uid="uid://3x18c2nvgnq1" path="res://floor-1/lab.tscn" id="3_7dmqt"]
 [ext_resource type="PackedScene" uid="uid://dqvuljm8xhbks" path="res://floor-1/main_basement.tscn" id="4_mnf44"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_wghvk"]
+load_path = "res://.godot/imported/Concrete031_1K-PNG_Color.png-4483eab22f0ba33a8612d5c307081159.s3tc.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_lg733"]
+load_path = "res://.godot/imported/Concrete031_1K-PNG_NormalGL.png-8e382e1f94fd57fa76eec6ce48926b6f.s3tc.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_o2v3o"]
+load_path = "res://.godot/imported/Concrete031_1K-PNG_Roughness.png-2615cf38025eea860084f4a3550d6083.s3tc.ctex"
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xgbrq"]
+albedo_texture = SubResource("CompressedTexture2D_wghvk")
+roughness_texture = SubResource("CompressedTexture2D_o2v3o")
+normal_enabled = true
+normal_texture = SubResource("CompressedTexture2D_lg733")
+uv1_scale = Vector3(10.4, 8.4, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_qs5y2"]
+material = SubResource("StandardMaterial3D_xgbrq")
+size = Vector3(10.4, 0.1, 8.4)
 
 [node name="basement" type="Node3D"]
 
@@ -17,3 +37,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.05, 0, -4.2)
 
 [node name="main_basement" parent="." instance=ExtResource("4_mnf44")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.95, 0, -1.25)
+
+[node name="celling" type="MeshInstance3D" parent="." groups=["wood"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.95, 3.15, -1.25)
+mesh = SubResource("BoxMesh_qs5y2")
+skeleton = NodePath("../stairs")
