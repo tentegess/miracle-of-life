@@ -33,7 +33,6 @@ shadow_enabled = true
 environment = SubResource("Environment_7v3vg")
 
 [node name="main_floor" parent="." instance=ExtResource("3_i1w8e")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.345341, 0.0814004, 0.270212)
 
 [node name="basement" parent="." instance=ExtResource("4_uciv6")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.456, -2.919, -2.652)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, -3.2, 6.254)
