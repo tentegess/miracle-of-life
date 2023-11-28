@@ -1,4 +1,4 @@
-[gd_scene load_steps=31 format=3 uid="uid://djfsnxjg5dyt6"]
+[gd_scene load_steps=30 format=3 uid="uid://djfsnxjg5dyt6"]
 
 [ext_resource type="PackedScene" uid="uid://dujh6n5slbk8s" path="res://player/player.tscn" id="1_gnk70"]
 [ext_resource type="Script" path="res://test.gd" id="1_ttvfy"]
@@ -7,7 +7,6 @@
 [ext_resource type="ArrayMesh" uid="uid://dbpsogr1r48hy" path="res://notes/DEATH NOTE OBJ.obj" id="5_ihg13"]
 [ext_resource type="Texture2D" uid="uid://rm38kquv7aar" path="res://note.png" id="6_anqa3"]
 [ext_resource type="PackedScene" uid="uid://ycwwefpje1n" path="res://assets/models/doors/door.tscn" id="7_7k4c5"]
-[ext_resource type="PackedScene" uid="uid://dtyv81c45apy4" path="res://floor0/doors_with_walls/door_with_wall.tscn" id="8_5p25q"]
 [ext_resource type="PackedScene" uid="uid://dmhdfmx3sy2aj" path="res://assets/models/amon/amon.tscn" id="9_etoot"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_7y3lw"]
@@ -188,9 +187,6 @@ locked = false
 [node name="Door2" parent="." instance=ExtResource("7_7k4c5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.90471, 0, 19.8873)
 keyPath = NodePath("../RigidBody3D")
-
-[node name="door_with_wall" parent="." instance=ExtResource("8_5p25q")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.71356, 0.0426587, 14.9051)
 
 [node name="Door3" parent="." instance=ExtResource("7_7k4c5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.6742, 0.042659, 14.7661)
