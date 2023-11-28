@@ -84,6 +84,7 @@ func _input(event):
 			if not note_view.visible:
 				pick_up()
 				read_note()
+				place_object()
 			if not interaction:
 				remove_object()	
 			clicked = true
@@ -102,6 +103,8 @@ func _input(event):
 			var interacted = reach.get_collider()
 			if interacted != null and interacted.has_method("action"):
 				interacted.action(self)
+			if interacted != null and interacted.has_method("rotate_right"):
+				interacted.rotate_right()
 
 
 func _physics_process(delta):
@@ -241,7 +244,8 @@ func move_cam(state):
 	
 func check_cursor():
 	var collider = reach.get_collider()
-	if collider != null and (collider is RigidBody3D or "note" in collider.get_groups() or collider.has_method("action")):
+	if collider != null and (collider is RigidBody3D or "note" in collider.get_groups() or 
+	collider.has_method("action") or "amon" in collider.get_groups()):
 		crosshair.visible = true
 	else:
 		crosshair.visible = false
@@ -265,6 +269,13 @@ func read_note():
 		note_view.texture = collider.get_node("note").texture
 		note_view.visible = true
 		note_sound.play()
+		interaction = true
+		
+		
+func place_object():
+	var collider = reach.get_collider()
+	if collider != null and collider.has_method("place"):
+		collider.place(self)
 		interaction = true
 		
 		
