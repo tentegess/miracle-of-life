@@ -1,4 +1,4 @@
-[gd_scene load_steps=45 format=3 uid="uid://bq72hnscmse3i"]
+[gd_scene load_steps=47 format=3 uid="uid://bq72hnscmse3i"]
 
 [ext_resource type="Texture2D" uid="uid://df4wcvsfc7b2h" path="res://assets/models/stairs/textures/main_baseColor.jpeg" id="1_aetrw"]
 [ext_resource type="Texture2D" uid="uid://r1x35norpiev" path="res://assets/textures/paint_green_1k/paint_0001_base_color_1k.jpg" id="2_qy7p6"]
@@ -11,6 +11,8 @@
 [ext_resource type="PackedScene" uid="uid://onkfi733ebgn" path="res://floor0/doors_with_walls/stairs_doors.tscn" id="8_milcd"]
 [ext_resource type="Texture2D" uid="uid://5xqbucqbpm3b" path="res://assets/textures/Concrete017_1k/Concrete017_1K-PNG_NormalGL.png" id="9_yh3bf"]
 [ext_resource type="Texture2D" uid="uid://dcjv8jq85i4os" path="res://assets/textures/Concrete017_1k/Concrete017_1K-PNG_Roughness.png" id="10_lidq0"]
+[ext_resource type="PackedScene" uid="uid://bv8vcpy8u66tr" path="res://floor0/terminal.tscn" id="12_cj8rv"]
+[ext_resource type="Script" path="res://floor0/doors_with_walls/stairs_doors.gd" id="12_hq3xh"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dn852"]
 resource_name = "main"
@@ -285,3 +287,7 @@ shape = SubResource("ConcavePolygonShape3D_6lu1g")
 
 [node name="doors" parent="." instance=ExtResource("8_milcd")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2)
+script = ExtResource("12_hq3xh")
+
+[node name="terminal" parent="." instance=ExtResource("12_cj8rv")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -1.30988, 0, 1.13463)

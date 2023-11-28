@@ -1,0 +1,46 @@
+[gd_scene load_steps=2 format=3 uid="uid://jqer75wiiuoy"]
+
+[ext_resource type="Script" path="res://pause_menu.gd" id="1_rwm0r"]
+
+[node name="pause_menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_rwm0r")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.488
+anchor_top = 0.528
+anchor_right = 0.488
+anchor_bottom = 0.528
+offset_left = -153.176
+offset_top = -198.144
+offset_right = 152.824
+offset_bottom = 178.856
+scale = Vector2(0.997738, 1.05087)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel"]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 61.0
+grow_horizontal = 2
+alignment = 1
+
+[node name="Label" type="Label" parent="Panel/VBoxContainer"]
+layout_mode = 2
+text = "Pauza
+
+"
+horizontal_alignment = 1
+
+[node name="Button" type="Button" parent="Panel/VBoxContainer"]
+layout_mode = 2
+text = "Wznów"
+
+[connection signal="pressed" from="Panel/VBoxContainer/Button" to="." method="_on_button_pressed"]

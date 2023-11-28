@@ -4,6 +4,7 @@ extends Interactable
 var is_open := false
 var can_use := true
 @export var locked := true
+@export var unlock_by_key := true
 @export_node_path("RigidBody3D") var keyPath
 var key
 
@@ -15,7 +16,7 @@ func _ready():
 func action(player=null):
 	if can_use:
 		if locked and player:
-			if check_key(player):
+			if check_key(player) and unlock_by_key:
 				unlock()
 			else:
 				lock()

@@ -308,6 +308,7 @@ data = PackedVector3Array(-1.2756, -0.0788, 0.0033, -1.2902, -0.0788, 5.9306, -1
 [node name="Door" instance=ExtResource("1_bfm4s")]
 script = ExtResource("2_unjri")
 locked = true
+unlock_by_key = true
 keyPath = null
 
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="." index="0"]

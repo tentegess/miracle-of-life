@@ -1,8 +1,9 @@
-[gd_scene load_steps=15 format=3 uid="uid://d1nni4e4pf6sn"]
+[gd_scene load_steps=16 format=3 uid="uid://d1nni4e4pf6sn"]
 
 [ext_resource type="Script" path="res://test.gd" id="1_d42ox"]
 [ext_resource type="PackedScene" uid="uid://dujh6n5slbk8s" path="res://player/player.tscn" id="2_m05qw"]
 [ext_resource type="PackedScene" uid="uid://bv8vcpy8u66tr" path="res://floor0/terminal.tscn" id="3_uadpv"]
+[ext_resource type="PackedScene" uid="uid://jqer75wiiuoy" path="res://pause_menu.tscn" id="4_0l3pi"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_7y3lw"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -37,6 +38,7 @@ data = PackedVector3Array(-0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0
 data = PackedVector3Array(-0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, -0.5)
 
 [node name="Node3D" type="Node3D"]
+process_mode = 3
 script = ExtResource("1_d42ox")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
@@ -87,3 +89,9 @@ skeleton = NodePath("../MeshInstance3D")
 shape = SubResource("ConcavePolygonShape3D_vm7rr")
 
 [node name="terminal" parent="." instance=ExtResource("3_uadpv")]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="pause_menu" parent="CanvasLayer" node_paths=PackedStringArray("game_scene") instance=ExtResource("4_0l3pi")]
+process_mode = 2
+game_scene = NodePath("../..")
