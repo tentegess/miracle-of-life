@@ -56,7 +56,7 @@ func unlock():
 func check_key(player):
 	if player.has_method("held_item"):
 		if player.held_item():
-			if keyName in player.held_item().get_groups():
+			if keyName in player.held_item().get_parent().get_groups():
 				player.picked_object = null
 				return true
 	return false
