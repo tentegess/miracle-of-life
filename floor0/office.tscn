@@ -1,4 +1,4 @@
-[gd_scene load_steps=45 format=3 uid="uid://6lchojg1ji50"]
+[gd_scene load_steps=46 format=3 uid="uid://6lchojg1ji50"]
 
 [ext_resource type="PackedScene" uid="uid://b7uwsm4c44ms8" path="res://floor0/doors_with_walls/office1_doors.tscn" id="1_kn432"]
 [ext_resource type="PackedScene" uid="uid://cxh115gvso2ti" path="res://floor0/doors_with_walls/office2_doors.tscn" id="2_1bups"]
@@ -15,6 +15,7 @@
 [ext_resource type="Texture2D" uid="uid://dm35c00mq5dsd" path="res://assets/models/wooden_shelf/textures/Material_normal.png" id="9_ieukb"]
 [ext_resource type="PackedScene" uid="uid://csvo5t0w4vs4p" path="res://assets/models/pedestal_desk/scene.gltf" id="10_st42q"]
 [ext_resource type="PackedScene" uid="uid://dkyoapj32s26a" path="res://assets/models/chair/scene.gltf" id="11_gfap3"]
+[ext_resource type="PackedScene" uid="uid://drnthnnys7p7l" path="res://assets/models/key/key.tscn" id="16_rp0of"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fjx2p"]
 albedo_texture = ExtResource("2_3bx5k")
@@ -313,3 +314,6 @@ transform = Transform3D(-6.99382e-08, 0, -1.6, 0, 1.6, 0, 1.6, 0, -6.99382e-08, 
 
 [node name="chair" parent="." instance=ExtResource("11_gfap3")]
 transform = Transform3D(-1.30879, 0, 0.387681, 0, 1.365, 0, -0.387681, 0, -1.30879, -0.825185, 0.0999999, -0.430264)
+
+[node name="scene" parent="." instance=ExtResource("16_rp0of")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.293694, 1.39498, -0.392231)
