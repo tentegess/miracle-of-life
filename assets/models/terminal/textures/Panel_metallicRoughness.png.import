@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ctsuofnyo8k7i"
-path.s3tc="res://.godot/imported/Scene_-_Root_metallicRoughness.png-0efafbce7306fe1c0de0befd6c69ab2d.s3tc.ctex"
+uid="uid://ddffjtrcx6yrb"
+path.s3tc="res://.godot/imported/Panel_metallicRoughness.png-4ad92005aa5e702f7696d315b7680e82.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/models/terminal/textures/Scene_-_Root_metallicRoughness.png"
-dest_files=["res://.godot/imported/Scene_-_Root_metallicRoughness.png-0efafbce7306fe1c0de0befd6c69ab2d.s3tc.ctex"]
+source_file="res://assets/models/terminal/textures/Panel_metallicRoughness.png"
+dest_files=["res://.godot/imported/Panel_metallicRoughness.png-4ad92005aa5e702f7696d315b7680e82.s3tc.ctex"]
 
 [params]
 
@@ -25,7 +25,7 @@ compress/channel_pack=0
 mipmaps/generate=true
 mipmaps/limit=-1
 roughness/mode=8
-roughness/src_normal="res://assets/models/terminal/textures/Scene_-_Root_normal.png"
+roughness/src_normal="res://assets/models/terminal/textures/Panel_normal.png"
 process/fix_alpha_border=true
 process/premult_alpha=false
 process/normal_map_invert_y=false

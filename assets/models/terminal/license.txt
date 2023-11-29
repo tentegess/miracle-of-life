@@ -1,11 +1,11 @@
 Model Information:
-* title:	Terminal [free]
-* source:	https://sketchfab.com/3d-models/terminal-free-2814841f1341478590b682987df57236
-* author:	NinKorr3D (https://sketchfab.com/NinKorr3D)
+* title:	Keypad
+* source:	https://sketchfab.com/3d-models/keypad-b9968a00bc9249df927ff1969acf2f7e
+* author:	Spellkaze (https://sketchfab.com/Spellkaze)
 
 Model License:
 * license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
 * requirements:	Author must be credited. Commercial use is allowed.
 
 If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
-This work is based on "Terminal [free]" (https://sketchfab.com/3d-models/terminal-free-2814841f1341478590b682987df57236) by NinKorr3D (https://sketchfab.com/NinKorr3D) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+This work is based on "Keypad" (https://sketchfab.com/3d-models/keypad-b9968a00bc9249df927ff1969acf2f7e) by Spellkaze (https://sketchfab.com/Spellkaze) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

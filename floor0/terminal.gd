@@ -2,17 +2,20 @@ extends Interactable
 
 @onready var terminal_ui := $Control
 @onready var line_edit := $Control/LineEdit
+@onready var LineEditRegEx = RegEx.new()
 
 var show_t := false
-var password := "amelia"
+var password := "2137"
 var Player = null
 var used := false
+var textt = ""
 
 signal unlock
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	terminal_ui.hide()
 	set_process_input(true)
+	LineEditRegEx.compile("^[0-9.]*$")
 
 func _input(event):
 	if show_t:
@@ -50,4 +53,19 @@ func _on_line_edit_text_submitted(new_text):
 			hide_ui()
 			used = true
 		else:
+			$AudioStreamPlayer.stream = load("res://assets/sound/terminal/wrong_pass.ogg")
+			$AudioStreamPlayer.pitch_scale = 1.0
+			$AudioStreamPlayer.play()
 			print("złe hasło")
+
+
+func _on_line_edit_text_changed(new_text):
+	if LineEditRegEx.search(new_text):
+		textt = str(new_text)
+		$AudioStreamPlayer.stop()
+		$AudioStreamPlayer.stream = load("res://assets/sound/terminal/click.ogg")
+		$AudioStreamPlayer.pitch_scale = randf_range(1.0,1.2)
+		$AudioStreamPlayer.play()
+	else:
+		line_edit.text = textt
+		line_edit.set_caret_column(line_edit.text.length())

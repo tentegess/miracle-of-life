@@ -290,4 +290,4 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2)
 script = ExtResource("12_hq3xh")
 
 [node name="terminal" parent="." instance=ExtResource("12_cj8rv")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -1.30988, 0, 1.13463)
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 1.20504, 1.78079, 1.13463)

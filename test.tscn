@@ -183,14 +183,11 @@ texture = ExtResource("6_anqa3")
 [node name="Door" parent="." instance=ExtResource("7_7k4c5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 17.0277)
 locked = false
-keyName = ""
 
 [node name="Door2" parent="." instance=ExtResource("7_7k4c5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.90471, 0, 19.8873)
-keyName = ""
 
 [node name="Door3" parent="." instance=ExtResource("7_7k4c5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.6742, 0.042659, 14.7661)
-keyName = ""
 
 [node name="Amon" parent="." instance=ExtResource("9_etoot")]

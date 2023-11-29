@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c4rk3c3q4uosv"
-path.s3tc="res://.godot/imported/Scene_-_Root_normal.png-b19f35ca66525c2632615f8934cd727f.s3tc.ctex"
+uid="uid://jo7lyit0si8h"
+path.s3tc="res://.godot/imported/Button_normal.png-2f300c3ba9d9a540893865b15e0af446.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/models/terminal/textures/Scene_-_Root_normal.png"
-dest_files=["res://.godot/imported/Scene_-_Root_normal.png-b19f35ca66525c2632615f8934cd727f.s3tc.ctex"]
+source_file="res://assets/models/terminal/textures/Button_normal.png"
+dest_files=["res://.godot/imported/Button_normal.png-2f300c3ba9d9a540893865b15e0af446.s3tc.ctex"]
 
 [params]
 
@@ -25,7 +25,7 @@ compress/channel_pack=0
 mipmaps/generate=true
 mipmaps/limit=-1
 roughness/mode=1
-roughness/src_normal="res://assets/models/terminal/textures/Scene_-_Root_normal.png"
+roughness/src_normal="res://assets/models/terminal/textures/Button_normal.png"
 process/fix_alpha_border=true
 process/premult_alpha=false
 process/normal_map_invert_y=false
