@@ -309,7 +309,7 @@ data = PackedVector3Array(-1.2756, -0.0788, 0.0033, -1.2902, -0.0788, 5.9306, -1
 script = ExtResource("2_unjri")
 locked = true
 unlock_by_key = true
-keyPath = null
+keyName = ""
 
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="." index="0"]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0.565139, 1.28768, 0.5618)

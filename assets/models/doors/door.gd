@@ -5,12 +5,12 @@ var is_open := false
 var can_use := true
 @export var locked := true
 @export var unlock_by_key := true
-@export_node_path("RigidBody3D") var keyPath
+#@export_node_path("RigidBody3D") var keyPath
+@export var keyName := ""
 var key
 
 func _ready():
-	if keyPath != null:
-		key = get_node(keyPath)
+	pass
 
 # Called when the node enters the scene tree for the first time.
 func action(player=null):
@@ -55,9 +55,10 @@ func unlock():
 
 func check_key(player):
 	if player.has_method("held_item"):
-		if player.held_item() == key:
-			player.picked_object = null
-			return true
+		if player.held_item():
+			if keyName in player.held_item().get_groups():
+				player.picked_object = null
+				return true
 	return false
 	
 
