@@ -1,6 +1,7 @@
-[gd_scene load_steps=26 format=3 uid="uid://3x18c2nvgnq1"]
+[gd_scene load_steps=27 format=3 uid="uid://3x18c2nvgnq1"]
 
 [ext_resource type="PackedScene" uid="uid://d2admk7ccwr2a" path="res://floor-1/doors_with_walls/main_basement_door.tscn" id="1_6xu4d"]
+[ext_resource type="PackedScene" uid="uid://cda3wmfn70lnx" path="res://assets/models/shelf/shelf.tscn" id="2_ttndo"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_anvej"]
 load_path = "res://.godot/imported/Concrete017_1K-PNG_Color.png-70b284543347c3c6912c117fd55f4c41.s3tc.ctex"
@@ -137,3 +138,6 @@ skeleton = NodePath("../../floor/floor2")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="backwall/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_qsvwb")
+
+[node name="shelf" parent="." instance=ExtResource("2_ttndo")]
+transform = Transform3D(0.015, 0, 0, 0, 0.015, 0, 0, 0, 0.015, -1, 0, -1.20814)
