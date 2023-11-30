@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://d2x6xkadgddvh"]
+[gd_scene load_steps=17 format=3 uid="uid://d2x6xkadgddvh"]
 
 [ext_resource type="PackedScene" uid="uid://3va183v261dk" path="res://floor0/hallway.tscn" id="1_kj0tv"]
 [ext_resource type="PackedScene" uid="uid://7g8d2n8q674t" path="res://floor0/bathroom.tscn" id="2_kiuwd"]
@@ -7,6 +7,9 @@
 [ext_resource type="PackedScene" uid="uid://6lchojg1ji50" path="res://floor0/office.tscn" id="5_k1kv1"]
 [ext_resource type="PackedScene" uid="uid://gg8onwme2ylx" path="res://floor0/bedroom2.tscn" id="6_3e37e"]
 [ext_resource type="PackedScene" uid="uid://bq72hnscmse3i" path="res://floor0/stairs.tscn" id="7_rmc13"]
+[ext_resource type="Texture2D" uid="uid://dtjrnq2fcc0dy" path="res://assets/textures/paint_green_1k/paint_0002_base_color_1k.jpg" id="8_gw4u8"]
+[ext_resource type="Texture2D" uid="uid://bhoryeu0nck3i" path="res://assets/textures/paint_green_1k/paint_0001_normal_opengl_1k.png" id="9_c6duh"]
+[ext_resource type="Texture2D" uid="uid://cu3ay1ccilqqw" path="res://assets/textures/paint_green_1k/paint_0001_roughness_1k.jpg" id="10_y5a54"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_b6huq"]
 size = Vector3(3.06068, 0.201526, 7.51114)
@@ -16,6 +19,20 @@ size = Vector3(2.71173, 0.201526, 4.12455)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_qsf02"]
 size = Vector3(12.0282, 0.201526, 14.9373)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4b1qf"]
+albedo_texture = ExtResource("8_gw4u8")
+roughness_texture = ExtResource("10_y5a54")
+normal_enabled = true
+normal_texture = ExtResource("9_c6duh")
+uv1_scale = Vector3(15, 15, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_dli2j"]
+material = SubResource("StandardMaterial3D_4b1qf")
+size = Vector3(15, 0.2, 15)
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_nm35p"]
+data = PackedVector3Array(-7.5, 0.1, 7.5, 7.5, 0.1, 7.5, -7.5, -0.1, 7.5, 7.5, 0.1, 7.5, 7.5, -0.1, 7.5, -7.5, -0.1, 7.5, 7.5, 0.1, -7.5, -7.5, 0.1, -7.5, 7.5, -0.1, -7.5, -7.5, 0.1, -7.5, -7.5, -0.1, -7.5, 7.5, -0.1, -7.5, 7.5, 0.1, 7.5, 7.5, 0.1, -7.5, 7.5, -0.1, 7.5, 7.5, 0.1, -7.5, 7.5, -0.1, -7.5, 7.5, -0.1, 7.5, -7.5, 0.1, -7.5, -7.5, 0.1, 7.5, -7.5, -0.1, -7.5, -7.5, 0.1, 7.5, -7.5, -0.1, 7.5, -7.5, -0.1, -7.5, 7.5, 0.1, 7.5, -7.5, 0.1, 7.5, 7.5, 0.1, -7.5, -7.5, 0.1, 7.5, -7.5, 0.1, -7.5, 7.5, 0.1, -7.5, -7.5, -0.1, 7.5, 7.5, -0.1, 7.5, -7.5, -0.1, -7.5, 7.5, -0.1, 7.5, 7.5, -0.1, -7.5, -7.5, -0.1, -7.5)
 
 [node name="main_floor" type="Node3D"]
 
@@ -53,3 +70,13 @@ shape = SubResource("BoxShape3D_77trp")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.42316, -0.00832349, -2.26262)
 shape = SubResource("BoxShape3D_qsf02")
+
+[node name="celling" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.2, -2.3)
+visible = false
+mesh = SubResource("BoxMesh_dli2j")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="celling"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="celling/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_nm35p")
