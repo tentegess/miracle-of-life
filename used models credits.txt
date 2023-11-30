@@ -24,6 +24,7 @@ bathroom:
 kitchen:
 "Kitchen set" (https://skfb.ly/ooAEC) by Blaž Mraz is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 "Candy CCOLS 5142 WH" (https://skfb.ly/6UnnO) by InvrsionAdmin is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+"Shrek (Pocket Shrek) and (Animations)" (https://skfb.ly/oDKSs) by guinavarro.al is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
 hallway:
 "Persian Malayer Runner Carpet" (https://skfb.ly/opVDu) by mfb64 is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
