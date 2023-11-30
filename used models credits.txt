@@ -1,4 +1,4 @@
-textury:
+tekstury:
 https://polyhaven.com
 https://ambientcg.com
 https://www.texturecan.com/details/340/
@@ -6,9 +6,15 @@ modele:
 https://sketchfab.com/feed
 
 
+general:
 "Old wooden window" (https://skfb.ly/6S7Lx) by SusanKing is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 "Stairs" (https://skfb.ly/ooCGS) by Banobano is licensed under CC Attribution-NonCommercial-ShareAlike (http://creativecommons.org/licenses/by-nc-sa/4.0/).
 "Wooden door" (https://skfb.ly/WpVu) by HASSAN is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+"Paper debris" (https://skfb.ly/oDAYx) by Sousinho is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+"Overgrown Train Station Clutter - Paper" (https://skfb.ly/osuwz) by Mysticbobo is licensed under Creative Commons Attribution-NoDerivs (http://creativecommons.org/licenses/by-nd/4.0/).
+
+
 
 bathroom:
 "Bath with sink" (https://skfb.ly/6VDpz) by patrakeevasveta is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
@@ -25,9 +31,13 @@ hallway:
 office:
 "Persian Malayer Carpet" (https://skfb.ly/opVHO) by mfb64 is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 "Wooden shelf" (https://skfb.ly/ouq8L) by vilsonpistori is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
-"Chair" (https://skfb.ly/6BNzA) by Shedmon is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
-"Pedestal desk" (https://skfb.ly/ooRFD) by shuvalov.di is licensed under CC Attribution-NonCommercial-ShareAlike (http://creativecommons.org/licenses/by-nc-sa/4.0/).
 
+"Pedestal desk" (https://skfb.ly/ooRFD) by shuvalov.di is licensed under CC Attribution-NonCommercial-ShareAlike (http://creativecommons.org/licenses/by-nc-sa/4.0/).
+"Каслинское литьё СССР. Сидящая собака." (https://skfb.ly/6VuRs) by dima051983 is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+"Statue d'époque romaine / Statue roman period" (https://skfb.ly/6UxOu) by Frédérique Bertrand - 3D Imago Urbis is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+"Antique Book Set" (https://skfb.ly/oFYn6) by FrodoUndead is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+"Legal Pad" (https://skfb.ly/6TUGw) by Tomations is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+"House Plant 001 Petite/Small Still Life" (https://skfb.ly/oC8VN) by geckty is licensed under CC Attribution-NonCommercial-ShareAlike (http://creativecommons.org/licenses/by-nc-sa/4.0/).
 
 bedroom1:
 "Dresser" (https://skfb.ly/o8FRF) by Ally Furnish is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
@@ -37,4 +47,12 @@ bedroom1:
 
 bedroom2:
 "Ikea idanas single bed" (https://skfb.ly/oAzJt) by ditovirnantio is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+"Modern Desk" (https://skfb.ly/oIV9n) by AK is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+"Pencil" (https://skfb.ly/6XTGS) by idyllKingdom is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+"Low Poly Solved Rubik's Cube" (https://skfb.ly/oMxx9) by zhya is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+"PICA PICA - Floor Junk Clutter 02" (https://skfb.ly/6DvpO) by SEED.EA is licensed under Creative Commons Attribution-NonCommercial (http://creativecommons.org/licenses/by-nc/4.0/).
+"Cactus plant" (https://skfb.ly/onZAt) by RISD Nature Lab is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+"Toy Box" (https://skfb.ly/6Uwxu) by Hayley Jacka is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+
 

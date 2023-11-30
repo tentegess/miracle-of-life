@@ -1,0 +1,11 @@
+Model Information:
+* title:	Pencil
+* source:	https://sketchfab.com/3d-models/pencil-5648ec6fdfc94713b01f49ba5d057a3b
+* author:	idyllKingdom (https://sketchfab.com/idyllKingdom)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Pencil" (https://sketchfab.com/3d-models/pencil-5648ec6fdfc94713b01f49ba5d057a3b) by idyllKingdom (https://sketchfab.com/idyllKingdom) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

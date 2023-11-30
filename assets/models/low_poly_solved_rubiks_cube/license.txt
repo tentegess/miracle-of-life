@@ -1,0 +1,11 @@
+Model Information:
+* title:	Low Poly Solved Rubik's Cube
+* source:	https://sketchfab.com/3d-models/low-poly-solved-rubiks-cube-de00fb1090014ecea000dc32c81c2490
+* author:	zhya (https://sketchfab.com/zzzhya)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Low Poly Solved Rubik's Cube" (https://sketchfab.com/3d-models/low-poly-solved-rubiks-cube-de00fb1090014ecea000dc32c81c2490) by zhya (https://sketchfab.com/zzzhya) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

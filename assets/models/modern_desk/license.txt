@@ -1,0 +1,11 @@
+Model Information:
+* title:	Modern Desk
+* source:	https://sketchfab.com/3d-models/modern-desk-39ea36146ae34b4782734a091b43d34e
+* author:	AK (https://sketchfab.com/skaf13)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Modern Desk" (https://sketchfab.com/3d-models/modern-desk-39ea36146ae34b4782734a091b43d34e) by AK (https://sketchfab.com/skaf13) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

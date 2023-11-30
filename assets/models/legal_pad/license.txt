@@ -1,0 +1,11 @@
+Model Information:
+* title:	Legal Pad
+* source:	https://sketchfab.com/3d-models/legal-pad-c8a67ebe663544dd9dca484c16f7f21f
+* author:	Tomations (https://sketchfab.com/Tomations)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Legal Pad" (https://sketchfab.com/3d-models/legal-pad-c8a67ebe663544dd9dca484c16f7f21f) by Tomations (https://sketchfab.com/Tomations) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

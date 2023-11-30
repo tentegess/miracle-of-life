@@ -1,0 +1,11 @@
+Model Information:
+* title:	Statue d'époque romaine / Statue roman period
+* source:	https://sketchfab.com/3d-models/statue-depoque-romaine-statue-roman-period-7fa78479a63b4358bd1edeba44f8266f
+* author:	Frédérique Bertrand - 3D Imago Urbis (https://sketchfab.com/fre3darchi)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Statue d'époque romaine / Statue roman period" (https://sketchfab.com/3d-models/statue-depoque-romaine-statue-roman-period-7fa78479a63b4358bd1edeba44f8266f) by Frédérique Bertrand - 3D Imago Urbis (https://sketchfab.com/fre3darchi) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
