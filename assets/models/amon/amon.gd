@@ -50,9 +50,9 @@ func check_correct():
 	if key and rotate_step == 2:
 		if "cross" in key.get_owner().get_groups():
 			is_correct = true
-			get_tree().get_nodes_in_group("amon_counter")[0].action()
 	else:
 		is_correct = false
+	get_tree().get_nodes_in_group("amon_counter")[0].action()
 		
 	
 func return_correct():
