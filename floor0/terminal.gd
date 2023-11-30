@@ -42,7 +42,7 @@ func hide_ui():
 	Player.get_parent().get_tree().paused = false
 	terminal_ui.hide()
 	line_edit.clear()
-	terminal_ui.hide()
+
 
 func _on_line_edit_text_submitted(new_text):
 	if !used:

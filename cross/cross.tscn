@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://bcjow3rr6j2hd"]
+
+[ext_resource type="ArrayMesh" uid="uid://cdk6uidg7yy6c" path="res://cross/cross.obj" id="1_v7km7"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_r0e35"]
+size = Vector3(0.171823, 0.293227, 0.0223434)
+
+[node name="cross" type="Node3D"]
+
+[node name="RigidBody3D" type="RigidBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00319107, 0.0168279, 0.00809094)
+shape = SubResource("BoxShape3D_r0e35")
+
+[node name="Cross" type="MeshInstance3D" parent="RigidBody3D"]
+transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, 0, 0, 0)
+mesh = ExtResource("1_v7km7")
+skeleton = NodePath("../..")

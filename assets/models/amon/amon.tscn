@@ -166,7 +166,7 @@ data = PackedVector3Array(-0.15, 0.15, 0.005, 0.15, 0.15, 0.005, -0.15, -0.15, 0
 [node name="Amon" type="Node3D"]
 
 [node name="wall" type="MeshInstance3D" parent="."]
-transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -0.025, 2.5, -0.005)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.025, 2.5, -0.005)
 material_override = SubResource("StandardMaterial3D_k4qjy")
 mesh = SubResource("BoxMesh_p1bah")
 
@@ -182,6 +182,7 @@ skeleton = NodePath("../..")
 script = ExtResource("2_rqkg1")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="wall/row1/slot1/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 5, 0, 0, 0)
 shape = SubResource("ConcavePolygonShape3D_rxqq0")
 
 [node name="slot2" type="MeshInstance3D" parent="wall/row1"]
@@ -194,6 +195,7 @@ skeleton = NodePath("../..")
 script = ExtResource("2_rqkg1")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="wall/row1/slot2/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 5, 0, 0, 0)
 shape = SubResource("ConcavePolygonShape3D_ddvfd")
 
 [node name="slot3" type="MeshInstance3D" parent="wall/row1"]
@@ -206,6 +208,7 @@ skeleton = NodePath("../..")
 script = ExtResource("2_rqkg1")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="wall/row1/slot3/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 5, 0, 0, 0)
 shape = SubResource("ConcavePolygonShape3D_k0fl6")
 
 [node name="slot4" type="MeshInstance3D" parent="wall/row1"]
@@ -218,6 +221,7 @@ skeleton = NodePath("../slot3")
 script = ExtResource("2_rqkg1")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="wall/row1/slot4/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 5, 0, 0, 0)
 shape = SubResource("ConcavePolygonShape3D_nsxmb")
 
 [node name="slot5" type="MeshInstance3D" parent="wall/row1"]
@@ -230,6 +234,7 @@ skeleton = NodePath("../slot4")
 script = ExtResource("2_rqkg1")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="wall/row1/slot5/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 5, 0, 0, 0)
 shape = SubResource("ConcavePolygonShape3D_vgk0v")
 
 [node name="row2" type="Node3D" parent="wall"]
@@ -245,6 +250,7 @@ skeleton = NodePath("../..")
 script = ExtResource("2_rqkg1")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="wall/row2/slot6/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 5, 0, 0, 0)
 shape = SubResource("ConcavePolygonShape3D_a8w16")
 
 [node name="slot7" type="MeshInstance3D" parent="wall/row2"]
@@ -257,6 +263,7 @@ skeleton = NodePath("../..")
 script = ExtResource("2_rqkg1")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="wall/row2/slot7/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 5, 0, 0, 0)
 shape = SubResource("ConcavePolygonShape3D_lnbsv")
 
 [node name="slot8" type="MeshInstance3D" parent="wall/row2"]
@@ -269,6 +276,7 @@ skeleton = NodePath("../..")
 script = ExtResource("2_rqkg1")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="wall/row2/slot8/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 5, 0, 0, 0)
 shape = SubResource("ConcavePolygonShape3D_6x6sh")
 
 [node name="slot9" type="MeshInstance3D" parent="wall/row2"]
@@ -281,6 +289,7 @@ skeleton = NodePath("../slot8")
 script = ExtResource("2_rqkg1")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="wall/row2/slot9/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 5, 0, 0, 0)
 shape = SubResource("ConcavePolygonShape3D_0l3rm")
 
 [node name="slot10" type="MeshInstance3D" parent="wall/row2"]
@@ -293,6 +302,7 @@ skeleton = NodePath("../slot9")
 script = ExtResource("2_rqkg1")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="wall/row2/slot10/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 5, 0, 0, 0)
 shape = SubResource("ConcavePolygonShape3D_uifop")
 
 [node name="row3" type="Node3D" parent="wall"]
@@ -308,6 +318,7 @@ skeleton = NodePath("../../..")
 script = ExtResource("2_rqkg1")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="wall/row3/slot11/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 5, 0, 0, 0)
 shape = SubResource("ConcavePolygonShape3D_rlo58")
 
 [node name="slot12" type="MeshInstance3D" parent="wall/row3"]
@@ -320,6 +331,7 @@ skeleton = NodePath("../../..")
 script = ExtResource("2_rqkg1")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="wall/row3/slot12/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 5, 0, 0, 0)
 shape = SubResource("ConcavePolygonShape3D_4bnr2")
 
 [node name="slot13" type="MeshInstance3D" parent="wall/row3"]
@@ -332,6 +344,7 @@ skeleton = NodePath("../../..")
 script = ExtResource("2_rqkg1")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="wall/row3/slot13/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 5, 0, 0, 0)
 shape = SubResource("ConcavePolygonShape3D_o5npm")
 
 [node name="slot14" type="MeshInstance3D" parent="wall/row3"]
@@ -344,6 +357,7 @@ skeleton = NodePath("../slot13")
 script = ExtResource("2_rqkg1")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="wall/row3/slot14/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 5, 0, 0, 0)
 shape = SubResource("ConcavePolygonShape3D_8j151")
 
 [node name="slot15" type="MeshInstance3D" parent="wall/row3"]
@@ -356,6 +370,7 @@ skeleton = NodePath("../slot14")
 script = ExtResource("2_rqkg1")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="wall/row3/slot15/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 5, 0, 0, 0)
 shape = SubResource("ConcavePolygonShape3D_welh3")
 
 [node name="row4" type="Node3D" parent="wall"]
@@ -371,6 +386,7 @@ skeleton = NodePath("../../..")
 script = ExtResource("2_rqkg1")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="wall/row4/slot16/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 5, 0, 0, 0)
 shape = SubResource("ConcavePolygonShape3D_tninb")
 
 [node name="slot17" type="MeshInstance3D" parent="wall/row4"]
@@ -383,6 +399,7 @@ skeleton = NodePath("../../..")
 script = ExtResource("2_rqkg1")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="wall/row4/slot17/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 5, 0, 0, 0)
 shape = SubResource("ConcavePolygonShape3D_2whw3")
 
 [node name="slot18" type="MeshInstance3D" parent="wall/row4"]
@@ -395,6 +412,7 @@ skeleton = NodePath("../../..")
 script = ExtResource("2_rqkg1")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="wall/row4/slot18/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 5, 0, 0, 0)
 shape = SubResource("ConcavePolygonShape3D_3nc4u")
 
 [node name="slot19" type="MeshInstance3D" parent="wall/row4"]
@@ -407,6 +425,7 @@ skeleton = NodePath("../slot18")
 script = ExtResource("2_rqkg1")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="wall/row4/slot19/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 5, 0, 0, 0)
 shape = SubResource("ConcavePolygonShape3D_726no")
 
 [node name="slot20" type="MeshInstance3D" parent="wall/row4"]
@@ -419,6 +438,7 @@ skeleton = NodePath("../slot19")
 script = ExtResource("2_rqkg1")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="wall/row4/slot20/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 5, 0, 0, 0)
 shape = SubResource("ConcavePolygonShape3D_ckcjm")
 
 [node name="row5" type="Node3D" parent="wall"]
@@ -434,6 +454,7 @@ skeleton = NodePath("../../..")
 script = ExtResource("2_rqkg1")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="wall/row5/slot21/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 5, 0, 0, 0)
 shape = SubResource("ConcavePolygonShape3D_whc4m")
 
 [node name="slot22" type="MeshInstance3D" parent="wall/row5"]
@@ -446,6 +467,7 @@ skeleton = NodePath("../../..")
 script = ExtResource("2_rqkg1")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="wall/row5/slot22/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 5, 0, 0, 0)
 shape = SubResource("ConcavePolygonShape3D_evpj8")
 
 [node name="slot23" type="MeshInstance3D" parent="wall/row5"]
@@ -458,6 +480,7 @@ skeleton = NodePath("../../..")
 script = ExtResource("2_rqkg1")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="wall/row5/slot23/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 5, 0, 0, 0)
 shape = SubResource("ConcavePolygonShape3D_dm2gg")
 
 [node name="slot24" type="MeshInstance3D" parent="wall/row5"]
@@ -470,6 +493,7 @@ skeleton = NodePath("../slot23")
 script = ExtResource("2_rqkg1")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="wall/row5/slot24/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 5, 0, 0, 0)
 shape = SubResource("ConcavePolygonShape3D_a4wn7")
 
 [node name="slot25" type="MeshInstance3D" parent="wall/row5"]
@@ -482,4 +506,5 @@ skeleton = NodePath("../slot24")
 script = ExtResource("2_rqkg1")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="wall/row5/slot25/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 5, 0, 0, 0)
 shape = SubResource("ConcavePolygonShape3D_43onx")
