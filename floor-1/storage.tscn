@@ -6,7 +6,11 @@
 [ext_resource type="PackedScene" uid="uid://bcjow3rr6j2hd" path="res://cross/cross.tscn" id="3_73pow"]
 [ext_resource type="Texture2D" uid="uid://xbl8ywr6uy7x" path="res://assets/models/amon/textures/Asphalt026C_2K-PNG_Roughness.png" id="3_vb3rw"]
 [ext_resource type="Script" path="res://assets/models/amon/amon.gd" id="4_n5i5y"]
+<<<<<<< Updated upstream
 [ext_resource type="PackedScene" uid="uid://onkfi733ebgn" path="res://floor0/doors_with_walls/stairs_doors.tscn" id="6_w5ql2"]
+=======
+[ext_resource type="PackedScene" uid="uid://1m1hcv20bsyj" path="res://floor0/doors_with_walls/stairs_doors.tscn" id="6_w5ql2"]
+>>>>>>> Stashed changes
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_k6j2q"]
 load_path = "res://.godot/imported/Concrete017_1K-PNG_Color.png-70b284543347c3c6912c117fd55f4c41.s3tc.ctex"
@@ -682,8 +686,29 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0116611, 1.01907, -2.84819)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.418856, 1.00519, -2.84819)
 
 [node name="cross9" parent="." groups=["cross"] instance=ExtResource("3_73pow")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00628501, 1.04166, -1.15598)
 
 [node name="door_with_wall" parent="." instance=ExtResource("6_w5ql2")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 1.35, 0.1, -1.6)
 script = ExtResource("2_btfrp")
+
+[node name="light1" type="SpotLight3D" parent="door_with_wall"]
+transform = Transform3D(1, 0, 0, 0, -0.436802, -0.899558, 0, 0.899558, -0.436802, 0.0231229, -0.414757, -0.781198)
+light_color = Color(1, 0, 0, 1)
+light_energy = 1.298
+light_size = 3.65
+light_specular = 10.236
+spot_range = 3.638
+spot_attenuation = 0.00232267
+spot_angle = 19.28
+spot_angle_attenuation = 3.13833
+
+[node name="light2" type="SpotLight3D" parent="door_with_wall"]
+transform = Transform3D(1, 0, 0, 0, -0.392337, 0.919822, 0, -0.919822, -0.392337, 0.0222136, 2.66476, -0.940927)
+light_color = Color(1, 0, 0, 1)
+light_energy = 0.702
+light_size = 100.0
+light_specular = 10.037
+spot_range = 3.83
+spot_attenuation = 0.00448711
+spot_angle = 17.93
+spot_angle_attenuation = 4.9246
