@@ -13,7 +13,6 @@ func _ready():
 		animation.connect("animation_finished", animation_finished)
 
 func action(player=null):
-	if can_use:
 	if Global.animator_can_use:
 		if is_open:
 			is_open = false
