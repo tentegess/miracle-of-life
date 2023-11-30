@@ -1,0 +1,11 @@
+Model Information:
+* title:	Altar
+* source:	https://sketchfab.com/3d-models/altar-1a459e27f8ec40e9b4d70abcadf5a1a8
+* author:	Rico Peters (https://sketchfab.com/ryko777)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Altar" (https://sketchfab.com/3d-models/altar-1a459e27f8ec40e9b4d70abcadf5a1a8) by Rico Peters (https://sketchfab.com/ryko777) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
