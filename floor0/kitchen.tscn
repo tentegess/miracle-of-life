@@ -507,7 +507,6 @@ mesh = SubResource("BoxMesh_3ewvn")
 [node name="StaticBody3D" type="StaticBody3D" parent="floor"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="floor/StaticBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 shape = SubResource("ConvexPolygonShape3D_rwhif")
 
 [node name="rightwall" type="MeshInstance3D" parent="." groups=["wood"]]
