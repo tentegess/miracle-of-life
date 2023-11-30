@@ -8,10 +8,10 @@
 [ext_resource type="Texture2D" uid="uid://i77jywr5aem6" path="res://assets/textures/concrete_layers_02_1k/textures/concrete_layers_02_nor_gl_1k.png" id="6_mqbha"]
 [ext_resource type="Texture2D" uid="uid://dq0k08yrf3ux" path="res://assets/textures/concrete_layers_02_1k/textures/concrete_layers_02_rough_1k.png" id="7_ulalg"]
 [ext_resource type="Texture2D" uid="uid://dvkir218pe52x" path="res://assets/textures/Concrete017_1k/Concrete017_1K-PNG_Color.png" id="8_j4srm"]
-[ext_resource type="PackedScene" path="res://floor0/doors_with_walls/stairs_doors.tscn" id="8_milcd"]
+[ext_resource type="PackedScene" uid="uid://onkfi733ebgn" path="res://floor0/doors_with_walls/stairs_doors.tscn" id="8_milcd"]
 [ext_resource type="Texture2D" uid="uid://5xqbucqbpm3b" path="res://assets/textures/Concrete017_1k/Concrete017_1K-PNG_NormalGL.png" id="9_yh3bf"]
 [ext_resource type="Texture2D" uid="uid://dcjv8jq85i4os" path="res://assets/textures/Concrete017_1k/Concrete017_1K-PNG_Roughness.png" id="10_lidq0"]
-[ext_resource type="PackedScene" path="res://floor0/terminal.tscn" id="12_cj8rv"]
+[ext_resource type="PackedScene" uid="uid://bv8vcpy8u66tr" path="res://floor0/terminal.tscn" id="12_cj8rv"]
 [ext_resource type="Script" path="res://floor0/doors_with_walls/stairs_doors.gd" id="12_hq3xh"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dn852"]
