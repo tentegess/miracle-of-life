@@ -1,6 +1,4 @@
-[gd_scene load_steps=32 format=3 uid="uid://dqvuljm8xhbks"]
-
-[ext_resource type="PackedScene" uid="uid://bqchwxr7lhuvj" path="res://assets/models/altar/altar.tscn" id="1_r0ru2"]
+[gd_scene load_steps=31 format=3 uid="uid://dqvuljm8xhbks"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_5eqmo"]
 load_path = "res://.godot/imported/Concrete017_1K-PNG_Color.png-70b284543347c3c6912c117fd55f4c41.s3tc.ctex"
@@ -167,6 +165,3 @@ skeleton = NodePath("../../floor/floor2")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="frontwall/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_b8w4g")
-
-[node name="altar" parent="." instance=ExtResource("1_r0ru2")]
-transform = Transform3D(-2.18557e-10, 0, 0.005, 0, 0.005, 0, -0.005, 0, -2.18557e-10, -0.00542986, 0.208546, 0.64868)
