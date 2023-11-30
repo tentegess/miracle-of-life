@@ -1,6 +1,7 @@
 extends Node
 
 signal unlock
+signal lock
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -12,11 +13,13 @@ func _process(delta):
 	pass
 
 
-func action():
-	var test = get_tree().get_nodes_in_group("amon_required")
-	var test2 = 0
-	for t in test:
-		if t.return_correct():
-			test2 += 1
-	if test2 == 9:
+func unlock_action():
+	var all_required_cross = get_tree().get_nodes_in_group("amon_required")
+	var cross_counter = 0
+	for cross in all_required_cross:
+		if cross.return_correct():
+			cross_counter += 1
+	if cross_counter == 9:
 		unlock.emit()
+	else:
+		lock.emit()
