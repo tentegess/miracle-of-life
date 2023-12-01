@@ -259,7 +259,7 @@ func pick_up():
 				picked_object.visible = false
 				picked_object = picked_object.get_owner().get_child(0)
 				picked_object.visible = true
-				collider = null
+				collider.queue_free()
 				interaction = true
 				return
 			remove_object()

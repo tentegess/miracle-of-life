@@ -1,6 +1,8 @@
 extends StaticBody3D
 
 @export_node_path("Node3D") var keyPath
+@export var is_key = false
+@export var amon_scene = 0
 
 var key = null
 var rotation_angle = 90
@@ -11,7 +13,7 @@ var is_correct = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	if keyPath != null:
+	if is_key:
 		key = get_node(keyPath).get_child(0)
 		rotate_step = 2
 		is_correct = true
@@ -51,7 +53,7 @@ func check_correct():
 	if key and rotate_step == 2:
 		if "cross_worm" in key.get_groups():
 			is_correct = true
-	get_tree().get_nodes_in_group("amon_counter")[0].action()
+	get_tree().get_nodes_in_group("amon_counter")[amon_scene].action()
 		
 	
 func return_correct():

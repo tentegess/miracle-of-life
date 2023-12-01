@@ -14,7 +14,11 @@ func _process(delta):
 
 
 func action():
-	var all_required_cross = get_tree().get_nodes_in_group("amon_required")
+	var amon = get_child(0)
+	var all_required_cross = []
+	for row in range(0,5):
+		for slot in range(0,5):
+			all_required_cross.append(amon.get_child(row).get_child(slot).get_child(0))
 	var cross_counter = 0
 	for cross in all_required_cross:
 		if cross.return_correct():

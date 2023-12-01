@@ -639,6 +639,7 @@ skeleton = NodePath("../..")
 [node name="StaticBody3D" type="StaticBody3D" parent="Amon/wall/row1/slot2" groups=["amon", "amon_required"]]
 script = ExtResource("4_n5i5y")
 keyPath = NodePath("../../../../../cross_worm1")
+is_key = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Amon/wall/row1/slot2/StaticBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 5, 0, 0, 0)
@@ -653,6 +654,7 @@ skeleton = NodePath("../..")
 [node name="StaticBody3D" type="StaticBody3D" parent="Amon/wall/row1/slot3" groups=["amon", "amon_required"]]
 script = ExtResource("4_n5i5y")
 keyPath = NodePath("../../../../../cross_worm2")
+is_key = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Amon/wall/row1/slot3/StaticBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 5, 0, 0, 0)
@@ -667,6 +669,7 @@ skeleton = NodePath("../slot3")
 [node name="StaticBody3D" type="StaticBody3D" parent="Amon/wall/row1/slot4" groups=["amon", "amon_required"]]
 script = ExtResource("4_n5i5y")
 keyPath = NodePath("../../../../../cross_worm3")
+is_key = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Amon/wall/row1/slot4/StaticBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 5, 0, 0, 0)
@@ -765,6 +768,7 @@ skeleton = NodePath("../../..")
 [node name="StaticBody3D" type="StaticBody3D" parent="Amon/wall/row3/slot11" groups=["amon", "amon_required"]]
 script = ExtResource("4_n5i5y")
 keyPath = NodePath("../../../../../cross_worm4")
+is_key = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Amon/wall/row3/slot11/StaticBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 5, 0, 0, 0)
@@ -818,6 +822,7 @@ skeleton = NodePath("../slot14")
 [node name="StaticBody3D" type="StaticBody3D" parent="Amon/wall/row3/slot15" groups=["amon", "amon_required"]]
 script = ExtResource("4_n5i5y")
 keyPath = NodePath("../../../../../cross_worm5")
+is_key = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Amon/wall/row3/slot15/StaticBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 5, 0, 0, 0)
@@ -916,6 +921,7 @@ skeleton = NodePath("../../..")
 [node name="StaticBody3D" type="StaticBody3D" parent="Amon/wall/row5/slot22" groups=["amon", "amon_required"]]
 script = ExtResource("4_n5i5y")
 keyPath = NodePath("../../../../../cross_worm6")
+is_key = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Amon/wall/row5/slot22/StaticBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 5, 0, 0, 0)
@@ -930,6 +936,7 @@ skeleton = NodePath("../../..")
 [node name="StaticBody3D" type="StaticBody3D" parent="Amon/wall/row5/slot23" groups=["amon", "amon_required"]]
 script = ExtResource("4_n5i5y")
 keyPath = NodePath("../../../../../cross_worm7")
+is_key = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Amon/wall/row5/slot23/StaticBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 5, 0, 0, 0)
@@ -944,6 +951,7 @@ skeleton = NodePath("../slot23")
 [node name="StaticBody3D" type="StaticBody3D" parent="Amon/wall/row5/slot24" groups=["amon", "amon_required"]]
 script = ExtResource("4_n5i5y")
 keyPath = NodePath("../../../../../cross_worm8")
+is_key = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Amon/wall/row5/slot24/StaticBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 5, 0, 0, 0)
