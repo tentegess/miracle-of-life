@@ -1,8 +1,8 @@
 [gd_scene load_steps=33 format=3 uid="uid://3va183v261dk"]
 
-[ext_resource type="PackedScene" path="res://floor0/doors_with_walls/office_doors.tscn" id="1_aclk8"]
+[ext_resource type="PackedScene" uid="uid://cvlqitrkmfvwe" path="res://floor0/doors_with_walls/office_doors.tscn" id="1_aclk8"]
 [ext_resource type="PackedScene" uid="uid://2bxc3ybq0uk6" path="res://floor0/doors_with_walls/bathroom_doors.tscn" id="1_iuru3"]
-[ext_resource type="PackedScene" path="res://floor0/doors_with_walls/bedroom_doors.tscn" id="3_vg44g"]
+[ext_resource type="PackedScene" uid="uid://frv7s77ltug6" path="res://floor0/doors_with_walls/bedroom_doors.tscn" id="3_vg44g"]
 [ext_resource type="Texture2D" uid="uid://b0375i2jbk64f" path="res://assets/textures/wood_floor_1k/wood_floor_diff_1k.png" id="3_w3u4k"]
 [ext_resource type="Texture2D" uid="uid://wsbqhnhc6g0o" path="res://assets/textures/wood_floor_1k/wood_floor_nor_gl_1k.png" id="4_0s6wk"]
 [ext_resource type="Texture2D" uid="uid://dpsffkb2fky6g" path="res://assets/textures/wood_floor_1k/wood_floor_rough_1k.png" id="5_0fctc"]
@@ -10,7 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://bwqbp2atvjdog" path="res://assets/models/carpet1/scene.gltf" id="7_x66gl"]
 [ext_resource type="Texture2D" uid="uid://bhoryeu0nck3i" path="res://assets/textures/paint_green_1k/paint_0001_normal_opengl_1k.png" id="8_fw4ws"]
 [ext_resource type="Texture2D" uid="uid://cu3ay1ccilqqw" path="res://assets/textures/paint_green_1k/paint_0001_roughness_1k.jpg" id="9_pktyt"]
-[ext_resource type="PackedScene" path="res://floor0/doors_with_walls/outside_doors.tscn" id="11_0f16x"]
+[ext_resource type="PackedScene" uid="uid://guokhgj2u8vn" path="res://floor0/doors_with_walls/outside_doors.tscn" id="11_0f16x"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7poll"]
 albedo_texture = ExtResource("3_w3u4k")

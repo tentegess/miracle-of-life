@@ -87,7 +87,7 @@ data = PackedVector3Array(-1.25, 0.15, 0.05, 1.25, 0.15, 0.05, -1.25, -0.15, 0.0
 
 [node name="Door" parent="." instance=ExtResource("1_iji45")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.0687293)
-locked = false
+unlock_by_key = false
 
 [node name="front" type="Node3D" parent="."]
 

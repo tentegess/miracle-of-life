@@ -273,7 +273,7 @@ func pick_up():
 func read_note():
 	var collider = reach.get_collider()
 	if collider != null and "note" in collider.get_groups():
-		note_view.texture = collider.get_tree().get_nodes_in_group("read_note")[0].texture
+		note_view.texture = collider.get_child(0).get_child(0).get_child(0).texture
 		note_view.visible = true
 		note_sound.play()
 		interaction = true

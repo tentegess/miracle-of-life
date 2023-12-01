@@ -5,7 +5,7 @@ extends Interactable
 @onready var LineEditRegEx = RegEx.new()
 
 var show_t := false
-var password := "2137"
+var password := "483214"
 var Player = null
 var used := false
 var textt = ""
