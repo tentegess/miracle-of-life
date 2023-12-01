@@ -1,0 +1,11 @@
+Model Information:
+* title:	Open Magazine
+* source:	https://sketchfab.com/3d-models/open-magazine-01a548cb6fc341c98a99375755cf6ce3
+* author:	abdillaamy (https://sketchfab.com/abdillaamy)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Open Magazine" (https://sketchfab.com/3d-models/open-magazine-01a548cb6fc341c98a99375755cf6ce3) by abdillaamy (https://sketchfab.com/abdillaamy) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

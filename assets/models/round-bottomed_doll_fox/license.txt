@@ -1,0 +1,11 @@
+Model Information:
+* title:	round-bottomed doll (fox)
+* source:	https://sketchfab.com/3d-models/round-bottomed-doll-fox-62d856c58ce140eabacd34d26459dd0d
+* author:	i55121127 (https://sketchfab.com/i55121127)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "round-bottomed doll (fox)" (https://sketchfab.com/3d-models/round-bottomed-doll-fox-62d856c58ce140eabacd34d26459dd0d) by i55121127 (https://sketchfab.com/i55121127) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

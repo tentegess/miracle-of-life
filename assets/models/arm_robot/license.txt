@@ -1,0 +1,11 @@
+Model Information:
+* title:	arm robot
+* source:	https://sketchfab.com/3d-models/arm-robot-a2ba6d10bc394d1db1536c0717361ff7
+* author:	aksinia0987 (https://sketchfab.com/aksinia0987)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "arm robot" (https://sketchfab.com/3d-models/arm-robot-a2ba6d10bc394d1db1536c0717361ff7) by aksinia0987 (https://sketchfab.com/aksinia0987) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

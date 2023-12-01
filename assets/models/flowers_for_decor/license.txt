@@ -1,0 +1,11 @@
+Model Information:
+* title:	Flowers for Decor
+* source:	https://sketchfab.com/3d-models/flowers-for-decor-95b895cb3a654784bfac64bc345fc55e
+* author:	emilmammadzada (https://sketchfab.com/emilzaqe)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Flowers for Decor" (https://sketchfab.com/3d-models/flowers-for-decor-95b895cb3a654784bfac64bc345fc55e) by emilmammadzada (https://sketchfab.com/emilzaqe) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
