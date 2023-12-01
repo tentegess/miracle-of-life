@@ -2,8 +2,8 @@
 
 [ext_resource type="PackedScene" uid="uid://dn5xefs4fvvx6" path="res://floor-1/corridor.tscn" id="1_eyrka"]
 [ext_resource type="PackedScene" uid="uid://cr0nuulg4da71" path="res://floor-1/storage.tscn" id="2_amk52"]
-[ext_resource type="PackedScene" uid="uid://3x18c2nvgnq1" path="res://floor-1/lab.tscn" id="3_7dmqt"]
-[ext_resource type="PackedScene" uid="uid://dqvuljm8xhbks" path="res://floor-1/main_basement.tscn" id="4_mnf44"]
+[ext_resource type="PackedScene" uid="uid://cks4imw4q4dqi" path="res://floor-1/lab.tscn" id="3_7dmqt"]
+[ext_resource type="PackedScene" uid="uid://b3qnpnqdt60nq" path="res://floor-1/main_basement.tscn" id="4_mnf44"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_wghvk"]
 load_path = "res://.godot/imported/Concrete031_1K-PNG_Color.png-4483eab22f0ba33a8612d5c307081159.s3tc.ctex"
