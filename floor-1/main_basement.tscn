@@ -16,14 +16,14 @@ albedo_texture = SubResource("CompressedTexture2D_5eqmo")
 roughness_texture = SubResource("CompressedTexture2D_vq1r8")
 normal_enabled = true
 normal_texture = SubResource("CompressedTexture2D_qy1wf")
-uv1_scale = Vector3(5.4, 3.4, 1)
+uv1_scale = Vector3(7.4, 5.4, 1)
 
 [sub_resource type="BoxMesh" id="BoxMesh_5spdd"]
 material = SubResource("StandardMaterial3D_j72b5")
-size = Vector3(5.4, 0.2, 3.4)
+size = Vector3(7.4, 0.2, 5.4)
 
-[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_6kvev"]
-data = PackedVector3Array(-2.7, 0.1, 1.7, 2.7, 0.1, 1.7, -2.7, -0.1, 1.7, 2.7, 0.1, 1.7, 2.7, -0.1, 1.7, -2.7, -0.1, 1.7, 2.7, 0.1, -1.7, -2.7, 0.1, -1.7, 2.7, -0.1, -1.7, -2.7, 0.1, -1.7, -2.7, -0.1, -1.7, 2.7, -0.1, -1.7, 2.7, 0.1, 1.7, 2.7, 0.1, -1.7, 2.7, -0.1, 1.7, 2.7, 0.1, -1.7, 2.7, -0.1, -1.7, 2.7, -0.1, 1.7, -2.7, 0.1, -1.7, -2.7, 0.1, 1.7, -2.7, -0.1, -1.7, -2.7, 0.1, 1.7, -2.7, -0.1, 1.7, -2.7, -0.1, -1.7, 2.7, 0.1, 1.7, -2.7, 0.1, 1.7, 2.7, 0.1, -1.7, -2.7, 0.1, 1.7, -2.7, 0.1, -1.7, 2.7, 0.1, -1.7, -2.7, -0.1, 1.7, 2.7, -0.1, 1.7, -2.7, -0.1, -1.7, 2.7, -0.1, 1.7, 2.7, -0.1, -1.7, -2.7, -0.1, -1.7)
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_u21in"]
+data = PackedVector3Array(-3.7, 0.1, 2.7, 3.7, 0.1, 2.7, -3.7, -0.1, 2.7, 3.7, 0.1, 2.7, 3.7, -0.1, 2.7, -3.7, -0.1, 2.7, 3.7, 0.1, -2.7, -3.7, 0.1, -2.7, 3.7, -0.1, -2.7, -3.7, 0.1, -2.7, -3.7, -0.1, -2.7, 3.7, -0.1, -2.7, 3.7, 0.1, 2.7, 3.7, 0.1, -2.7, 3.7, -0.1, 2.7, 3.7, 0.1, -2.7, 3.7, -0.1, -2.7, 3.7, -0.1, 2.7, -3.7, 0.1, -2.7, -3.7, 0.1, 2.7, -3.7, -0.1, -2.7, -3.7, 0.1, 2.7, -3.7, -0.1, 2.7, -3.7, -0.1, -2.7, 3.7, 0.1, 2.7, -3.7, 0.1, 2.7, 3.7, 0.1, -2.7, -3.7, 0.1, 2.7, -3.7, 0.1, -2.7, 3.7, 0.1, -2.7, -3.7, -0.1, 2.7, 3.7, -0.1, 2.7, -3.7, -0.1, -2.7, 3.7, -0.1, 2.7, 3.7, -0.1, -2.7, -3.7, -0.1, -2.7)
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ivfql"]
 load_path = "res://.godot/imported/concrete_layers_02_diff_1k.png-4d99a87098e01f620a69083afa842372.s3tc.ctex"
@@ -39,14 +39,14 @@ albedo_texture = SubResource("CompressedTexture2D_ivfql")
 roughness_texture = SubResource("CompressedTexture2D_ldpbp")
 normal_enabled = true
 normal_texture = SubResource("CompressedTexture2D_veglc")
-uv1_scale = Vector3(5, 3, 1)
+uv1_scale = Vector3(7, 3, 1)
 
 [sub_resource type="BoxMesh" id="BoxMesh_whdw1"]
 material = SubResource("StandardMaterial3D_ahw6c")
-size = Vector3(5, 3, 0.1)
+size = Vector3(7, 3, 0.1)
 
-[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_7x35m"]
-data = PackedVector3Array(-2.5, 1.5, 0.05, 2.5, 1.5, 0.05, -2.5, -1.5, 0.05, 2.5, 1.5, 0.05, 2.5, -1.5, 0.05, -2.5, -1.5, 0.05, 2.5, 1.5, -0.05, -2.5, 1.5, -0.05, 2.5, -1.5, -0.05, -2.5, 1.5, -0.05, -2.5, -1.5, -0.05, 2.5, -1.5, -0.05, 2.5, 1.5, 0.05, 2.5, 1.5, -0.05, 2.5, -1.5, 0.05, 2.5, 1.5, -0.05, 2.5, -1.5, -0.05, 2.5, -1.5, 0.05, -2.5, 1.5, -0.05, -2.5, 1.5, 0.05, -2.5, -1.5, -0.05, -2.5, 1.5, 0.05, -2.5, -1.5, 0.05, -2.5, -1.5, -0.05, 2.5, 1.5, 0.05, -2.5, 1.5, 0.05, 2.5, 1.5, -0.05, -2.5, 1.5, 0.05, -2.5, 1.5, -0.05, 2.5, 1.5, -0.05, -2.5, -1.5, 0.05, 2.5, -1.5, 0.05, -2.5, -1.5, -0.05, 2.5, -1.5, 0.05, 2.5, -1.5, -0.05, -2.5, -1.5, -0.05)
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_6bgn8"]
+data = PackedVector3Array(-3.5, 1.5, 0.05, 3.5, 1.5, 0.05, -3.5, -1.5, 0.05, 3.5, 1.5, 0.05, 3.5, -1.5, 0.05, -3.5, -1.5, 0.05, 3.5, 1.5, -0.05, -3.5, 1.5, -0.05, 3.5, -1.5, -0.05, -3.5, 1.5, -0.05, -3.5, -1.5, -0.05, 3.5, -1.5, -0.05, 3.5, 1.5, 0.05, 3.5, 1.5, -0.05, 3.5, -1.5, 0.05, 3.5, 1.5, -0.05, 3.5, -1.5, -0.05, 3.5, -1.5, 0.05, -3.5, 1.5, -0.05, -3.5, 1.5, 0.05, -3.5, -1.5, -0.05, -3.5, 1.5, 0.05, -3.5, -1.5, 0.05, -3.5, -1.5, -0.05, 3.5, 1.5, 0.05, -3.5, 1.5, 0.05, 3.5, 1.5, -0.05, -3.5, 1.5, 0.05, -3.5, 1.5, -0.05, 3.5, 1.5, -0.05, -3.5, -1.5, 0.05, 3.5, -1.5, 0.05, -3.5, -1.5, -0.05, 3.5, -1.5, 0.05, 3.5, -1.5, -0.05, -3.5, -1.5, -0.05)
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_dgnvb"]
 load_path = "res://.godot/imported/concrete_layers_02_diff_1k.png-4d99a87098e01f620a69083afa842372.s3tc.ctex"
@@ -62,14 +62,14 @@ albedo_texture = SubResource("CompressedTexture2D_dgnvb")
 roughness_texture = SubResource("CompressedTexture2D_6v7g7")
 normal_enabled = true
 normal_texture = SubResource("CompressedTexture2D_dndap")
-uv1_scale = Vector3(3, 3, 1)
+uv1_scale = Vector3(5, 3, 1)
 
 [sub_resource type="BoxMesh" id="BoxMesh_cekqy"]
 material = SubResource("StandardMaterial3D_l8omd")
-size = Vector3(0.1, 3, 3)
+size = Vector3(0.1, 3, 5)
 
-[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_nfto7"]
-data = PackedVector3Array(-0.05, 1.5, 1.5, 0.05, 1.5, 1.5, -0.05, -1.5, 1.5, 0.05, 1.5, 1.5, 0.05, -1.5, 1.5, -0.05, -1.5, 1.5, 0.05, 1.5, -1.5, -0.05, 1.5, -1.5, 0.05, -1.5, -1.5, -0.05, 1.5, -1.5, -0.05, -1.5, -1.5, 0.05, -1.5, -1.5, 0.05, 1.5, 1.5, 0.05, 1.5, -1.5, 0.05, -1.5, 1.5, 0.05, 1.5, -1.5, 0.05, -1.5, -1.5, 0.05, -1.5, 1.5, -0.05, 1.5, -1.5, -0.05, 1.5, 1.5, -0.05, -1.5, -1.5, -0.05, 1.5, 1.5, -0.05, -1.5, 1.5, -0.05, -1.5, -1.5, 0.05, 1.5, 1.5, -0.05, 1.5, 1.5, 0.05, 1.5, -1.5, -0.05, 1.5, 1.5, -0.05, 1.5, -1.5, 0.05, 1.5, -1.5, -0.05, -1.5, 1.5, 0.05, -1.5, 1.5, -0.05, -1.5, -1.5, 0.05, -1.5, 1.5, 0.05, -1.5, -1.5, -0.05, -1.5, -1.5)
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_0amer"]
+data = PackedVector3Array(-0.05, 1.5, 2.5, 0.05, 1.5, 2.5, -0.05, -1.5, 2.5, 0.05, 1.5, 2.5, 0.05, -1.5, 2.5, -0.05, -1.5, 2.5, 0.05, 1.5, -2.5, -0.05, 1.5, -2.5, 0.05, -1.5, -2.5, -0.05, 1.5, -2.5, -0.05, -1.5, -2.5, 0.05, -1.5, -2.5, 0.05, 1.5, 2.5, 0.05, 1.5, -2.5, 0.05, -1.5, 2.5, 0.05, 1.5, -2.5, 0.05, -1.5, -2.5, 0.05, -1.5, 2.5, -0.05, 1.5, -2.5, -0.05, 1.5, 2.5, -0.05, -1.5, -2.5, -0.05, 1.5, 2.5, -0.05, -1.5, 2.5, -0.05, -1.5, -2.5, 0.05, 1.5, 2.5, -0.05, 1.5, 2.5, 0.05, 1.5, -2.5, -0.05, 1.5, 2.5, -0.05, 1.5, -2.5, 0.05, 1.5, -2.5, -0.05, -1.5, 2.5, 0.05, -1.5, 2.5, -0.05, -1.5, -2.5, 0.05, -1.5, 2.5, 0.05, -1.5, -2.5, -0.05, -1.5, -2.5)
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_rhby0"]
 load_path = "res://.godot/imported/concrete_layers_02_diff_1k.png-4d99a87098e01f620a69083afa842372.s3tc.ctex"
@@ -85,14 +85,14 @@ albedo_texture = SubResource("CompressedTexture2D_rhby0")
 roughness_texture = SubResource("CompressedTexture2D_biirs")
 normal_enabled = true
 normal_texture = SubResource("CompressedTexture2D_d8k0t")
-uv1_scale = Vector3(3, 3, 1)
+uv1_scale = Vector3(5, 3, 1)
 
 [sub_resource type="BoxMesh" id="BoxMesh_f8s4x"]
 material = SubResource("StandardMaterial3D_tbpl1")
-size = Vector3(0.1, 3, 3)
+size = Vector3(0.1, 3, 5)
 
-[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_wvmhd"]
-data = PackedVector3Array(-0.05, 1.5, 1.5, 0.05, 1.5, 1.5, -0.05, -1.5, 1.5, 0.05, 1.5, 1.5, 0.05, -1.5, 1.5, -0.05, -1.5, 1.5, 0.05, 1.5, -1.5, -0.05, 1.5, -1.5, 0.05, -1.5, -1.5, -0.05, 1.5, -1.5, -0.05, -1.5, -1.5, 0.05, -1.5, -1.5, 0.05, 1.5, 1.5, 0.05, 1.5, -1.5, 0.05, -1.5, 1.5, 0.05, 1.5, -1.5, 0.05, -1.5, -1.5, 0.05, -1.5, 1.5, -0.05, 1.5, -1.5, -0.05, 1.5, 1.5, -0.05, -1.5, -1.5, -0.05, 1.5, 1.5, -0.05, -1.5, 1.5, -0.05, -1.5, -1.5, 0.05, 1.5, 1.5, -0.05, 1.5, 1.5, 0.05, 1.5, -1.5, -0.05, 1.5, 1.5, -0.05, 1.5, -1.5, 0.05, 1.5, -1.5, -0.05, -1.5, 1.5, 0.05, -1.5, 1.5, -0.05, -1.5, -1.5, 0.05, -1.5, 1.5, 0.05, -1.5, -1.5, -0.05, -1.5, -1.5)
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_nk16k"]
+data = PackedVector3Array(-0.05, 1.5, 2.5, 0.05, 1.5, 2.5, -0.05, -1.5, 2.5, 0.05, 1.5, 2.5, 0.05, -1.5, 2.5, -0.05, -1.5, 2.5, 0.05, 1.5, -2.5, -0.05, 1.5, -2.5, 0.05, -1.5, -2.5, -0.05, 1.5, -2.5, -0.05, -1.5, -2.5, 0.05, -1.5, -2.5, 0.05, 1.5, 2.5, 0.05, 1.5, -2.5, 0.05, -1.5, 2.5, 0.05, 1.5, -2.5, 0.05, -1.5, -2.5, 0.05, -1.5, 2.5, -0.05, 1.5, -2.5, -0.05, 1.5, 2.5, -0.05, -1.5, -2.5, -0.05, 1.5, 2.5, -0.05, -1.5, 2.5, -0.05, -1.5, -2.5, 0.05, 1.5, 2.5, -0.05, 1.5, 2.5, 0.05, 1.5, -2.5, -0.05, 1.5, 2.5, -0.05, 1.5, -2.5, 0.05, 1.5, -2.5, -0.05, -1.5, 2.5, 0.05, -1.5, 2.5, -0.05, -1.5, -2.5, 0.05, -1.5, 2.5, 0.05, -1.5, -2.5, -0.05, -1.5, -2.5)
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_uj8ul"]
 load_path = "res://.godot/imported/concrete_layers_02_diff_1k.png-4d99a87098e01f620a69083afa842372.s3tc.ctex"
@@ -108,14 +108,14 @@ albedo_texture = SubResource("CompressedTexture2D_uj8ul")
 roughness_texture = SubResource("CompressedTexture2D_7gmul")
 normal_enabled = true
 normal_texture = SubResource("CompressedTexture2D_64kqj")
-uv1_scale = Vector3(2.5, 3, 1)
+uv1_scale = Vector3(4.5, 3, 1)
 
 [sub_resource type="BoxMesh" id="BoxMesh_ysbb8"]
 material = SubResource("StandardMaterial3D_dnhip")
-size = Vector3(2.5, 3, 0.1)
+size = Vector3(4.5, 3, 0.1)
 
-[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_b8w4g"]
-data = PackedVector3Array(-1.25, 1.5, 0.05, 1.25, 1.5, 0.05, -1.25, -1.5, 0.05, 1.25, 1.5, 0.05, 1.25, -1.5, 0.05, -1.25, -1.5, 0.05, 1.25, 1.5, -0.05, -1.25, 1.5, -0.05, 1.25, -1.5, -0.05, -1.25, 1.5, -0.05, -1.25, -1.5, -0.05, 1.25, -1.5, -0.05, 1.25, 1.5, 0.05, 1.25, 1.5, -0.05, 1.25, -1.5, 0.05, 1.25, 1.5, -0.05, 1.25, -1.5, -0.05, 1.25, -1.5, 0.05, -1.25, 1.5, -0.05, -1.25, 1.5, 0.05, -1.25, -1.5, -0.05, -1.25, 1.5, 0.05, -1.25, -1.5, 0.05, -1.25, -1.5, -0.05, 1.25, 1.5, 0.05, -1.25, 1.5, 0.05, 1.25, 1.5, -0.05, -1.25, 1.5, 0.05, -1.25, 1.5, -0.05, 1.25, 1.5, -0.05, -1.25, -1.5, 0.05, 1.25, -1.5, 0.05, -1.25, -1.5, -0.05, 1.25, -1.5, 0.05, 1.25, -1.5, -0.05, -1.25, -1.5, -0.05)
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_xkc1i"]
+data = PackedVector3Array(-2.25, 1.5, 0.05, 2.25, 1.5, 0.05, -2.25, -1.5, 0.05, 2.25, 1.5, 0.05, 2.25, -1.5, 0.05, -2.25, -1.5, 0.05, 2.25, 1.5, -0.05, -2.25, 1.5, -0.05, 2.25, -1.5, -0.05, -2.25, 1.5, -0.05, -2.25, -1.5, -0.05, 2.25, -1.5, -0.05, 2.25, 1.5, 0.05, 2.25, 1.5, -0.05, 2.25, -1.5, 0.05, 2.25, 1.5, -0.05, 2.25, -1.5, -0.05, 2.25, -1.5, 0.05, -2.25, 1.5, -0.05, -2.25, 1.5, 0.05, -2.25, -1.5, -0.05, -2.25, 1.5, 0.05, -2.25, -1.5, 0.05, -2.25, -1.5, -0.05, 2.25, 1.5, 0.05, -2.25, 1.5, 0.05, 2.25, 1.5, -0.05, -2.25, 1.5, 0.05, -2.25, 1.5, -0.05, 2.25, 1.5, -0.05, -2.25, -1.5, 0.05, 2.25, -1.5, 0.05, -2.25, -1.5, -0.05, 2.25, -1.5, 0.05, 2.25, -1.5, -0.05, -2.25, -1.5, -0.05)
 
 [node name="main_basement" type="Node3D"]
 
@@ -126,47 +126,47 @@ skeleton = NodePath("../stairs")
 [node name="StaticBody3D" type="StaticBody3D" parent="floor"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="floor/StaticBody3D"]
-shape = SubResource("ConcavePolygonShape3D_6kvev")
+shape = SubResource("ConcavePolygonShape3D_u21in")
 
 [node name="backwall" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.6, 1.55)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.6, 2.55)
 mesh = SubResource("BoxMesh_whdw1")
 skeleton = NodePath("../../floor/floor2")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="backwall"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="backwall/StaticBody3D"]
-shape = SubResource("ConcavePolygonShape3D_7x35m")
+shape = SubResource("ConcavePolygonShape3D_6bgn8")
 
 [node name="leftwall" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.55, 1.6, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.55, 1.6, 0)
 mesh = SubResource("BoxMesh_cekqy")
 skeleton = NodePath("../../floor/floor2")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="leftwall"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="leftwall/StaticBody3D"]
-shape = SubResource("ConcavePolygonShape3D_nfto7")
+shape = SubResource("ConcavePolygonShape3D_0amer")
 
 [node name="rightwall" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.55, 1.6, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.55, 1.6, 0)
 mesh = SubResource("BoxMesh_f8s4x")
 skeleton = NodePath("../../floor/floor2")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="rightwall"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="rightwall/StaticBody3D"]
-shape = SubResource("ConcavePolygonShape3D_wvmhd")
+shape = SubResource("ConcavePolygonShape3D_nk16k")
 
 [node name="frontwall" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.25, 1.6, -1.55)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.25, 1.6, -2.55)
 mesh = SubResource("BoxMesh_ysbb8")
 skeleton = NodePath("../../floor/floor2")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="frontwall"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="frontwall/StaticBody3D"]
-shape = SubResource("ConcavePolygonShape3D_b8w4g")
+shape = SubResource("ConcavePolygonShape3D_xkc1i")
 
 [node name="altar" parent="." instance=ExtResource("1_m2neh")]
 transform = Transform3D(-2.18557e-10, 0, 0.005, 0, 0.005, 0, -0.005, 0, -2.18557e-10, -0.158132, 0.1, -0.0289191)
