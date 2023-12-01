@@ -23,3 +23,4 @@ func action():
 		unlock.emit()
 	else:
 		lock.emit()
+	print(cross_counter)

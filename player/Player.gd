@@ -255,6 +255,13 @@ func pick_up():
 	var collider = reach.get_collider()
 	if collider != null and collider is RigidBody3D:
 		if picked_object != null:
+			if "cross" in picked_object.get_groups() and "worm" in collider.get_groups():
+				picked_object.visible = false
+				picked_object = picked_object.get_owner().get_child(0)
+				picked_object.visible = true
+				collider = null
+				interaction = true
+				return
 			remove_object()
 		picked_object = collider
 		picked_object.global_transform.origin = hand.global_transform.origin
@@ -266,7 +273,7 @@ func pick_up():
 func read_note():
 	var collider = reach.get_collider()
 	if collider != null and "note" in collider.get_groups():
-		note_view.texture = collider.get_node("note").texture
+		note_view.texture = collider.get_tree().get_nodes_in_group("read_note")[0].texture
 		note_view.visible = true
 		note_sound.play()
 		interaction = true

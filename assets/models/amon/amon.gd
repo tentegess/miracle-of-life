@@ -12,7 +12,6 @@ var is_correct = false
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	if keyPath != null:
-		print(key)
 		key = get_node(keyPath).get_child(0)
 		rotate_step = 2
 		is_correct = true
@@ -48,11 +47,10 @@ func rotate_right():
 			
 			
 func check_correct():
+	is_correct = false
 	if key and rotate_step == 2:
-		if "cross_worm" in key.get_owner().get_groups():
+		if "cross_worm" in key.get_groups():
 			is_correct = true
-	else:
-		is_correct = false
 	get_tree().get_nodes_in_group("amon_counter")[0].action()
 		
 	

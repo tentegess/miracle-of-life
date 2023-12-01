@@ -997,7 +997,7 @@ libraries = {
 "": SubResource("AnimationLibrary_i12ew")
 }
 
-[node name="RigidBody3D" type="RigidBody3D" parent="worm1"]
+[node name="RigidBody3D" type="RigidBody3D" parent="worm1" groups=["worm"]]
 transform = Transform3D(1, 0, 0, 0, 1, 4.37114e-08, 0, -4.37114e-08, 1, 0, 0, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="worm1/RigidBody3D"]
@@ -1202,7 +1202,7 @@ libraries = {
 "": SubResource("AnimationLibrary_i12ew")
 }
 
-[node name="RigidBody3D" type="RigidBody3D" parent="worm2"]
+[node name="RigidBody3D" type="RigidBody3D" parent="worm2" groups=["worm"]]
 transform = Transform3D(1, 0, 0, 0, 1, 4.37114e-08, 0, -4.37114e-08, 1, 0, 0, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="worm2/RigidBody3D"]
@@ -1407,7 +1407,7 @@ libraries = {
 "": SubResource("AnimationLibrary_i12ew")
 }
 
-[node name="RigidBody3D" type="RigidBody3D" parent="worm3"]
+[node name="RigidBody3D" type="RigidBody3D" parent="worm3" groups=["worm"]]
 transform = Transform3D(1, 0, 0, 0, 1, 4.37114e-08, 0, -4.37114e-08, 1, 0, 0, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="worm3/RigidBody3D"]
@@ -1612,7 +1612,7 @@ libraries = {
 "": SubResource("AnimationLibrary_i12ew")
 }
 
-[node name="RigidBody3D" type="RigidBody3D" parent="worm4"]
+[node name="RigidBody3D" type="RigidBody3D" parent="worm4" groups=["worm"]]
 transform = Transform3D(1, 0, 0, 0, 1, 4.37114e-08, 0, -4.37114e-08, 1, 0, 0, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="worm4/RigidBody3D"]
@@ -1808,29 +1808,29 @@ bones/25/scale = Vector3(0.493693, 0.493693, 0.493693)
 mesh = SubResource("ArrayMesh_lgbn4")
 skin = SubResource("Skin_oxesr")
 
-[node name="cross_worm1" parent="." groups=["cross_worm"] instance=ExtResource("12_8qm5u")]
+[node name="cross_worm1" parent="." instance=ExtResource("12_8qm5u")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.389008, 2.63465, -2.83697)
 
-[node name="cross_worm2" parent="." groups=["cross_worm"] instance=ExtResource("12_8qm5u")]
+[node name="cross_worm2" parent="." instance=ExtResource("12_8qm5u")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00294188, 2.63465, -2.83697)
 
-[node name="cross_worm3" parent="." groups=["cross_worm"] instance=ExtResource("12_8qm5u")]
+[node name="cross_worm3" parent="." instance=ExtResource("12_8qm5u")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.412999, 2.63465, -2.83697)
 
-[node name="cross_worm4" parent="." groups=["cross_worm"] instance=ExtResource("12_8qm5u")]
+[node name="cross_worm4" parent="." instance=ExtResource("12_8qm5u")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.794222, 1.82997, -2.83697)
 
-[node name="cross_worm5" parent="." groups=["cross_worm"] instance=ExtResource("12_8qm5u")]
+[node name="cross_worm5" parent="." instance=ExtResource("12_8qm5u")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.814105, 1.82536, -2.83697)
 
-[node name="cross_worm6" parent="." groups=["cross_worm"] instance=ExtResource("12_8qm5u")]
+[node name="cross_worm6" parent="." instance=ExtResource("12_8qm5u")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.389008, 1.02674, -2.83697)
 
-[node name="cross_worm7" parent="." groups=["cross_worm"] instance=ExtResource("12_8qm5u")]
+[node name="cross_worm7" parent="." instance=ExtResource("12_8qm5u")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0280334, 1.01488, -2.83697)
 
-[node name="cross_worm8" parent="." groups=["cross_worm"] instance=ExtResource("12_8qm5u")]
+[node name="cross_worm8" parent="." instance=ExtResource("12_8qm5u")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.43197, 1.00805, -2.83697)
 
-[node name="cross_worm" parent="." groups=["cross_worm"] instance=ExtResource("12_8qm5u")]
+[node name="cross_worm" parent="." instance=ExtResource("12_8qm5u")]
 transform = Transform3D(1, 0, 0, 0, 0.560639, 0.82806, 0, -0.82806, 0.560639, -0.217809, 0.246065, -2.69726)
