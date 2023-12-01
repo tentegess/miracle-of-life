@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://bv8vcpy8u66tr"]
+[gd_scene load_steps=7 format=3 uid="uid://bv8vcpy8u66tr"]
 
 [ext_resource type="Script" path="res://floor0/terminal.gd" id="1_pgcds"]
 [ext_resource type="PackedScene" uid="uid://dxujqpyoelacu" path="res://interact_template.tscn" id="1_rpjmq"]
 [ext_resource type="PackedScene" uid="uid://dxsoyme2rg6cn" path="res://assets/models/terminal/scene.gltf" id="3_afw7d"]
+[ext_resource type="Script" path="res://floor0/terminal_button.gd" id="5_357kx"]
 [ext_resource type="Texture2D" uid="uid://br2nn3vtmld7y" path="res://assets/textures/terminal/dribble_computer.png" id="6_b4hkv"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_f52qe"]
@@ -50,8 +51,141 @@ alignment = 2
 max_length = 10
 virtual_keyboard_enabled = false
 
+[node name="Button" type="Button" parent="Control" index="2"]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.031
+anchor_bottom = 0.031
+offset_left = 396.0
+offset_top = 192.191
+offset_right = 460.0
+offset_bottom = 254.191
+script = ExtResource("5_357kx")
+char = "1"
+
+[node name="Button2" type="Button" parent="Control" index="3"]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.031
+anchor_bottom = 0.031
+offset_left = 601.0
+offset_top = 372.191
+offset_right = 668.0
+offset_bottom = 436.191
+script = ExtResource("5_357kx")
+char = "9"
+
+[node name="Button3" type="Button" parent="Control" index="4"]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.031
+anchor_bottom = 0.031
+offset_left = 498.0
+offset_top = 375.191
+offset_right = 565.0
+offset_bottom = 435.191
+script = ExtResource("5_357kx")
+char = "8"
+
+[node name="Button4" type="Button" parent="Control" index="5"]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.031
+anchor_bottom = 0.031
+offset_left = 395.0
+offset_top = 375.191
+offset_right = 466.0
+offset_bottom = 439.191
+script = ExtResource("5_357kx")
+char = "7"
+
+[node name="Button5" type="Button" parent="Control" index="6"]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.031
+anchor_bottom = 0.031
+offset_left = 601.0
+offset_top = 283.191
+offset_right = 671.0
+offset_bottom = 343.191
+script = ExtResource("5_357kx")
+char = "6"
+
+[node name="Button6" type="Button" parent="Control" index="7"]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.031
+anchor_bottom = 0.031
+offset_left = 496.0
+offset_top = 282.191
+offset_right = 569.0
+offset_bottom = 342.191
+script = ExtResource("5_357kx")
+char = "5"
+
+[node name="Button7" type="Button" parent="Control" index="8"]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.031
+anchor_bottom = 0.031
+offset_left = 392.0
+offset_top = 285.191
+offset_right = 468.0
+offset_bottom = 345.191
+script = ExtResource("5_357kx")
+char = "4"
+
+[node name="Button8" type="Button" parent="Control" index="9"]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.031
+anchor_bottom = 0.031
+offset_left = 596.0
+offset_top = 195.191
+offset_right = 673.0
+offset_bottom = 255.191
+script = ExtResource("5_357kx")
+char = "3"
+
+[node name="Button9" type="Button" parent="Control" index="10"]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.031
+anchor_bottom = 0.031
+offset_left = 497.0
+offset_top = 193.191
+offset_right = 563.0
+offset_bottom = 253.191
+script = ExtResource("5_357kx")
+char = "2"
+
+[node name="Button10" type="Button" parent="Control" index="11"]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.031
+anchor_bottom = 0.031
+offset_left = 499.0
+offset_top = 465.191
+offset_right = 567.0
+offset_bottom = 525.191
+script = ExtResource("5_357kx")
+char = "0"
+
+[node name="Button11" type="Button" parent="Control" index="12"]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.031
+anchor_bottom = 0.031
+offset_left = 715.0
+offset_top = 287.191
+offset_right = 793.0
+offset_bottom = 399.191
+
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." index="3"]
 process_mode = 2
 
 [connection signal="text_changed" from="Control/LineEdit" to="." method="_on_line_edit_text_changed"]
 [connection signal="text_submitted" from="Control/LineEdit" to="." method="_on_line_edit_text_submitted"]
+[connection signal="button_up" from="Control/Button11" to="." method="_on_button_11_button_up"]

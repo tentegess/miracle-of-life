@@ -20,6 +20,7 @@ func _ready():
 func _input(event):
 	if show_t:
 		if Input.is_action_just_released("pause"):
+			Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 			hide_ui()
 			
 
@@ -28,6 +29,7 @@ func action(player=null):
 	show_t = !show_t
 	if show_t:
 		player.get_parent().get_tree().paused = true
+		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 		terminal_ui.show()
 		var timer = Timer.new()
 		timer.wait_time = 0.1
@@ -47,16 +49,17 @@ func hide_ui():
 func _on_line_edit_text_submitted(new_text):
 	if !used:
 		if new_text.to_lower() == password:
-			print("dobre hasło")
+			Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 			unlock.emit()
 			Global.pause_game = false
 			hide_ui()
 			used = true
 		else:
+			line_edit.clear()
 			$AudioStreamPlayer.stream = load("res://assets/sound/terminal/wrong_pass.ogg")
 			$AudioStreamPlayer.pitch_scale = 1.0
 			$AudioStreamPlayer.play()
-			print("złe hasło")
+
 
 
 func _on_line_edit_text_changed(new_text):
@@ -69,3 +72,7 @@ func _on_line_edit_text_changed(new_text):
 	else:
 		line_edit.text = textt
 		line_edit.set_caret_column(line_edit.text.length())
+
+
+func _on_button_11_button_up():
+	_on_line_edit_text_submitted(line_edit.text)

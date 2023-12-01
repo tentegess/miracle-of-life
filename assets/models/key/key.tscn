@@ -50,7 +50,7 @@ size = Vector3(0.247557, 0.0797169, 0.309411)
 [node name="RigidBody3D" type="RigidBody3D" parent="."]
 
 [node name="make_smaller" type="Node3D" parent="RigidBody3D"]
-transform = Transform3D(0.3, 0, 0, 0, -1.31134e-08, 0.3, 0, -0.3, -1.31134e-08, 0, 0, 0)
+transform = Transform3D(-0.00331955, -1.31875e-08, 0.299982, -0.263646, 0.143115, -0.00291746, -0.143107, -0.263663, -0.00158361, -0.00324672, 0.00298826, -5.6552e-05)
 
 [node name="Object_2" type="MeshInstance3D" parent="RigidBody3D/make_smaller"]
 transform = Transform3D(0.001, 0, 0, 0, 0.001, 4.37114e-11, 0, -4.37114e-11, 0.001, 0, 0, 0)
@@ -58,5 +58,5 @@ mesh = SubResource("ArrayMesh_wntf6")
 skeleton = NodePath("")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00172657, 0.00474805, 0.00565901)
+transform = Transform3D(-0.0110651, 0.999939, 0, -0.878822, -0.00972487, -0.477051, -0.477022, -0.00527863, 0.878875, 0.00152015, 0.00175979, 0.00571556)
 shape = SubResource("BoxShape3D_ffths")
