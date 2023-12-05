@@ -1,4 +1,4 @@
-[gd_scene load_steps=95 format=3 uid="uid://cr0nuulg4da71"]
+[gd_scene load_steps=99 format=3 uid="uid://cr0nuulg4da71"]
 
 [ext_resource type="Script" path="res://floor-1/doors_with_walls/storage_doors.gd" id="2_btfrp"]
 [ext_resource type="Script" path="res://assets/models/amon/amon_counter.gd" id="2_rnx2n"]
@@ -10,7 +10,11 @@
 [ext_resource type="Texture2D" uid="uid://rhdf7vsvdu4" path="res://assets/models/worm/textures/Parasit_baseColor.png" id="8_wv3yj"]
 [ext_resource type="Texture2D" uid="uid://dfb78566ca8t5" path="res://assets/models/worm/textures/Parasit_metallicRoughness.png" id="9_i4w53"]
 [ext_resource type="Texture2D" uid="uid://bagxye4momo4a" path="res://assets/models/worm/textures/Parasit_normal.png" id="10_pb6v7"]
+[ext_resource type="PackedScene" uid="uid://bcjow3rr6j2hd" path="res://cross/cross.tscn" id="11_ia42v"]
 [ext_resource type="PackedScene" uid="uid://gaik87ff1kj1" path="res://assets/models/cross_worms/cross_worm.tscn" id="12_8qm5u"]
+[ext_resource type="PackedScene" uid="uid://cda3wmfn70lnx" path="res://assets/models/shelf/shelf.tscn" id="13_cr2du"]
+[ext_resource type="PackedScene" uid="uid://duehn668j3tpo" path="res://assets/models/lamp/scene.gltf" id="14_m0023"]
+[ext_resource type="PackedScene" uid="uid://chr75k7lc0bn2" path="res://assets/models/lamp/lamp.tscn" id="15_x2o71"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_k6j2q"]
 load_path = "res://.godot/imported/Concrete017_1K-PNG_Color.png-70b284543347c3c6912c117fd55f4c41.s3tc.ctex"
@@ -997,7 +1001,7 @@ spot_angle = 17.93
 spot_angle_attenuation = 4.9246
 
 [node name="worm1" type="Node3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.897273, 0.0999999, 2.0921)
+transform = Transform3D(-0.935444, 0, 0.353475, 0, 1, 0, -0.353475, 0, -0.935444, 0.91792, 1.85384, -0.747998)
 script = ExtResource("8_p8usq")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="worm1"]
@@ -1202,7 +1206,7 @@ mesh = SubResource("ArrayMesh_lgbn4")
 skin = SubResource("Skin_oxesr")
 
 [node name="worm2" type="Node3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.897273, 0.0999999, 1.88968)
+transform = Transform3D(0.569279, 0, -0.822144, 0, 1, 0, 0.822144, 0, 0.569279, 1.10771, 1.8478, -0.900415)
 script = ExtResource("8_p8usq")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="worm2"]
@@ -1407,7 +1411,7 @@ mesh = SubResource("ArrayMesh_lgbn4")
 skin = SubResource("Skin_oxesr")
 
 [node name="worm3" type="Node3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.897273, 0.0999999, 1.6804)
+transform = Transform3D(0.885394, 0, 0.464842, 0, 1, 0, -0.464842, 0, 0.885394, 0.970669, 1.83642, -0.910345)
 script = ExtResource("8_p8usq")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="worm3"]
@@ -1612,7 +1616,7 @@ mesh = SubResource("ArrayMesh_lgbn4")
 skin = SubResource("Skin_oxesr")
 
 [node name="worm4" type="Node3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.897273, 0.0999999, 1.46584)
+transform = Transform3D(-0.567844, 0, -0.823136, 0, 1, 0, 0.823136, 0, -0.567844, 1.0729, 1.85445, -0.616357)
 script = ExtResource("8_p8usq")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="worm4"]
@@ -1842,3 +1846,18 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.43197, 1.00805, -4.33289)
 
 [node name="cross_worm" parent="." instance=ExtResource("12_8qm5u")]
 transform = Transform3D(1, 0, 0, 0, 0.560639, 0.82806, 0, -0.82806, 0.560639, -0.217809, 0.246065, -4.19318)
+
+[node name="shelf" parent="." instance=ExtResource("13_cr2du")]
+transform = Transform3D(-6.55671e-10, 0, 0.015, 0, 0.015, 0, -0.015, 0, -6.55671e-10, 0.837969, 0.0999994, 0.369493)
+
+[node name="cross" parent="." instance=ExtResource("11_ia42v")]
+transform = Transform3D(-0.748956, 0.380063, -0.542787, 0, 0.819152, 0.573576, 0.66262, 0.429583, -0.613509, 1.15324, 0.304623, 0.243646)
+
+[node name="scene" parent="." instance=ExtResource("14_m0023")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.57481, 0.0999999, -0.688064)
+
+[node name="lamp" parent="." instance=ExtResource("15_x2o71")]
+transform = Transform3D(0.120137, 0, -0.992757, 0, 1, 0, 0.992757, 0, 0.120137, 0.942563, 2.05178, -0.490512)
+
+[node name="lamp2" parent="." instance=ExtResource("15_x2o71")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.938521, 0.443826, -0.0516109)

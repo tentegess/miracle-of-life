@@ -1,9 +1,10 @@
-[gd_scene load_steps=11 format=3 uid="uid://rlawu5t5aehs"]
+[gd_scene load_steps=12 format=3 uid="uid://rlawu5t5aehs"]
 
 [ext_resource type="PackedScene" uid="uid://dn5xefs4fvvx6" path="res://floor-1/corridor.tscn" id="1_eyrka"]
 [ext_resource type="PackedScene" uid="uid://cr0nuulg4da71" path="res://floor-1/storage.tscn" id="2_amk52"]
 [ext_resource type="PackedScene" uid="uid://cks4imw4q4dqi" path="res://floor-1/lab.tscn" id="3_7dmqt"]
 [ext_resource type="PackedScene" uid="uid://b3qnpnqdt60nq" path="res://floor-1/main_basement.tscn" id="4_mnf44"]
+[ext_resource type="PackedScene" uid="uid://op1ms1ys3iv2" path="res://lightbulb.tscn" id="5_hxcg7"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_wghvk"]
 load_path = "res://.godot/imported/Concrete031_1K-PNG_Color.png-4483eab22f0ba33a8612d5c307081159.s3tc.ctex"
@@ -50,3 +51,30 @@ skeleton = NodePath("../stairs")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="celling/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_qn53c")
+
+[node name="lightbulb" parent="." instance=ExtResource("5_hxcg7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.017, 0.276)
+
+[node name="lightbulb2" parent="." instance=ExtResource("5_hxcg7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.017, 4.7)
+
+[node name="lightbulb3" parent="." instance=ExtResource("5_hxcg7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.503, 3.017, 4.7)
+
+[node name="lightbulb4" parent="." instance=ExtResource("5_hxcg7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.503, 3.017, 4.7)
+
+[node name="lightbulb5" parent="." instance=ExtResource("5_hxcg7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.9, 3.017, 0.636)
+
+[node name="lightbulb6" parent="." instance=ExtResource("5_hxcg7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.9, 3.017, -4.207)
+
+[node name="lightbulb7" parent="." instance=ExtResource("5_hxcg7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.83933, 3.017, -3.87883)
+
+[node name="lightbulb8" parent="." instance=ExtResource("5_hxcg7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.75754, 3.017, -3.87883)
+
+[node name="lightbulb9" parent="." instance=ExtResource("5_hxcg7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.14726, 3.017, 0.706676)

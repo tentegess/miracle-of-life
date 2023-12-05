@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://chr75k7lc0bn2"]
+
+[ext_resource type="PackedScene" uid="uid://duehn668j3tpo" path="res://assets/models/lamp/scene.gltf" id="1_b7hug"]
+
+[node name="lamp" instance=ExtResource("1_b7hug")]
+
+[node name="OmniLight3D" type="OmniLight3D" parent="." index="1"]
+light_color = Color(0.72549, 0.701961, 0, 1)
+light_energy = 0.521
+shadow_bias = 10.0
+shadow_normal_bias = 10.0
+shadow_transmittance_bias = 16.0
+omni_range = 0.5
+omni_attenuation = 1.07177

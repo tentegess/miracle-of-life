@@ -37,5 +37,4 @@ omni_shadow_mode = 0
 stream = ExtResource("2_vh3d5")
 volume_db = -14.118
 autoplay = true
-stream_paused = true
 max_distance = 3.0

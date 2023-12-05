@@ -1,14 +1,12 @@
-[gd_scene load_steps=93 format=3 uid="uid://cks4imw4q4dqi"]
+[gd_scene load_steps=91 format=3 uid="uid://cks4imw4q4dqi"]
 
 [ext_resource type="PackedScene" uid="uid://onkfi733ebgn" path="res://floor0/doors_with_walls/stairs_doors.tscn" id="1_44tjg"]
-[ext_resource type="PackedScene" uid="uid://cda3wmfn70lnx" path="res://assets/models/shelf/shelf.tscn" id="2_d2ar4"]
 [ext_resource type="Script" path="res://floor-1/doors_with_walls/storage_doors.gd" id="2_iu1tt"]
 [ext_resource type="Script" path="res://assets/models/amon/amon_counter.gd" id="3_olk8d"]
 [ext_resource type="Texture2D" uid="uid://drtit17n8byvs" path="res://assets/models/amon/textures/Asphalt026C_2K-PNG_Color.png" id="4_m5bj7"]
 [ext_resource type="Texture2D" uid="uid://xbl8ywr6uy7x" path="res://assets/models/amon/textures/Asphalt026C_2K-PNG_Roughness.png" id="5_klfc5"]
 [ext_resource type="Script" path="res://assets/models/amon/amon.gd" id="6_jpcgb"]
 [ext_resource type="PackedScene" uid="uid://gaik87ff1kj1" path="res://assets/models/cross_worms/cross_worm.tscn" id="7_qfibk"]
-[ext_resource type="PackedScene" uid="uid://bcjow3rr6j2hd" path="res://cross/cross.tscn" id="9_0rjul"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_anvej"]
 load_path = "res://.godot/imported/Concrete017_1K-PNG_Color.png-70b284543347c3c6912c117fd55f4c41.s3tc.ctex"
@@ -361,9 +359,6 @@ skeleton = NodePath("../../floor/floor2")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="backwall/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_b1ea0")
-
-[node name="shelf" parent="." instance=ExtResource("2_d2ar4")]
-transform = Transform3D(0.015, 0, 0, 0, 0.015, 0, 0, 0, 0.015, -1.17059, 0.0999994, 1.80802)
 
 [node name="Amon" type="Node3D" parent="." groups=["amon_counter"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.028, -0.667624, -2.84296)
@@ -766,6 +761,3 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.973019, 1.0315, -1.24123)
 
 [node name="cross_worm8" parent="." instance=ExtResource("7_qfibk")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.794, 1.01281, -1.24123)
-
-[node name="cross" parent="." instance=ExtResource("9_0rjul")]
-transform = Transform3D(0.822144, 0.326525, 0.466327, 0, 0.819152, -0.573576, -0.56928, 0.471562, 0.673461, 0.137, 0.304, 2.147)
