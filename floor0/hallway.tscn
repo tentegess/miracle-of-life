@@ -1,6 +1,6 @@
 [gd_scene load_steps=33 format=3 uid="uid://3va183v261dk"]
 
-[ext_resource type="PackedScene" path="res://floor0/doors_with_walls/office_doors.tscn" id="1_aclk8"]
+[ext_resource type="PackedScene" uid="uid://cvlqitrkmfvwe" path="res://floor0/doors_with_walls/office_doors.tscn" id="1_aclk8"]
 [ext_resource type="PackedScene" uid="uid://2bxc3ybq0uk6" path="res://floor0/doors_with_walls/bathroom_doors.tscn" id="1_iuru3"]
 [ext_resource type="PackedScene" uid="uid://frv7s77ltug6" path="res://floor0/doors_with_walls/bedroom_doors.tscn" id="3_vg44g"]
 [ext_resource type="Texture2D" uid="uid://b0375i2jbk64f" path="res://assets/textures/wood_floor_1k/wood_floor_diff_1k.png" id="3_w3u4k"]
