@@ -1,0 +1,48 @@
+[gd_scene load_steps=6 format=3 uid="uid://d0y8hhjb2acl5"]
+
+[ext_resource type="PackedScene" uid="uid://c0ioo3crne6dg" path="res://assets/models/ceiling_lamp/scene.gltf" id="1_it83t"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_cti8k"]
+points = PackedVector3Array(0.19911, -3.5798, 1.06285, -0.214061, -3.60057, -1.14245, -0.154137, -3.8715, -0.493216, 1.14255, -3.60057, -0.213961, -1.14255, -3.60057, 0.214161, 0.0296352, -3.95754, 0.17847, 0.892479, -3.60057, 0.749872, -0.535488, -3.60057, 1.03551, -0.830008, -3.57983, -0.69719, 0.749772, -3.60057, -0.892379, 0.419912, -3.899, -0.0897469, -0.419909, -3.899, 0.0899463, 0.962933, -3.57983, -0.497904, -1.03541, -3.60057, -0.535388, 0.154137, -3.8715, 0.493416, 0.154137, -3.8715, -0.493215, 0.214061, -3.60057, 1.14265, -0.367865, -3.87099, 0.367965, 0.493353, -3.8715, 0.154249, -0.962933, -3.57983, 0.498105, -0.749772, -3.60057, -0.892379, -0.237636, -3.92749, -0.237536, -0.892479, -3.60057, 0.749872, 0.214061, -3.60057, -1.14245, 1.10676, -3.60057, 0.357092, 0.19911, -3.5798, -1.06265, -0.154137, -3.8715, 0.493415, 0.996058, -3.57982, 0.431767, 0.118317, -3.95664, -0.147889, 0.435001, -3.87224, -0.279516, -0.493315, -3.8715, -0.154037, 0.535488, -3.60057, 1.03551)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_d7uud"]
+points = PackedVector3Array(-0.738135, -2.36536, 7.3938, -1.41757, -4.37745, -7.57411, -1.86675, -5.09069, -7.23721, 7.57815, -4.84986, 0.47188, -2.0149, -7.78686, 2.4626, -6.89955, -2.36536, -2.95707, 5.66727, -2.36536, -4.92749, 3.6168, -7.13223, -3.61811, -7.25332, -5.3233, 1.16843, 3.42994, -6.46662, 5.25962, 5.66727, -2.36536, 4.92769, -4.30496, -6.68307, -4.08045, -4.2296, -4.85404, 6.34229, -6.65402, -2.36536, 3.44833, -0.738135, -2.36536, -7.3936, 4.22852, -4.854, -6.34268, 3.83173, -7.57773, 0.901517, 1.16856, -5.3233, 7.25339, -1.12647, -7.80175, -2.92759, -5.87801, -4.3836, -4.93654, 6.74659, -5.55509, -2.5583, 7.3937, -2.36594, -0.738034, -4.97603, -7.13298, 1.12966, 1.14204, -6.46677, -6.17291, 6.04876, -5.3233, 4.1886, -1.82264, -6.91901, 5.24376, 3.06129, -4.38178, 7.06735, -6.74659, -5.55509, -2.5583, -6.04877, -5.3233, 4.18861, -3.44977, -2.36536, -6.65238, 1.1251, -7.80183, 2.92789, 6.17335, -6.46657, 1.14193)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_787nw"]
+points = PackedVector3Array(9.74977, 2.25936, 3.89476, -1.94904, 0.966813, -10.4566, -1.94541, 1.94344, -10.4372, -8.41619, 0.959058, 6.48277, 6.79916, -2.72732, 3.39151, -6.77496, -2.72659, -3.39343, -8.85133, 3.46903, -2.21526, 1.30236, 2.89175, 10.0067, 7.60149, 3.46664, -5.05883, 6.12088, -2.72732, -4.41192, -2.36295, -2.72659, 7.12524, 9.09526, 0.959809, -5.51402, -9.65894, 0.630904, -4.19109, 4.84976, 0.631189, 9.3521, -5.05077, 3.46867, 7.59739, 0.69038, -2.72659, -7.46524, 4.23466, 0.960999, -9.74333, 6.63894, 3.45964, 6.31251, 1.93873, 3.52219, -8.67476, -1.94904, 0.966814, 10.4568, -7.11304, -2.72659, 2.37515, -10.4305, 1.94441, 1.9545, 10.3454, 0.310624, -0.643201, -6.44496, 2.89251, -7.74959, 0.848241, -3.0842, -1.11592, -5.73867, 0.305954, -8.62805, 2.38715, -2.72659, 7.12524, 10.0075, 2.8885, -1.28872, 9.09523, 0.959806, 5.51421, -10.3204, 0.309209, 0.967002, -3.38143, -2.72659, -6.78696, -8.95039, 3.18739, 3.83859)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_a2lxn"]
+shading_mode = 0
+
+[node name="scene" instance=ExtResource("1_it83t")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Sketchfab_model/root/GLTF_SceneRootNode/cabin_001_15" index="3"]
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Sketchfab_model/root/GLTF_SceneRootNode/cabin_001_15/StaticBody3D" index="0"]
+shape = SubResource("ConvexPolygonShape3D_cti8k")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="Sketchfab_model/root/GLTF_SceneRootNode/cabin_001_15/StaticBody3D" index="1"]
+shape = SubResource("ConvexPolygonShape3D_d7uud")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Sketchfab_model/root/GLTF_SceneRootNode/cabin_001_15/StaticBody3D" index="2"]
+shape = SubResource("ConvexPolygonShape3D_787nw")
+
+[node name="CSGSphere3D" type="CSGSphere3D" parent="." index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.108778, 0)
+operation = 2
+radius = 0.0722196
+material = SubResource("StandardMaterial3D_a2lxn")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="CSGSphere3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.575141, 0)
+light_color = Color(1, 0.968627, 0.768627, 1)
+light_energy = 0.35
+light_specular = 1.0
+shadow_enabled = true
+shadow_bias = 1.0
+shadow_normal_bias = 1.932
+shadow_blur = 1.678
+distance_fade_enabled = true
+omni_range = 3.78134
+omni_attenuation = 2.0
+omni_shadow_mode = 0

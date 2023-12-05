@@ -1,0 +1,41 @@
+[gd_scene load_steps=4 format=3 uid="uid://op1ms1ys3iv2"]
+
+[ext_resource type="PackedScene" uid="uid://dt6lp5yec72u0" path="res://assets/models/lightbulb/scene.gltf" id="1_re1ug"]
+[ext_resource type="AudioStream" uid="uid://caoaloj3w51uq" path="res://assets/sound/light/flicker.ogg" id="2_vh3d5"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_36v4y"]
+shading_mode = 0
+
+[node name="scene" instance=ExtResource("1_re1ug")]
+
+[node name="Sketchfab_model" parent="." index="0"]
+transform = Transform3D(2, 0, 0, 0, -8.74228e-08, -2, 0, 2, -8.74228e-08, 0, 0.0487763, 0)
+
+[node name="CSGSphere3D" type="CSGSphere3D" parent="." index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.122848, 0)
+operation = 2
+radius = 0.068608
+material = SubResource("StandardMaterial3D_36v4y")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="CSGSphere3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.575141, 0)
+light_color = Color(1, 0.968627, 0.768627, 1)
+light_energy = 0.2
+light_specular = 1.0
+shadow_enabled = true
+shadow_bias = 1.0
+shadow_normal_bias = 10.0
+shadow_reverse_cull_face = true
+shadow_transmittance_bias = 3.847
+shadow_blur = 1.678
+distance_fade_enabled = true
+omni_range = 3.78134
+omni_attenuation = 2.0
+omni_shadow_mode = 0
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="." index="2"]
+stream = ExtResource("2_vh3d5")
+volume_db = -14.118
+autoplay = true
+stream_paused = true
+max_distance = 3.0

@@ -28,6 +28,10 @@ version_control/autoload_on_startup=true
 
 import/fbx/enabled=false
 
+[gui]
+
+theme/quality/msaa_2d=0
+
 [input]
 
 move_forward={
@@ -88,4 +92,9 @@ interact={
 
 [rendering]
 
+anti_aliasing/quality/msaa_2d=2
 anti_aliasing/quality/msaa_3d=2
+
+[xr]
+
+shaders/enabled=true

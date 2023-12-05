@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://d2x6xkadgddvh"]
+[gd_scene load_steps=19 format=3 uid="uid://d2x6xkadgddvh"]
 
 [ext_resource type="PackedScene" uid="uid://3va183v261dk" path="res://floor0/hallway.tscn" id="1_kj0tv"]
 [ext_resource type="PackedScene" uid="uid://7g8d2n8q674t" path="res://floor0/bathroom.tscn" id="2_kiuwd"]
@@ -10,6 +10,8 @@
 [ext_resource type="Texture2D" uid="uid://dtjrnq2fcc0dy" path="res://assets/textures/paint_green_1k/paint_0002_base_color_1k.jpg" id="8_gw4u8"]
 [ext_resource type="Texture2D" uid="uid://bhoryeu0nck3i" path="res://assets/textures/paint_green_1k/paint_0001_normal_opengl_1k.png" id="9_c6duh"]
 [ext_resource type="Texture2D" uid="uid://cu3ay1ccilqqw" path="res://assets/textures/paint_green_1k/paint_0001_roughness_1k.jpg" id="10_y5a54"]
+[ext_resource type="PackedScene" uid="uid://d0y8hhjb2acl5" path="res://light1.tscn" id="11_lsf7e"]
+[ext_resource type="PackedScene" uid="uid://op1ms1ys3iv2" path="res://lightbulb.tscn" id="12_4065e"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_b6huq"]
 size = Vector3(3.06068, 0.201526, 7.51114)
@@ -72,11 +74,50 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.42316, -0.00832349, -2.2626
 shape = SubResource("BoxShape3D_qsf02")
 
 [node name="celling" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.2, -2.3)
-visible = false
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.17053, -2.3)
+gi_mode = 2
 mesh = SubResource("BoxMesh_dli2j")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="celling"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="celling/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_nm35p")
+
+[node name="light1" parent="." instance=ExtResource("11_lsf7e")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.047, 3.431)
+
+[node name="light2" parent="." instance=ExtResource("11_lsf7e")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.047, -0.702)
+
+[node name="light10" parent="." instance=ExtResource("11_lsf7e")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.047, -6.58728)
+
+[node name="light7" parent="." instance=ExtResource("11_lsf7e")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.54883, 3.047, -0.702)
+
+[node name="light9" parent="." instance=ExtResource("11_lsf7e")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.89314, 3.047, -4.73849)
+
+[node name="light11" parent="." instance=ExtResource("11_lsf7e")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.89314, 3.047, -8.28722)
+
+[node name="light8" parent="." instance=ExtResource("11_lsf7e")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.22326, 3.047, 2.6697)
+
+[node name="light3" parent="." instance=ExtResource("11_lsf7e")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.2637, 3.047, 1.548)
+
+[node name="light6" parent="." instance=ExtResource("11_lsf7e")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.73035, 3.047, 1.548)
+
+[node name="light4" parent="." instance=ExtResource("11_lsf7e")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.00894, 3.04683, -4.56059)
+
+[node name="light5" parent="." instance=ExtResource("11_lsf7e")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.00894, 3.04683, -7.19507)
+
+[node name="lightbulb" parent="." instance=ExtResource("12_4065e")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.99246, 2.98776, -0.620665)
+
+[node name="lightbulb2" parent="." instance=ExtResource("12_4065e")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.99246, -0.201439, 2.06064)

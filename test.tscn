@@ -12,7 +12,7 @@
 [ext_resource type="Texture2D" uid="uid://daky82lgqf6lq" path="res://assets/models/toy_box/textures/Mat_Toys_emissive.jpeg" id="10_6byfb"]
 [ext_resource type="Texture2D" uid="uid://dj4pjoop6xh60" path="res://assets/models/toy_box/textures/Mat_Toys_metallicRoughness.png" id="11_2ju87"]
 [ext_resource type="Texture2D" uid="uid://blvfpbft8lwtb" path="res://assets/models/toy_box/textures/Mat_Toys_normal.png" id="12_7q5nr"]
-[ext_resource type="PackedScene" path="res://assets/models/toy_box/untitled.tscn" id="13_w1wun"]
+[ext_resource type="PackedScene" uid="uid://ewhtcys6j15o" path="res://assets/models/toy_box/untitled.tscn" id="13_w1wun"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_7y3lw"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
