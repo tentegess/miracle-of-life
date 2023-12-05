@@ -267,6 +267,7 @@ func pick_up():
 		picked_object.global_transform.origin = hand.global_transform.origin
 		picked_object.collision_mask = 0
 		picked_object.collision_layer = 0
+		picked_object.angular_velocity = Vector3.ZERO
 		interaction = true
 		
 		
@@ -302,6 +303,7 @@ func remove_object():
 		picked_object.collision_mask = 1
 		picked_object.collision_layer = 1
 		picked_object.linear_velocity = Vector3.ZERO
+		picked_object.angular_velocity = Vector3.ZERO
 		picked_object = null
 		
 		
