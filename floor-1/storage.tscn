@@ -1854,7 +1854,8 @@ transform = Transform3D(-6.55671e-10, 0, 0.015, 0, 0.015, 0, -0.015, 0, -6.55671
 transform = Transform3D(-0.748956, 0.380063, -0.542787, 0, 0.819152, 0.573576, 0.66262, 0.429583, -0.613509, 1.15324, 0.304623, 0.243646)
 
 [node name="scene" parent="." instance=ExtResource("14_m0023")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.57481, 0.0999999, -0.688064)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.57481, 0.485643, -0.688064)
+visible = false
 
 [node name="lamp" parent="." instance=ExtResource("15_x2o71")]
 transform = Transform3D(0.120137, 0, -0.992757, 0, 1, 0, 0.992757, 0, 0.120137, 0.942563, 2.05178, -0.490512)
