@@ -7,8 +7,8 @@ extends StaticBody3D
 var key = null
 var rotation_angle = 90
 var rotate_step = 0
-var rotation_axis = Vector3(0, 0, 1)  
 var is_correct = false
+var initial_rotation = Vector3(0,0,0)
 
 
 # Called when the node enters the scene tree for the first time.
@@ -23,8 +23,12 @@ func _ready():
 func _process(delta):
 	if key != null:
 		key.global_position = self.global_position
-		key.global_transform.basis = Basis().rotated(
-			rotation_axis, deg_to_rad(-rotation_angle*rotate_step))
+		var combined_basis = Basis()
+		combined_basis = combined_basis.rotated(Vector3(0, 0, 1), deg_to_rad(-rotation_angle * rotate_step))
+		combined_basis = combined_basis.rotated(Vector3(0, 1, 0), deg_to_rad(initial_rotation.y))
+		
+
+		key.global_transform.basis = combined_basis
 
 
 # Called when player left click
@@ -35,6 +39,7 @@ func place(player=null):
 		key = null
 	elif key == null and player.picked_object != null:
 		key = player.picked_object
+		initial_rotation = get_parent().get_parent().get_parent().get_parent().get_rotation_degrees()
 		player.picked_object = null
 	check_correct()
 		

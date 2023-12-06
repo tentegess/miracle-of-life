@@ -32,7 +32,7 @@ script = ExtResource("1_6rbcb")
 
 [node name="Player" parent="." instance=ExtResource("1_fiq1j")]
 process_mode = 1
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0276566, 1.32859, 3.84383)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.9215, -1.56667, 5.58868)
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_7v3vg")
