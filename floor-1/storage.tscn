@@ -570,7 +570,7 @@ bind/25/pose = Transform3D(2.5808, -0.582715, 0.0220566, 0.0480271, 0.112666, -2
 
 [node name="storage" type="Node3D"]
 
-[node name="floor" type="MeshInstance3D" parent="." groups=["wood"]]
+[node name="floor" type="MeshInstance3D" parent="." groups=["concrete2"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.1)
 mesh = SubResource("BoxMesh_hh3m0")
 skeleton = NodePath("../stairs")

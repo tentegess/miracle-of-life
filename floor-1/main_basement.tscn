@@ -284,7 +284,7 @@ data = PackedVector3Array(-0.15, 0.15, 0.005, 0.15, 0.15, 0.005, -0.15, -0.15, 0
 
 [node name="main_basement" type="Node3D"]
 
-[node name="floor" type="MeshInstance3D" parent="." groups=["wood"]]
+[node name="floor" type="MeshInstance3D" parent="." groups=["concrete2"]]
 mesh = SubResource("BoxMesh_5spdd")
 skeleton = NodePath("../stairs")
 

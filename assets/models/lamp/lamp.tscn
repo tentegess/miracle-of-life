@@ -6,9 +6,9 @@
 
 [node name="OmniLight3D" type="OmniLight3D" parent="." index="1"]
 light_color = Color(0.72549, 0.701961, 0, 1)
-light_energy = 0.521
+light_energy = 1.614
 shadow_bias = 10.0
 shadow_normal_bias = 10.0
 shadow_transmittance_bias = 16.0
-omni_range = 0.5
-omni_attenuation = 1.07177
+omni_range = 0.49
+omni_attenuation = 0.189464

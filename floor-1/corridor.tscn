@@ -239,7 +239,7 @@ transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -9.9, 
 
 [node name="floor" type="Node3D" parent="."]
 
-[node name="floor" type="MeshInstance3D" parent="floor" groups=["wood"]]
+[node name="floor" type="MeshInstance3D" parent="floor" groups=["concrete2"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.6)
 mesh = SubResource("BoxMesh_x7ipa")
 skeleton = NodePath("../stairs")
@@ -249,7 +249,7 @@ skeleton = NodePath("../stairs")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="floor/floor/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_hxm21")
 
-[node name="floor2" type="MeshInstance3D" parent="floor" groups=["wood"]]
+[node name="floor2" type="MeshInstance3D" parent="floor" groups=["concrete2"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.2, 0, 4.7)
 mesh = SubResource("BoxMesh_wwep4")
 skeleton = NodePath("../stairs")

@@ -188,6 +188,9 @@ func play_step_sound(group : String):
 		"concrete":
 			footstep_player.stream = load("res://assets/sound/step/concrete/0.ogg")
 			
+		"concrete2":
+			footstep_player.stream = load("res://assets/sound/step/concrete/1.ogg")
+			
 		"wood":
 			footstep_player.stream = load("res://assets/sound/step/wood/0.ogg")
 			

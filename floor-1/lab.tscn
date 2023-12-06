@@ -310,7 +310,7 @@ spot_attenuation = 0.00448711
 spot_angle = 17.93
 spot_angle_attenuation = 4.9246
 
-[node name="floor" type="MeshInstance3D" parent="." groups=["wood"]]
+[node name="floor" type="MeshInstance3D" parent="." groups=["concrete2"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0.5)
 mesh = SubResource("BoxMesh_e7upp")
 skeleton = NodePath("../stairs")
