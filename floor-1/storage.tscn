@@ -1,4 +1,4 @@
-[gd_scene load_steps=99 format=3 uid="uid://cr0nuulg4da71"]
+[gd_scene load_steps=100 format=3 uid="uid://cr0nuulg4da71"]
 
 [ext_resource type="Script" path="res://floor-1/doors_with_walls/storage_doors.gd" id="2_btfrp"]
 [ext_resource type="Script" path="res://assets/models/amon/amon_counter.gd" id="2_rnx2n"]
@@ -15,6 +15,7 @@
 [ext_resource type="PackedScene" uid="uid://cda3wmfn70lnx" path="res://assets/models/shelf/shelf.tscn" id="13_cr2du"]
 [ext_resource type="PackedScene" uid="uid://duehn668j3tpo" path="res://assets/models/lamp/scene.gltf" id="14_m0023"]
 [ext_resource type="PackedScene" uid="uid://chr75k7lc0bn2" path="res://assets/models/lamp/lamp.tscn" id="15_x2o71"]
+[ext_resource type="PackedScene" uid="uid://caq46hs5god1y" path="res://assets/models/salt/salt.tscn" id="16_tbnkk"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_k6j2q"]
 load_path = "res://.godot/imported/Concrete017_1K-PNG_Color.png-70b284543347c3c6912c117fd55f4c41.s3tc.ctex"
@@ -30,11 +31,11 @@ albedo_texture = SubResource("CompressedTexture2D_k6j2q")
 roughness_texture = SubResource("CompressedTexture2D_74o3s")
 normal_enabled = true
 normal_texture = SubResource("CompressedTexture2D_54j05")
-uv1_scale = Vector3(2.5, 8.9, 1)
+uv1_scale = Vector3(2.5, 5.7, 1)
 
 [sub_resource type="BoxMesh" id="BoxMesh_hh3m0"]
 material = SubResource("StandardMaterial3D_u7pdd")
-size = Vector3(2.5, 0.2, 8.9)
+size = Vector3(2.5, 0.2, 5.9)
 
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_nklh1"]
 data = PackedVector3Array(-1.25, 0.1, 4.45, 1.25, 0.1, 4.45, -1.25, -0.1, 4.45, 1.25, 0.1, 4.45, 1.25, -0.1, 4.45, -1.25, -0.1, 4.45, 1.25, 0.1, -4.45, -1.25, 0.1, -4.45, 1.25, -0.1, -4.45, -1.25, 0.1, -4.45, -1.25, -0.1, -4.45, 1.25, -0.1, -4.45, 1.25, 0.1, 4.45, 1.25, 0.1, -4.45, 1.25, -0.1, 4.45, 1.25, 0.1, -4.45, 1.25, -0.1, -4.45, 1.25, -0.1, 4.45, -1.25, 0.1, -4.45, -1.25, 0.1, 4.45, -1.25, -0.1, -4.45, -1.25, 0.1, 4.45, -1.25, -0.1, 4.45, -1.25, -0.1, -4.45, 1.25, 0.1, 4.45, -1.25, 0.1, 4.45, 1.25, 0.1, -4.45, -1.25, 0.1, 4.45, -1.25, 0.1, -4.45, 1.25, 0.1, -4.45, -1.25, -0.1, 4.45, 1.25, -0.1, 4.45, -1.25, -0.1, -4.45, 1.25, -0.1, 4.45, 1.25, -0.1, -4.45, -1.25, -0.1, -4.45)
@@ -53,11 +54,11 @@ albedo_texture = SubResource("CompressedTexture2D_q4iqx")
 roughness_texture = SubResource("CompressedTexture2D_0hmn6")
 normal_enabled = true
 normal_texture = SubResource("CompressedTexture2D_8mxhf")
-uv1_scale = Vector3(6.2, 3, 1)
+uv1_scale = Vector3(3.2, 3, 1)
 
 [sub_resource type="BoxMesh" id="BoxMesh_68o52"]
 material = SubResource("StandardMaterial3D_b0nsx")
-size = Vector3(0.1, 3, 6.2)
+size = Vector3(0.1, 3, 3.2)
 
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_vjljv"]
 data = PackedVector3Array(-0.05, 1.5, 3.1, 0.05, 1.5, 3.1, -0.05, -1.5, 3.1, 0.05, 1.5, 3.1, 0.05, -1.5, 3.1, -0.05, -1.5, 3.1, 0.05, 1.5, -3.1, -0.05, 1.5, -3.1, 0.05, -1.5, -3.1, -0.05, 1.5, -3.1, -0.05, -1.5, -3.1, 0.05, -1.5, -3.1, 0.05, 1.5, 3.1, 0.05, 1.5, -3.1, 0.05, -1.5, 3.1, 0.05, 1.5, -3.1, 0.05, -1.5, -3.1, 0.05, -1.5, 3.1, -0.05, 1.5, -3.1, -0.05, 1.5, 3.1, -0.05, -1.5, -3.1, -0.05, 1.5, 3.1, -0.05, -1.5, 3.1, -0.05, -1.5, -3.1, 0.05, 1.5, 3.1, -0.05, 1.5, 3.1, 0.05, 1.5, -3.1, -0.05, 1.5, 3.1, -0.05, 1.5, -3.1, 0.05, 1.5, -3.1, -0.05, -1.5, 3.1, 0.05, -1.5, 3.1, -0.05, -1.5, -3.1, 0.05, -1.5, 3.1, 0.05, -1.5, -3.1, -0.05, -1.5, -3.1)
@@ -76,11 +77,11 @@ albedo_texture = SubResource("CompressedTexture2D_fal67")
 roughness_texture = SubResource("CompressedTexture2D_cl1dr")
 normal_enabled = true
 normal_texture = SubResource("CompressedTexture2D_sie1r")
-uv1_scale = Vector3(8.7, 3, 1)
+uv1_scale = Vector3(5.7, 3, 1)
 
 [sub_resource type="BoxMesh" id="BoxMesh_i3pmj"]
 material = SubResource("StandardMaterial3D_ugoyw")
-size = Vector3(0.1, 3, 8.7)
+size = Vector3(0.1, 3, 5.7)
 
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_tj0wd"]
 data = PackedVector3Array(-0.05, 1.5, 4.35, 0.05, 1.5, 4.35, -0.05, -1.5, 4.35, 0.05, 1.5, 4.35, 0.05, -1.5, 4.35, -0.05, -1.5, 4.35, 0.05, 1.5, -4.35, -0.05, 1.5, -4.35, 0.05, -1.5, -4.35, -0.05, 1.5, -4.35, -0.05, -1.5, -4.35, 0.05, -1.5, -4.35, 0.05, 1.5, 4.35, 0.05, 1.5, -4.35, 0.05, -1.5, 4.35, 0.05, 1.5, -4.35, 0.05, -1.5, -4.35, 0.05, -1.5, 4.35, -0.05, 1.5, -4.35, -0.05, 1.5, 4.35, -0.05, -1.5, -4.35, -0.05, 1.5, 4.35, -0.05, -1.5, 4.35, -0.05, -1.5, -4.35, 0.05, 1.5, 4.35, -0.05, 1.5, 4.35, 0.05, 1.5, -4.35, -0.05, 1.5, 4.35, -0.05, 1.5, -4.35, 0.05, 1.5, -4.35, -0.05, -1.5, 4.35, 0.05, -1.5, 4.35, -0.05, -1.5, -4.35, 0.05, -1.5, 4.35, 0.05, -1.5, -4.35, -0.05, -1.5, -4.35)
@@ -643,7 +644,6 @@ skeleton = NodePath("../..")
 [node name="StaticBody3D" type="StaticBody3D" parent="Amon/wall/row1/slot2" groups=["amon", "amon_required"]]
 script = ExtResource("4_n5i5y")
 keyPath = NodePath("../../../../../cross_worm1")
-is_key = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Amon/wall/row1/slot2/StaticBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 5, 0, 0, 0)
@@ -658,7 +658,6 @@ skeleton = NodePath("../..")
 [node name="StaticBody3D" type="StaticBody3D" parent="Amon/wall/row1/slot3" groups=["amon", "amon_required"]]
 script = ExtResource("4_n5i5y")
 keyPath = NodePath("../../../../../cross_worm2")
-is_key = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Amon/wall/row1/slot3/StaticBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 5, 0, 0, 0)
@@ -673,7 +672,6 @@ skeleton = NodePath("../slot3")
 [node name="StaticBody3D" type="StaticBody3D" parent="Amon/wall/row1/slot4" groups=["amon", "amon_required"]]
 script = ExtResource("4_n5i5y")
 keyPath = NodePath("../../../../../cross_worm3")
-is_key = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Amon/wall/row1/slot4/StaticBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 5, 0, 0, 0)
@@ -772,7 +770,6 @@ skeleton = NodePath("../../..")
 [node name="StaticBody3D" type="StaticBody3D" parent="Amon/wall/row3/slot11" groups=["amon", "amon_required"]]
 script = ExtResource("4_n5i5y")
 keyPath = NodePath("../../../../../cross_worm4")
-is_key = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Amon/wall/row3/slot11/StaticBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 5, 0, 0, 0)
@@ -826,7 +823,6 @@ skeleton = NodePath("../slot14")
 [node name="StaticBody3D" type="StaticBody3D" parent="Amon/wall/row3/slot15" groups=["amon", "amon_required"]]
 script = ExtResource("4_n5i5y")
 keyPath = NodePath("../../../../../cross_worm5")
-is_key = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Amon/wall/row3/slot15/StaticBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 5, 0, 0, 0)
@@ -925,7 +921,6 @@ skeleton = NodePath("../../..")
 [node name="StaticBody3D" type="StaticBody3D" parent="Amon/wall/row5/slot22" groups=["amon", "amon_required"]]
 script = ExtResource("4_n5i5y")
 keyPath = NodePath("../../../../../cross_worm6")
-is_key = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Amon/wall/row5/slot22/StaticBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 5, 0, 0, 0)
@@ -940,7 +935,6 @@ skeleton = NodePath("../../..")
 [node name="StaticBody3D" type="StaticBody3D" parent="Amon/wall/row5/slot23" groups=["amon", "amon_required"]]
 script = ExtResource("4_n5i5y")
 keyPath = NodePath("../../../../../cross_worm7")
-is_key = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Amon/wall/row5/slot23/StaticBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 5, 0, 0, 0)
@@ -955,7 +949,6 @@ skeleton = NodePath("../slot23")
 [node name="StaticBody3D" type="StaticBody3D" parent="Amon/wall/row5/slot24" groups=["amon", "amon_required"]]
 script = ExtResource("4_n5i5y")
 keyPath = NodePath("../../../../../cross_worm8")
-is_key = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Amon/wall/row5/slot24/StaticBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 5, 0, 0, 0)
@@ -1862,3 +1855,6 @@ transform = Transform3D(0.120137, 0, -0.992757, 0, 1, 0, 0.992757, 0, 0.120137, 
 
 [node name="lamp2" parent="." instance=ExtResource("15_x2o71")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.938521, 0.443826, -0.0516109)
+
+[node name="salt" parent="." instance=ExtResource("16_tbnkk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.14304, 0.83926, -0.723926)
