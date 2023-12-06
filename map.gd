@@ -5,6 +5,7 @@ signal pause(paused : bool)
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+	get_tree().paused = false
 	
 
 @onready var pause_game = Global.pause_game:

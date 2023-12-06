@@ -1,0 +1,118 @@
+[gd_scene load_steps=14 format=3 uid="uid://dwut15bmlj8up"]
+
+[ext_resource type="Script" path="res://start_menu/main_menu.gd" id="1_mlbah"]
+[ext_resource type="Texture2D" uid="uid://cmxpesklexbx2" path="res://assets/textures/main menu/logo.png" id="1_yr0c3"]
+[ext_resource type="PackedScene" uid="uid://3va183v261dk" path="res://floor0/hallway.tscn" id="3_k8bx5"]
+[ext_resource type="Texture2D" uid="uid://dtjrnq2fcc0dy" path="res://assets/textures/paint_green_1k/paint_0002_base_color_1k.jpg" id="4_sf0sf"]
+[ext_resource type="Texture2D" uid="uid://bhoryeu0nck3i" path="res://assets/textures/paint_green_1k/paint_0001_normal_opengl_1k.png" id="5_7y04a"]
+[ext_resource type="Texture2D" uid="uid://cu3ay1ccilqqw" path="res://assets/textures/paint_green_1k/paint_0001_roughness_1k.jpg" id="6_r6a7e"]
+[ext_resource type="PackedScene" uid="uid://d0y8hhjb2acl5" path="res://light1.tscn" id="7_00bwt"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4b1qf"]
+albedo_texture = ExtResource("4_sf0sf")
+roughness_texture = ExtResource("6_r6a7e")
+normal_enabled = true
+normal_texture = ExtResource("5_7y04a")
+uv1_scale = Vector3(15, 15, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_66dxn"]
+material = SubResource("StandardMaterial3D_4b1qf")
+size = Vector3(15, 0.2, 15)
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_86nxw"]
+data = PackedVector3Array(-7.5, 0.1, 7.5, 7.5, 0.1, 7.5, -7.5, -0.1, 7.5, 7.5, 0.1, 7.5, 7.5, -0.1, 7.5, -7.5, -0.1, 7.5, 7.5, 0.1, -7.5, -7.5, 0.1, -7.5, 7.5, -0.1, -7.5, -7.5, 0.1, -7.5, -7.5, -0.1, -7.5, 7.5, -0.1, -7.5, 7.5, 0.1, 7.5, 7.5, 0.1, -7.5, 7.5, -0.1, 7.5, 7.5, 0.1, -7.5, 7.5, -0.1, -7.5, 7.5, -0.1, 7.5, -7.5, 0.1, -7.5, -7.5, 0.1, 7.5, -7.5, -0.1, -7.5, -7.5, 0.1, 7.5, -7.5, -0.1, 7.5, -7.5, -0.1, -7.5, 7.5, 0.1, 7.5, -7.5, 0.1, 7.5, 7.5, 0.1, -7.5, -7.5, 0.1, 7.5, -7.5, 0.1, -7.5, 7.5, 0.1, -7.5, -7.5, -0.1, 7.5, 7.5, -0.1, 7.5, -7.5, -0.1, -7.5, 7.5, -0.1, 7.5, 7.5, -0.1, -7.5, -7.5, -0.1, -7.5)
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_amnlu"]
+sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+ground_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+
+[sub_resource type="Sky" id="Sky_yy8k3"]
+sky_material = SubResource("ProceduralSkyMaterial_amnlu")
+
+[sub_resource type="Environment" id="Environment_dgi5i"]
+background_mode = 2
+background_color = Color(0, 0, 0.333333, 1)
+background_energy_multiplier = 0.1
+sky = SubResource("Sky_yy8k3")
+ambient_light_color = Color(0, 0, 0.12549, 1)
+ambient_light_sky_contribution = 0.2
+ambient_light_energy = 0.2
+tonemap_mode = 2
+glow_normalized = true
+glow_blend_mode = 0
+
+[node name="menu" type="Node3D"]
+process_mode = 3
+script = ExtResource("1_mlbah")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -156.0
+offset_top = -356.0
+offset_right = 162.0
+offset_bottom = -38.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_yr0c3")
+expand_mode = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.843
+anchor_right = 0.5
+anchor_bottom = 0.843
+offset_left = -154.0
+offset_top = -117.264
+offset_right = 164.0
+offset_bottom = 39.736
+
+[node name="start_button" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 35
+text = "Start"
+
+[node name="fullscreen_button" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 35
+text = "Pełny ekran"
+
+[node name="exit_button" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 35
+text = "Wyjście
+"
+
+[node name="hallway" parent="." instance=ExtResource("3_k8bx5")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0, 0, 1.02732)
+
+[node name="celling" type="MeshInstance3D" parent="hallway"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0, 3.17053, -2.3)
+gi_mode = 2
+mesh = SubResource("BoxMesh_66dxn")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="hallway/celling"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="hallway/celling/StaticBody3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0, 0, 0)
+shape = SubResource("ConcavePolygonShape3D_86nxw")
+
+[node name="scene" parent="hallway" instance=ExtResource("7_00bwt")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -0.0401363, 3.01467, 2.66485)
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0944877, 1.79379, -1.69858)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_dgi5i")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+
+[connection signal="pressed" from="VBoxContainer/start_button" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/fullscreen_button" to="." method="_on_fullscreen_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/exit_button" to="." method="_on_exit_button_pressed"]

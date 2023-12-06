@@ -22,7 +22,7 @@ size = Vector3(2.71173, 0.201526, 4.12455)
 [sub_resource type="BoxShape3D" id="BoxShape3D_qsf02"]
 size = Vector3(12.0282, 0.201526, 14.9373)
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4b1qf"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lt1m5"]
 albedo_texture = ExtResource("8_gw4u8")
 roughness_texture = ExtResource("10_y5a54")
 normal_enabled = true
@@ -30,7 +30,7 @@ normal_texture = ExtResource("9_c6duh")
 uv1_scale = Vector3(15, 15, 1)
 
 [sub_resource type="BoxMesh" id="BoxMesh_dli2j"]
-material = SubResource("StandardMaterial3D_4b1qf")
+material = SubResource("StandardMaterial3D_lt1m5")
 size = Vector3(15, 0.2, 15)
 
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_nm35p"]

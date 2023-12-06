@@ -19,6 +19,17 @@ func _process(delta):
 
 
 func _on_button_pressed():
-	print("test")
 	Global.pause_game = false
 	game_scene.pause_game = false
+
+
+func _on_fullscreen_button_pressed():
+	if DisplayServer.window_get_mode() == 0:
+		DisplayServer.window_set_mode(3)
+	else:
+		DisplayServer.window_set_mode(0)
+
+
+func _on_exit_button_button_down():
+	game_scene.pause_game = false
+	get_tree().change_scene_to_file("res://start_menu/menu.tscn")

@@ -3,6 +3,7 @@
 [ext_resource type="Script" path="res://pause_menu.gd" id="1_rwm0r"]
 
 [node name="pause_menu" type="Control"]
+process_mode = 3
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -43,4 +44,15 @@ horizontal_alignment = 1
 layout_mode = 2
 text = "Wznów"
 
+[node name="fullscreen_button" type="Button" parent="Panel/VBoxContainer"]
+layout_mode = 2
+text = "Pełny ekran"
+
+[node name="exit_button" type="Button" parent="Panel/VBoxContainer"]
+layout_mode = 2
+text = "Powrót do menu
+"
+
 [connection signal="pressed" from="Panel/VBoxContainer/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Panel/VBoxContainer/fullscreen_button" to="." method="_on_fullscreen_button_pressed"]
+[connection signal="button_down" from="Panel/VBoxContainer/exit_button" to="." method="_on_exit_button_button_down"]
