@@ -1864,5 +1864,5 @@ transform = Transform3D(0.120137, 0, -0.992757, 0, 1, 0, 0.992757, 0, 0.120137, 
 [node name="lamp2" parent="." instance=ExtResource("15_x2o71")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.938521, 0.443826, -0.0516109)
 
-[node name="salt" parent="." instance=ExtResource("16_tbnkk")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.14304, 0.83926, -0.723926)
+[node name="salt" parent="." groups=["salt"] instance=ExtResource("16_tbnkk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.03316, 0.837189, -0.783139)
