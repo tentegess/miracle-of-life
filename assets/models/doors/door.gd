@@ -5,7 +5,6 @@ var is_open := false
 var can_use := true
 @export var locked := true
 @export var unlock_by_key := true
-#@export_node_path("RigidBody3D") var keyPath
 @export var keyName := ""
 var key
 
