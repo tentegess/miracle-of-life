@@ -264,6 +264,12 @@ func pick_up():
 			if "worm" in picked_object.get_groups() and "cross" in collider.get_groups():
 				combine_item_holding_joined_item(collider)
 				return
+			if "water_jug" in picked_object.get_groups() and "salt" in collider.get_groups():
+				combine_item_holding_proper_item(collider)
+				return
+			if "salt" in picked_object.get_groups() and "water_jug" in collider.get_groups():
+				combine_item_holding_joined_item(collider)
+				return
 			remove_object()
 		picked_object = collider
 		picked_object.global_transform.origin = hand.global_transform.origin
