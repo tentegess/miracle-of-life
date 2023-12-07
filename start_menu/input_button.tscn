@@ -1,0 +1,57 @@
+[gd_scene load_steps=5 format=3 uid="uid://b2xn6fcy0blm4"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sa0s5"]
+bg_color = Color(0.113725, 0.113725, 0.113725, 0.682353)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_p2f1j"]
+bg_color = Color(1, 1, 1, 0.301961)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7fcsh"]
+bg_color = Color(0.596078, 0.596078, 0.596078, 0.658824)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_o577h"]
+
+[node name="input_button" type="Button"]
+custom_minimum_size = Vector2(0, 45)
+anchors_preset = 10
+anchor_right = 1.0
+grow_horizontal = 2
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxFlat_sa0s5")
+theme_override_styles/hover = SubResource("StyleBoxFlat_p2f1j")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_7fcsh")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_o577h")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 0
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="label_action" type="Label" parent="MarginContainer/HBoxContainer"]
+layout_mode = 2
+mouse_filter = 1
+theme_override_font_sizes/font_size = 35
+text = "action name"
+vertical_alignment = 1
+
+[node name="Control" type="Control" parent="MarginContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+mouse_filter = 1
+
+[node name="label_input" type="Label" parent="MarginContainer/HBoxContainer"]
+layout_mode = 2
+mouse_filter = 1
+theme_override_font_sizes/font_size = 35
+text = "action name"
+vertical_alignment = 1
