@@ -1,0 +1,11 @@
+Model Information:
+* title:	Star Wars Xbox 360 Controller
+* source:	https://sketchfab.com/3d-models/star-wars-xbox-360-controller-4ddbaa3d1dfb4145b50f1992132c9c04
+* author:	Logansryche (https://sketchfab.com/Logansryche)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Star Wars Xbox 360 Controller" (https://sketchfab.com/3d-models/star-wars-xbox-360-controller-4ddbaa3d1dfb4145b50f1992132c9c04) by Logansryche (https://sketchfab.com/Logansryche) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

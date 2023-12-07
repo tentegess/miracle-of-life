@@ -1,0 +1,11 @@
+Model Information:
+* title:	Mortar and pestle
+* source:	https://sketchfab.com/3d-models/mortar-and-pestle-d458e4aa44ec497a8ea4917d4152f617
+* author:	Teslov (https://sketchfab.com/Teslov)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Mortar and pestle" (https://sketchfab.com/3d-models/mortar-and-pestle-d458e4aa44ec497a8ea4917d4152f617) by Teslov (https://sketchfab.com/Teslov) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

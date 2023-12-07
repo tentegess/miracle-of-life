@@ -31,7 +31,6 @@ shadow_blur = 1.678
 distance_fade_enabled = true
 omni_range = 3.78134
 omni_attenuation = 2.0
-omni_shadow_mode = 0
 
 [node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="." index="2"]
 transform = Transform3D(1, 0, 0, 0, 0.0103321, 0.999947, 0, -0.999947, 0.0103321, 0, 0, 0)
@@ -40,6 +39,5 @@ volume_db = -14.118
 max_db = -0.968
 pitch_scale = 1.44
 autoplay = true
-stream_paused = true
 max_distance = 3.0
 emission_angle_degrees = 57.0

@@ -1,0 +1,11 @@
+Model Information:
+* title:	Double Pipe Straight
+* source:	https://sketchfab.com/3d-models/double-pipe-straight-0278e756bf824b60b66265be791e461a
+* author:	PSYCHOPOMP (https://sketchfab.com/Psychopomp-Games)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Double Pipe Straight" (https://sketchfab.com/3d-models/double-pipe-straight-0278e756bf824b60b66265be791e461a) by PSYCHOPOMP (https://sketchfab.com/Psychopomp-Games) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
