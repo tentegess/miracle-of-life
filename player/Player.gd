@@ -259,11 +259,10 @@ func pick_up():
 	if collider != null and collider is RigidBody3D:
 		if picked_object != null:
 			if "cross" in picked_object.get_groups() and "worm" in collider.get_groups():
-				picked_object.visible = false
-				picked_object = picked_object.get_owner().get_child(0)
-				picked_object.visible = true
-				collider.queue_free()
-				interaction = true
+				combine_item_holding_proper_item(collider)
+				return
+			if "worm" in picked_object.get_groups() and "cross" in collider.get_groups():
+				combine_item_holding_joined_item(collider)
 				return
 			remove_object()
 		picked_object = collider
@@ -272,6 +271,27 @@ func pick_up():
 		picked_object.collision_layer = 0
 		picked_object.angular_velocity = Vector3.ZERO
 		interaction = true
+		
+		
+func combine_item_holding_joined_item(collider):
+	picked_object.queue_free()
+	picked_object = collider
+	picked_object.global_transform.origin = hand.global_transform.origin
+	picked_object.collision_mask = 0
+	picked_object.collision_layer = 0
+	picked_object.angular_velocity = Vector3.ZERO
+	picked_object.visible = false
+	picked_object = picked_object.get_owner().get_child(0)
+	picked_object.visible = true
+	interaction = true
+		
+		
+func combine_item_holding_proper_item(collider):
+	picked_object.visible = false
+	picked_object = picked_object.get_owner().get_child(0)
+	picked_object.visible = true
+	collider.queue_free()
+	interaction = true
 		
 		
 func read_note():
