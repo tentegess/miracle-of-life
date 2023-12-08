@@ -45,3 +45,4 @@ shadow_blur = 1.678
 distance_fade_enabled = true
 omni_range = 3.78134
 omni_attenuation = 2.0
+omni_shadow_mode = 0

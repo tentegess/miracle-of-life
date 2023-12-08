@@ -1,0 +1,11 @@
+Model Information:
+* title:	Wo Curtain
+* source:	https://sketchfab.com/3d-models/wo-curtain-3b1e2abe618c4aa8922d69a88673a1c2
+* author:	darkvader1221 (https://sketchfab.com/darkvader1221)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Wo Curtain" (https://sketchfab.com/3d-models/wo-curtain-3b1e2abe618c4aa8922d69a88673a1c2) by darkvader1221 (https://sketchfab.com/darkvader1221) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
