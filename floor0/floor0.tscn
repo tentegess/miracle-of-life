@@ -10,8 +10,8 @@
 [ext_resource type="Texture2D" uid="uid://dtjrnq2fcc0dy" path="res://assets/textures/paint_green_1k/paint_0002_base_color_1k.jpg" id="8_gw4u8"]
 [ext_resource type="Texture2D" uid="uid://bhoryeu0nck3i" path="res://assets/textures/paint_green_1k/paint_0001_normal_opengl_1k.png" id="9_c6duh"]
 [ext_resource type="Texture2D" uid="uid://cu3ay1ccilqqw" path="res://assets/textures/paint_green_1k/paint_0001_roughness_1k.jpg" id="10_y5a54"]
-[ext_resource type="PackedScene" uid="uid://d0y8hhjb2acl5" path="res://light1.tscn" id="11_lsf7e"]
-[ext_resource type="PackedScene" uid="uid://op1ms1ys3iv2" path="res://lightbulb.tscn" id="12_4065e"]
+[ext_resource type="PackedScene" path="res://light1.tscn" id="11_lsf7e"]
+[ext_resource type="PackedScene" path="res://lightbulb.tscn" id="12_4065e"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_b6huq"]
 size = Vector3(3.06068, 0.201526, 7.51114)
