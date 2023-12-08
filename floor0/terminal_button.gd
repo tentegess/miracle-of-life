@@ -6,7 +6,7 @@ extends Control
 @export var char : String
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	modulate = Color(1, 1, 1, 0)
+	#modulate = Color(1, 1, 1, 0)
 	self.connect("button_up", _on_button_up)
 
 
