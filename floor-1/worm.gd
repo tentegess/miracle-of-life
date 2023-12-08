@@ -1,10 +1,13 @@
 extends Node3D
 	
-func ending(player):
+func action(player):
 	if player.has_method("held_item"):
 		if player.held_item():
-			if "potion" in player.held_item().get_parent().get_groups():
+			print(player.held_item().get_groups())
+			if "potion" in player.held_item().get_groups():
 				player.picked_object = null
-				get_tree().change_scene_to_file("res://ending.tscn")
+				get_tree().change_scene_to_file("res://ending/ending.tscn")
 				return true
 	return false
+	
+	
