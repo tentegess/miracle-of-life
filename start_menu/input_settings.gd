@@ -18,7 +18,7 @@ var input_actions = {
 		"run": "Bieganie",
 		"left_click": "Podnoszenie przedmiotów",
 		"right_click": "Obracanie przedmiotów",
-		"pause": "Pauza",
+		"interact": "Interakcja z przedmiotami",
 	}
 var input_changed = {}
 
