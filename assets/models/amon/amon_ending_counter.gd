@@ -18,7 +18,7 @@ func _ready():
 func amon_correct():
 	correct_amons += 1
 	if correct_amons == 4:
-		print('tutaj ending')
+		get_tree().change_scene_to_file("res://ending/ending2.tscn")
 	
 
 func amon_incorrect():
