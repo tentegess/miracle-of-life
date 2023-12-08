@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://jqer75wiiuoy"]
+[gd_scene load_steps=3 format=3 uid="uid://jqer75wiiuoy"]
 
 [ext_resource type="Script" path="res://pause_menu.gd" id="1_rwm0r"]
+[ext_resource type="PackedScene" uid="uid://dvn5tw6bwgklm" path="res://start_menu/input_settings.tscn" id="2_2wg4p"]
 
 [node name="pause_menu" type="Control"]
 process_mode = 3
@@ -12,20 +13,25 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_rwm0r")
 
-[node name="Panel" type="Panel" parent="."]
+[node name="menu" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Panel" type="Panel" parent="menu"]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.488
 anchor_top = 0.528
 anchor_right = 0.488
 anchor_bottom = 0.528
-offset_left = -153.176
-offset_top = -198.144
-offset_right = 152.824
-offset_bottom = 178.856
+offset_left = 389.48
+offset_top = 122.88
+offset_right = 695.48
+offset_bottom = 499.88
 scale = Vector2(0.997738, 1.05087)
 
-[node name="VBoxContainer" type="VBoxContainer" parent="Panel"]
+[node name="VBoxContainer" type="VBoxContainer" parent="menu/Panel"]
 layout_mode = 1
 anchors_preset = 10
 anchor_right = 1.0
@@ -33,26 +39,34 @@ offset_bottom = 61.0
 grow_horizontal = 2
 alignment = 1
 
-[node name="Label" type="Label" parent="Panel/VBoxContainer"]
+[node name="Label" type="Label" parent="menu/Panel/VBoxContainer"]
 layout_mode = 2
 text = "Pauza
 
 "
 horizontal_alignment = 1
 
-[node name="Button" type="Button" parent="Panel/VBoxContainer"]
+[node name="Button" type="Button" parent="menu/Panel/VBoxContainer"]
 layout_mode = 2
 text = "Wznów"
 
-[node name="fullscreen_button" type="Button" parent="Panel/VBoxContainer"]
+[node name="fullscreen_button" type="Button" parent="menu/Panel/VBoxContainer"]
 layout_mode = 2
 text = "Pełny ekran"
 
-[node name="exit_button" type="Button" parent="Panel/VBoxContainer"]
+[node name="control_button" type="Button" parent="menu/Panel/VBoxContainer"]
+layout_mode = 2
+text = "Sterowanie"
+
+[node name="exit_button" type="Button" parent="menu/Panel/VBoxContainer"]
 layout_mode = 2
 text = "Powrót do menu
 "
 
-[connection signal="pressed" from="Panel/VBoxContainer/Button" to="." method="_on_button_pressed"]
-[connection signal="pressed" from="Panel/VBoxContainer/fullscreen_button" to="." method="_on_fullscreen_button_pressed"]
-[connection signal="button_down" from="Panel/VBoxContainer/exit_button" to="." method="_on_exit_button_button_down"]
+[node name="input_settings" parent="." instance=ExtResource("2_2wg4p")]
+layout_mode = 1
+
+[connection signal="pressed" from="menu/Panel/VBoxContainer/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="menu/Panel/VBoxContainer/fullscreen_button" to="." method="_on_fullscreen_button_pressed"]
+[connection signal="pressed" from="menu/Panel/VBoxContainer/control_button" to="input_settings" method="_on_control_button_pressed"]
+[connection signal="button_down" from="menu/Panel/VBoxContainer/exit_button" to="." method="_on_exit_button_button_down"]

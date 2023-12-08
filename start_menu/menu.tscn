@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://start_menu/main_menu.gd" id="1_mlbah"]
 [ext_resource type="Texture2D" uid="uid://cmxpesklexbx2" path="res://assets/textures/main menu/logo.png" id="1_yr0c3"]
-[ext_resource type="PackedScene" uid="uid://b2xn6fcy0blm4" path="res://start_menu/input_button.tscn" id="3_fctfv"]
+[ext_resource type="PackedScene" uid="uid://dvn5tw6bwgklm" path="res://start_menu/input_settings.tscn" id="3_3xtan"]
 [ext_resource type="PackedScene" uid="uid://3va183v261dk" path="res://floor0/hallway.tscn" id="3_k8bx5"]
 [ext_resource type="Texture2D" uid="uid://dtjrnq2fcc0dy" path="res://assets/textures/paint_green_1k/paint_0002_base_color_1k.jpg" id="4_sf0sf"]
 [ext_resource type="Texture2D" uid="uid://bhoryeu0nck3i" path="res://assets/textures/paint_green_1k/paint_0001_normal_opengl_1k.png" id="5_7y04a"]
@@ -101,50 +101,7 @@ theme_override_font_sizes/font_size = 35
 text = "Wyjście
 "
 
-[node name="input_settings" type="Control" parent="."]
-visible = false
-layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-
-[node name="PanelContainer" type="PanelContainer" parent="input_settings"]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -491.0
-offset_top = -235.0
-offset_right = 491.0
-offset_bottom = 235.0
-grow_horizontal = 2
-grow_vertical = 2
-
-[node name="MarginContainer" type="MarginContainer" parent="input_settings/PanelContainer"]
-layout_mode = 2
-theme_override_constants/margin_left = 20
-theme_override_constants/margin_top = 20
-theme_override_constants/margin_right = 20
-theme_override_constants/margin_bottom = 20
-
-[node name="VBoxContainer2" type="VBoxContainer" parent="input_settings/PanelContainer/MarginContainer"]
-layout_mode = 2
-
-[node name="VBoxContainer" type="VBoxContainer" parent="input_settings/PanelContainer/MarginContainer/VBoxContainer2"]
-layout_mode = 2
-size_flags_vertical = 3
-
-[node name="input_button" parent="input_settings/PanelContainer/MarginContainer/VBoxContainer2/VBoxContainer" instance=ExtResource("3_fctfv")]
-layout_mode = 2
-
-[node name="save_button" type="Button" parent="input_settings/PanelContainer/MarginContainer/VBoxContainer2"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 35
-text = "Zapisz ustawienia"
+[node name="input_settings" parent="." instance=ExtResource("3_3xtan")]
 
 [node name="hallway" parent="." instance=ExtResource("3_k8bx5")]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0, 0, 1.02732)
@@ -174,6 +131,5 @@ environment = SubResource("Environment_dgi5i")
 
 [connection signal="pressed" from="menu/VBoxContainer/start_button" to="." method="_on_start_button_pressed"]
 [connection signal="pressed" from="menu/VBoxContainer/fullscreen_button" to="." method="_on_fullscreen_button_pressed"]
-[connection signal="pressed" from="menu/VBoxContainer/control_button" to="." method="_on_control_button_pressed"]
+[connection signal="pressed" from="menu/VBoxContainer/control_button" to="input_settings" method="_on_control_button_pressed"]
 [connection signal="pressed" from="menu/VBoxContainer/exit_button" to="." method="_on_exit_button_pressed"]
-[connection signal="pressed" from="input_settings/PanelContainer/MarginContainer/VBoxContainer2/save_button" to="." method="_on_save_button_pressed"]

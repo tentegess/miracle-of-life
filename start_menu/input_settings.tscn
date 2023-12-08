@@ -1,0 +1,62 @@
+[gd_scene load_steps=3 format=3 uid="uid://dvn5tw6bwgklm"]
+
+[ext_resource type="Script" path="res://start_menu/input_settings.gd" id="1_iv3oo"]
+[ext_resource type="PackedScene" uid="uid://b2xn6fcy0blm4" path="res://start_menu/input_button.tscn" id="2_7fwo8"]
+
+[node name="input_settings" type="Control"]
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_iv3oo")
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -491.0
+offset_top = -235.0
+offset_right = 491.0
+offset_bottom = 235.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="PanelContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="PanelContainer/MarginContainer"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer/MarginContainer/VBoxContainer2"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="input_button" parent="PanelContainer/MarginContainer/VBoxContainer2/VBoxContainer" instance=ExtResource("2_7fwo8")]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="PanelContainer/MarginContainer/VBoxContainer2"]
+layout_mode = 2
+size_flags_vertical = 10
+
+[node name="back_button" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer2/HBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 35
+text = "Cofnij"
+
+[node name="save_button" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer2/HBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 35
+text = "Zapisz ustawienia"
+
+[connection signal="pressed" from="PanelContainer/MarginContainer/VBoxContainer2/HBoxContainer/back_button" to="." method="_on_back_button_pressed"]
+[connection signal="pressed" from="PanelContainer/MarginContainer/VBoxContainer2/HBoxContainer/save_button" to="." method="_on_save_button_pressed"]
